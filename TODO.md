@@ -5,4 +5,5 @@
   - all icons, all buttons
   - list items
   - panel backgrounds
+- Fix 'new direct message' warning banner buttons - Bad contrast / hover effects
 - Optimize my code (lol)
