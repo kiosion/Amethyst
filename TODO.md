@@ -6,4 +6,5 @@
   - list items
   - panel backgrounds
 - Fix 'new direct message' warning banner buttons - Bad contrast / hover effects
+- Top margin difference of 2-4px between 'friends' list panel and dm chat / server chat panel
 - Optimize my code (lol)
