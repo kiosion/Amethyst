@@ -23,8 +23,6 @@
   --border-radius-2: 8px;
 }
 
-/* TODO: fix .warningCircleIcon-3R0DLw svg icon padding from profiles unable to load */
-
 /* Dark colours */
 .theme-dark {
   --background-1: #373949;
