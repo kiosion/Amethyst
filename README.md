@@ -1,4 +1,4 @@
-# Amethyst
+<div align=center><h1>Amethyst</h1></div>
 
 Amethyst is my fork of the Zelk BetterDiscord theme, using a <a href="https://github.com/dracula/dracula-theme" target="_blank">Dracula</a>-inspired colour scheme along with some other tweaks and quality-of-life changes.
 
