@@ -1,7 +1,7 @@
 /**
  * @name Amethyst
  * @version 0.0.1
- * @description A fork of the Zelk, using a Dracula-inspired colour scheme and comtaining various tweaks and quality-of-life changes.
+ * @description A fork of Zelk, using a Dracula-inspired colour scheme and comtaining various tweaks and quality-of-life changes.
  * @author kiosion
  * @authorId 346430063006187531
  * @source https://github.com/kiosion/Amethyst
@@ -218,7 +218,24 @@
 .scroller-hE2gWq>.header-Imy05m {
   display: none;
 }
-
+/* Nitro store page main section */
+.homeWrapperNormal-bu1BS6.homeWrapper-L4ors0 {
+  background-color: var(--background-2);
+}
+.headerBar-1dSpQr.container-ZMc96U::before {
+  display: none;
+}
+.scroller-29cQFV.auto-2K3UW5.scrollerBase-_bVAAt {
+  border-radius: var(--border-radius-1);
+  margin-top: 6px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* Grid items */
+.featureGrid-SSlfD0>.feature-2IUcBI {
+  background-color: var(--background-2) !important;
+}
 /* Toolbar */
 .container-ZMc96U.themed-ANHk51, .container-1taM1r {
   background-color: var(--background-tertiary);
@@ -267,7 +284,6 @@
   background-color: var(--green);
   color: var(--background-1);
 }
-
 /* Top icons (normal) */
 .iconWrapper-2awDjA.clickable-ZD7xvu:hover {
   background-color: var(--accent-color);
@@ -281,7 +297,6 @@
 .container-ZMc96U.themed-Hp1KC_ {
   margin-top: 4px;
 }
-
 /* Top pill friends list tabs */
 .tabBar-ra-EuL.topPill-3DJJNV>div:hover {
   cursor: pointer !important;
@@ -291,7 +306,6 @@
   cursor: normal !important;
   background-color: var(--hover-color-lighter) !important;
 }
-
 /* Top pill add friend tab */
 .item-3mHhwr.item-3XjbnG[aria-controls="add_friend-tab"] {
   color: var(--text-dark) !important;
@@ -446,23 +460,35 @@
 .delete-U8uivi:hover {
   color: var(--button-destructive) !important;
 }
-.lookFilled-yCfaCM.colorBrand-I6CyqQ, .lookFilled-yCfaCM.colorGrey-2DXtkV, .lookFilled-yCfaCM.colorPrimary-3b3xI6, .button-2DhvE9, .button-gP4R86, .questionMark-3qBhGj, .optionBox-1b4n4P {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ, .lookFilled-yCfaCM.colorGrey-2DXtkV, .lookFilled-yCfaCM.colorPrimary-2AuQVo, .button-2DhvE9, .button-gP4R86, .questionMark-3qBhGj, .optionBox-1b4n4P {
   background-color: var(--button-background) !important;
 }
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover, .lookFilled-yCfaCM.colorGrey-2DXtkV:hover, .lookFilled-yCfaCM.colorPrimary-3b3xI6:hover {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover, .lookFilled-yCfaCM.colorGrey-2DXtkV:hover, .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
   background-color: var(--button-background-hover) !important;
 }
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover>div, .lookFilled-yCfaCM.colorGrey-2DXtkV:hover>div, .lookFilled-yCfaCM.colorPrimary-3b3xI6:hover>div {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover>div, .lookFilled-yCfaCM.colorGrey-2DXtkV:hover>div, .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover>div {
   color: var(--text-dark) !important;
 }
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:active .lookFilled-yCfaCM.colorGrey-2DXtkV:active, .lookFilled-yCfaCM.colorPrimary-3b3xI6:active {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover>divsvg>path, .lookFilled-yCfaCM.colorGrey-2DXtkV:hover>div>svg>path, .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover>div>svg>path {
+  fill: var(--text-dark) !important;
+}
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:active .lookFilled-yCfaCM.colorGrey-2DXtkV:active, .lookFilled-yCfaCM.colorPrimary-2AuQVo:active {
   background-color: var(--button-background-active) !important;
 }
+.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+  background-color: var(--green);
+}
+.lookFilled-yCfaCM.colorGreen-3y-Z79>div {
+  color: var(--text-dark);
+}
+.lookFilled-yCfaCM.colorGreen-3y-Z79>div>svg>path {
+  fill: var(--text-dark);
+}
 .lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
-  background-color: var(--button-accent-hover);
+  background-color: var(--light-green);
 }
 .lookFilled-yCfaCM.colorGreen-3y-Z79:active {
-  background-color: var(--button-accent-active);
+  background-color: var(--light-green);
 }
 .lookFilled-yCfaCM.colorRed-1TFJan, .bd-button.bd-button-danger {
   background-color: var(--button-destructive);
@@ -558,6 +584,12 @@ button.lookBlank-3eh9lL:hover>div>div {
 .button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
   background: var(--hover-color-darker) !important;
   color: var(--text-normal);
+}
+.lookInverted-2mDUMi>div>svg>path {
+  fill: var(--accent-color);
+}
+.lookInverted-2mDUMi>div>span {
+  color: var(--accent-color);
 }
 
 /* Invite fullwidth button */
@@ -1386,7 +1418,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 
 /* Chat & Members list styling */
 .content-1jQy2l {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 .content-1jQy2l::before {
   display: none;
@@ -1549,6 +1581,26 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 }
 .channel-1Shao0.container-1oeRFJ.selected-1-Z6gm>div>div>div>div>div, .channel-1Shao0.container-1oeRFJ.selected-1-Z6gm>div>div>div>div {
   color: var(--text-normal);
+}
+
+/* DM Action buttons / New DM Action bar */
+.container-12Vzf8>button.button-f2h6uQ {
+  background-color: var(--hover-color-lighter) !important;
+}
+.container-12Vzf8>button.button-f2h6uQ:nth-of-type(3n+1):hover {
+  background-color: var(--green) !important;
+  color: var(--text-dark) !important;
+}
+.container-12Vzf8>button.button-f2h6uQ:nth-of-type(3n+2):hover>div {
+  color: var(--text-normal) !important;
+}
+.container-12Vzf8>button.button-f2h6uQ:nth-of-type(3n+2):hover, .container-12Vzf8>button.button-f2h6uQ:nth-of-type(3n+3) {
+  background-color: var(--red) !important;
+  color: var(--text-normal) !important;
+}
+.container-12Vzf8>button.button-f2h6uQ:nth-of-type(3n+3):hover {
+  background-color: var(--light-red) !important;
+  color: var(--text-dark) !important;
 }
 
 /* Channel List Sidebar */
@@ -1929,9 +1981,10 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 .section-2gLsgF, .inset-3sAvek, .container-S9SaVf {
   background-color: var(--background-tertiary) !important;
 }
-/* Selected Tab items */
+/* Selected DM list items */
 .channel-1Shao0.selected-1-Z6gm[href="/channels/@me"]>div, .channel-1Shao0.selected-1-Z6gm[href="/store"]>div {
   background-color: var(--accent-color) !important;
+  border-radius: var(--border-radius-1);
 }
 .channel-1Shao0.selected-1-Z6gm[href="/channels/@me"]>div>div, .channel-1Shao0.selected-1-Z6gm[href="/store"]>div>div, .channel-1Shao0.selected-1-Z6gm[href="/channels/@me"]>div>div>div>div, .channel-1Shao0.selected-1-Z6gm[href="/store"]>div>div>div>div {
   color: var(--text-dark) !important;
