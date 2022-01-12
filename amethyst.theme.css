@@ -1503,9 +1503,30 @@ div[id="---new-messages-bar"]>span {
 }
 
 /* Main Chat Server View */
+/* Floating message box styling */
+.form-3gdLxP {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.form-3gdLxP::before {
+  display: none;
+}
+.form-3gdLxP>div {
+  box-shadow: 0px 0px 18px 2px var(--hover-color);
+}
+.form-3gdLxP>div, .form-3gdLxP>div>div {
+  border-radius: var(--border-radius-1) !important;
+}
+.scrollerInner-2PPAp2>.scrollerSpacer-3AqkT9 {
+  padding-bottom: 48px;
+}
+
 .chatContent-3KubbW {
   margin-right: 10px;
 }
+
 .embedFull-2tM8-- {
   border: none;
 }
