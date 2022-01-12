@@ -16,6 +16,4 @@ Based on [schnensch0/zelk](https://github.com/schnensch0/zelk)
 
 [Settings Icons](https://github.com/mwittrien/BetterDiscordAddons/blob/master/Themes/_res/SettingsIcons.css) for BetterDiscord by mwittrien
 
-[USRBG](https://github.com/Discord-Custom-Covers/usrbg) by Tropical
-
 Snippets by david_#0218, [mackenzie#0173](https://github.com/spinfish) and [Bowser65#1337](https://github.com/cyyynthia)

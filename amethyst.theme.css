@@ -8,7 +8,6 @@
  * @invite kio
  */
 
-@import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 
 :root {
@@ -152,19 +151,6 @@
   --button-destructive: var(--light-red);
   --button-destructive-hover: var(--light-red);
   --button-destructive-active: var(--red);
-}
-
-:root{--outdated:none!important}
-/*  usrbg | snippet by _david_#0218  */
-.userPopout-xaxa6l[style*="--user-background"] .banner-2QYc2d, .root-8LYsGj[style*="--user-background"] .banner-2QYc2d {
-  height: 120px;
-  background: var(--background-tertiary) var(--user-background) var(--user-popout-position, center) center / cover !important;
-}
-.userPopout-xaxa6l[style*="--user-background"] .avatarPositionNormal-aZjAsn {
-  top: 76px;
-}
-.root-8LYsGj[style*="--user-background"] .banner-2QYc2d {
-  height: 240px;
 }
 
 /* Background */
