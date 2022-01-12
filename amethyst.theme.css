@@ -686,7 +686,7 @@ button.lookBlank-3eh9lL:hover>div>div {
 /* User Area styling (status / mute / deafen / settings) */
 section.panels-3wFtMD {
   transform: translate(8px, -30px);
-  box-shadow: 0px 0px 14px 2px var(--hover-color);
+  box-shadow: 0px 0px 14px 0px var(--hover-color);
   position: absolute;
   bottom: 0;
   width: 220px;
@@ -838,7 +838,7 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 }
 
 /* Settings */
-.standardSidebarView-E9Pc3j, .sidebar-nqHbhN {
+.standardSidebarView-E9Pc3j, .sidebar-nqHbhN, .sidebarRegionScroller-FXiQOh {
   background-color: var(--background-2);
 }
 .standardSidebarView-E9Pc3j>.contentRegion-3HkfJJ {
