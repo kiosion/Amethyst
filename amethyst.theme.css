@@ -1148,15 +1148,15 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 .note-Go5ZP2 textarea, .note-Go5ZP2, .userInfoSection-2u2hir:first-of-type, .bodyTitle-2Az3VQ.fontDisplay-3Gtuks.uppercase-2unHJn {
   display: var(--notes);
 }
-.body-1Ukv50 {
+.body-2wLx-E {
   height: calc(100% - 167px);
 }
 .listRow-1iDGel {
   margin: 2px 8px;
   border-radius: var(--border-radius-1);
 }
-.body-1Ukv50, .activity-3v9l4T, .avatar-37jOim, .headerTop-2y3V6H, .headerTop-1PNKck, .headerTop-2cWpdB, .activity-fViXj7, .body-3HBlXn, .topSection-13QKHs, .avatar-3QF_VA, .aboutMeSection---MkQa, .footer-3UKYOU, .footer-1N3bR3, .bodyInnerWrapper-26fQXj, .profileBannerPreview-3_l0Wd, .userPopout-xaxa6l {
-  background-color: var(--background-tertiary) !important;
+.body-2wLx-E, .body-1Ukv50, .activity-1gTu-L, .avatar-37jOim, .headerTop-3GPUSF, .headerTop-2cWpdB, .body-3HBlXn, .topSection-13QKHs, .avatar-3QF_VA, .aboutMeSection---MkQa, .footer-3UKYOU, .footer-1N3bR3, .bodyInnerWrapper-26fQXj, .profileBannerPreview-3_l0Wd, .userPopout-xaxa6l {
+  background-color: var(--background-2) !important;
 }
 .bodyInnerWrapper-26fQXj {
   padding: 0 8px 0 0;
@@ -1286,7 +1286,7 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 .connectedAccounts-1YaT2t>div {
   background-color: var(--background-1);
   border-radius: var(--border-radius-2);
-  padding: 10px 10px 10px 10px;
+  padding: 6px 10px 6px 10px;
 }
 
 /* Better roles | thanks to Bowser65#1337 */
