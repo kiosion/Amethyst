@@ -316,14 +316,13 @@
   color: var(--text-dark) !important;
   background-color: var(--green) !important;
   cursor: pointer !important;
-  box-shadow: 0px 0px 4px 0px var(--green);
+  box-shadow: 0px 0px 10px -2px var(--green);
   overflow: visible;
 }
 .item-3mHhwr.item-3XjbnG[aria-controls="add_friend-tab"]:hover {
   color: var(--text-dark) !important;
   background-color: var(--light-green) !important;
   cursor: pointer !important;
-  box-shadow: 0px 0px 6px 0px var(--green);
 }
 
 /* Search bar */
@@ -1908,6 +1907,23 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 }
 .unread-2lAfLh {
   display: none;
+}
+/* Unread channel indicator */
+.unreadTop-1DJtGv {
+  transform: translateY(10px);
+}
+.unreadBottom-3Ojk6R {
+  transform: translateY(-70px);
+}
+.unreadBottom-3Ojk6R>div {
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 10px -2px var(--accent-color);
+  color: var(--text-dark);
+}
+.unreadTop-1DJtGv>div {
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 10px -2px var(--accent-color);
+  color: var(--text-dark);
 }
 
 /* Emoji autocomplete popup */
