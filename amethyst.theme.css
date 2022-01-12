@@ -695,6 +695,18 @@ section.panels-3wFtMD>.container-YkUktl>div>button:nth-of-type(3n+2):hover>div>s
 section.panels-3wFtMD>.container-YkUktl>div>button:nth-of-type(3n+3):hover>div>svg>path {
   fill: var(--accent-color);
 }
+/* Status popup */
+.menu-1QACrS.styleFixed-2_NfVL.menu-1AgizY {
+  background-color: var(--background-2);
+  border-radius: var(--border-radius-1);
+  box-shadow: 0px 0px 12px 2px var(--hover-color);
+  transform: translate(-10px, -4px) !important;
+  width: 220px !important;
+}
+.item-1OdjEX.colorDefault-CDqZdO.focused-3qFvc8 {
+  background-color: var(--hover-color-lighter);
+  border-radius: var(--border-radius-2);
+}
 
 /* User profile settings buttons */
 .accountProfileCard-1XCH88>.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-3cPPsm, .fieldButton-27bJrp.button-f2h6uQ.lookFilled-yCfaCM.colorGrey-2DXtkV, .accountProfileCard-1XCH88>.userInfo-iCloHO>.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-3cPPsm {
@@ -1528,7 +1540,11 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   color: var(--text-dark);
 }
 
-/* Server list */
+/* Server sidebar */
+/* Home icon selected styling */
+.wrapper-3kah-n.selected-1Drb7Z[data-list-item-id="guildsnav___home"]>div>svg>path {
+  fill: var(--background-2) !important;
+}
 .circleIconButton-1VxDrg {
   color: var(--accent-color);
   background-color: var(--background-primary);
@@ -1781,11 +1797,10 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   color: var(--text-dark) !important;
 }
 
-
 /* Channel List Sidebar */
-/* Home icon selected styling */
-.wrapper-3kah-n.selected-1Drb7Z[data-list-item-id="guildsnav___home"]>div>svg>path {
-  fill: var(--background-2) !important;
+/* Padding for server channel list */
+.scroller-1ox3I2.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
+  padding-bottom: 80px;
 }
 /* Sidebar styling */
 .sidebar-1tnWFu {
