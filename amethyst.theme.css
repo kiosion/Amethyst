@@ -112,13 +112,14 @@ S02 HOME PAGES
   - SERVER DISCOVERY VIEW
 S03 TOP TOOLBAR
 S04 MAIN CHAT VIEW
+  - MESSAGE FORM
+  - EMOJI/STICKER BUTTONS
   - THREADS
   - EMOJI POPUPS
   - STICKER POPUPS
 S05 CHANNEL LIST PANEL
 S06 MEMBER LIST PANEL
-S07 MESSAGE FORM / USER AREA
-  - MESSAGE FORM
+S07 USER AREA
   - STATUS POPUP
   - ICONS
   - SPOTIFY
@@ -649,6 +650,51 @@ S13 MISC
 }
 
 /* S04 MAIN CHAT VIEW */
+/* MESSAGE FORM */
+.form-3gdLxP {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.form-3gdLxP::before {
+  display: none;
+}
+.form-3gdLxP>div {
+  box-shadow: 0px 0px 14px 2px var(--hover-color);
+}
+.form-3gdLxP>div, .form-3gdLxP>div>div, .form-3gdLxP>div>div>div, .form-3gdLxP>div>div>div>div {
+  border-radius: var(--border-radius-1) !important;
+}
+.scrollerInner-2PPAp2>.scrollerSpacer-3AqkT9 {
+  padding-bottom: 56px;
+}
+/* Emoji/sticker buttons */
+.buttonContainer-28fw2U>button>div>div {
+  color: var(--text-normal);
+}
+.buttonContainer-28fw2U:hover>button>div>div {
+  color: var(--accent-color);
+}
+.buttonContainer-28fw2U:hover>button[aria-label="Select emoji"]>div>div {
+  color: var(--accent-color);
+  background: var(--accent-color);
+}
+.buttons-uaqb-5 {
+  padding-right: 10px;
+}
+.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm {
+  background-color: var(--background-1) !important;
+}
+.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm:hover {
+  background-color: var(--hover-color-lighter) !important;
+}
+.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm:hover>div>div, .navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm:hover>div {
+  color: var(--accent-color) !important;
+}
+.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm[aria-selected="true"] {
+  background-color: var(--hover-color-darker) !important;
+}
 /* CHAT */
 .content-1jQy2l {
   margin-top: 6px;
@@ -1012,54 +1058,7 @@ code.inline {
   margin-left: 5px;
 }
 
-/* S07 MESSAGE BOX FORM / USER AREA */
-/* Message box form */
-.form-3gdLxP {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.form-3gdLxP::before {
-  display: none;
-}
-.form-3gdLxP>div {
-  box-shadow: 0px 0px 14px 2px var(--hover-color);
-}
-.form-3gdLxP>div, .form-3gdLxP>div>div, .form-3gdLxP>div>div>div, .form-3gdLxP>div>div>div>div {
-  border-radius: var(--border-radius-1) !important;
-}
-.scrollerInner-2PPAp2>.scrollerSpacer-3AqkT9 {
-  padding-bottom: 56px;
-}
-/* Emoji/sticker buttons */
-.buttonContainer-28fw2U>button>div>div {
-  color: var(--text-normal);
-}
-.buttonContainer-28fw2U:hover>button>div>div {
-  color: var(--accent-color);
-}
-.buttonContainer-28fw2U:hover>button[aria-label="Select emoji"]>div>div {
-  color: var(--accent-color);
-  background: var(--accent-color);
-}
-/* Emoji/gif picker buttons */
-.buttons-uaqb-5 {
-  padding-right: 10px;
-}
-.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm {
-  background-color: var(--background-1) !important;
-}
-.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm:hover {
-  background-color: var(--hover-color-lighter) !important;
-}
-.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm:hover>div>div, .navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm:hover>div {
-  color: var(--accent-color) !important;
-}
-.navButton-2gQCx-.navItem-3Wp_oJ.button-f2h6uQ.lookBlank-3eh9lL.colorBrand-3cPPsm[aria-selected="true"] {
-  background-color: var(--hover-color-darker) !important;
-}
-/* User Area */
+/* S07 USER AREA */
 .wrapper-24pKcD {
   margin: 0px 2px;
 }
