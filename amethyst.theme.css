@@ -1774,11 +1774,13 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 }
 .actionButtons-2SAg-Q>button.button-f2h6uQ:nth-of-type(3n+3) {
   background-color: var(--background-1) !important;
+  color: var(--text-normal) !important;
 }
 .actionButtons-2SAg-Q>button.button-f2h6uQ:nth-of-type(3n+3):hover {
   background-color: var(--green) !important;
   color: var(--text-dark) !important;
 }
+
 
 /* Channel List Sidebar */
 /* Home icon selected styling */
