@@ -1680,8 +1680,11 @@ div[id="---new-messages-bar"]>.content-3spvdd {
     background-image: none !important;
 }
 .markup-2BOw-j code {
-  background-color: var(--background-tertiary);
+  background-color: var(--hover-color);
   border-radius: var(--border-radius-2);
+}
+code.inline {
+  background-color: var(--hover-color);
 }
 .theme-dark .autocomplete-3l_oCd, .theme-dark .autocomplete-1vrmpx, .theme-light .autocomplete-3l_oCd, .theme-light .autocomplete-1vrmpx {
   background-color: var(--background-tertiary);
@@ -1807,7 +1810,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   color: var(--text-dark) !important;
 }
 
-/* Channel List Sidebar */
+/* Server Channel List Sidebar */
 /* Padding for server channel list */
 .scroller-1ox3I2.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
   padding-bottom: 60px;
@@ -1832,6 +1835,10 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   padding-right: 8px !important;
 }
 /* Selected channel styling */
+.containerDefault-YUSmu3.selected-2TbFuo>div>div {
+  background-color: var(--accent-color) !important;
+  border-radius: var(--border-radius-2);
+}
 .containerDefault-YUSmu3.selected-2TbFuo>div>div.content-1gYQeQ>a>div>svg>path, .containerDefault-YUSmu3.selected-2TbFuo>div>div.content-1gYQeQ>.children-1MGS9G>div>svg>path {
   fill: var(--text-dark);
 }
@@ -2029,6 +2036,9 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 }
 
 /* Member list */
+.container-2o3qEW {
+  background: transparent;
+}
 .members-3WRCEx.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -2050,11 +2060,16 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   background-color: var(--accent-color);
   color: var(--interactive-selected);
 }
+.membersGroup-2eiWxl.container-q97qHp {
+  padding-bottom: 24px;
+}
 .member-2gU6Ar.container-1oeRFJ.selected-1-Z6gm>.layout-1qmrhw {
   background-color: var(--hover-color-lighter);
+  border-radius: var(--border-radius-2);
 }
 .member-2gU6Ar.container-1oeRFJ:hover>.layout-1qmrhw {
   background-color: var(--hover-color-lighter);
+  border-radius: var(--border-radius-2);
 }
 .bannerPlaceholder-edbQI2 {
   border-radius: var(--border-radius-1);
