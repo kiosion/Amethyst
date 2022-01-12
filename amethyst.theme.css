@@ -175,7 +175,7 @@
   --deprecated-text-input-border-disabled: var(--background-secondary);
   --text-brand: var(--brand-experiment);
 }
-.tabBody-2dgbAs, .chat-2ZfjoI, .container-1eFtFS, .container-2cd8Mz, .container-3w7J-x, .container-1oAagU, .container-lRFx4q, .privateChannels-oVe7HL, .homeWrapperNormal-2KSUEa {
+.root-g14mjS, .footer-31IekZ, .tabBody-2dgbAs, .chat-2ZfjoI, .container-1eFtFS, .container-2cd8Mz, .container-3w7J-x, .container-1oAagU, .container-lRFx4q, .privateChannels-oVe7HL, .homeWrapperNormal-2KSUEa {
   background-color: var(--background-2) !important;
 }
 .peopleColumn-1wMU14, .chatContent-3KubbW, .pageWrapper-1PgVDX, .scroller-3X7KbA, .stageSection-3mAD8V {
@@ -683,6 +683,33 @@ button.lookBlank-3eh9lL:hover>div>div {
   background-color: var(--hover-color-darker) !important;
 }
 
+/* User Area styling (status / mute / deafen / settings) */
+section.panels-3wFtMD {
+  transform: translate(8px, -30px);
+  box-shadow: 0px 0px 14px 2px var(--hover-color);
+  position: absolute;
+  bottom: 0;
+  width: 220px;
+  border-radius: var(--border-radius-1);
+}
+section.panels-3wFtMD>.container-YkUktl {
+  background-color: var(--background-2);
+  border-radius: var(--border-radius-1);
+  height: 44px;
+}
+section.panels-3wFtMD>.container-YkUktl>div>button {
+  background-color: transparent !important;
+}
+section.panels-3wFtMD>.container-YkUktl>div>button:nth-of-type(3n+1):hover>div>svg>path {
+  fill: var(--red);
+}
+section.panels-3wFtMD>.container-YkUktl>div>button:nth-of-type(3n+2):hover>div>svg>svg>path, section.panels-3wFtMD>.container-YkUktl>div>button:nth-of-type(3n+2):hover>div>svg>path {
+  fill: var(--red);
+}
+section.panels-3wFtMD>.container-YkUktl>div>button:nth-of-type(3n+3):hover>div>svg>path {
+  fill: var(--accent-color);
+}
+
 /* User profile settings buttons */
 .accountProfileCard-1XCH88>.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-3cPPsm, .fieldButton-27bJrp.button-f2h6uQ.lookFilled-yCfaCM.colorGrey-2DXtkV, .accountProfileCard-1XCH88>.userInfo-iCloHO>.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-3cPPsm {
   background-color: var(--background-2) !important;
@@ -811,16 +838,23 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 }
 
 /* Settings */
-.sidebarRegionScroller-3MXcoP, .titleContainer-2CXtJo, .header-2mZ9Ov, .contentRegion-3nDuYy, .contentRegionScroller-26nc1e, .scroller-305q3I, .powercord-entities-manage-tabs, .popoutInfo-1A9dyK {
-  background-color: var(--background-tertiary) !important;
+.standardSidebarView-E9Pc3j, .sidebar-nqHbhN {
+  background-color: var(--background-2);
+}
+.standardSidebarView-E9Pc3j>.contentRegion-3HkfJJ {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-1);
+}
+.contentRegionScroller-2_GT_N.contentRegionShownSidebar-fHXkEg {
+  border-radius: var(--border-radius-1);
 }
 #app-mount .app-1q1i1E .app-2rEoOp .layers-3iHuyZ .sidebarRegion-VFTUkN .sidebar-CFHs9e {
   width: 290px !important;
   padding-right: 40px;
   padding-left: 40px;
-}
-.sidebarRegion-VFTUkN {
-  border-right: 1px solid var(--border-color);
 }
 .side-8zPYf6 .item-PXvHYJ, .container-CpszHS, .accountBtnInner-sj5jLs, .group-1WdBVp {
   border-radius: var(--border-radius-2);
@@ -869,7 +903,7 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .side-8zPYf6 .item-PXvHYJ[aria-controls="delete-tab"]:active::before, .side-8zPYf6 .item-PXvHYJ[aria-controls="logout-tab"]:active::before {
   --settings-icon-color: var(--button-destructive-active);
 }
-.powercord-product, .container-cMG81i, .attendeeCTA-3ZZQWt, .input-cIJ7To, .item-26Dhrx, .powercord-entities-manage-tabs, .powercord-account, .activeGame-14JI7o, .formNotice-2_hHWR, .css-118dehu-control, .previewContainer-37c2Si, .auditLog-2ph_aK, .background-1QDuV2, .roleRow-30TwGe, .bd-addon-card, .membershipDialogHouse2-35h9SY, .codeRedemptionRedirect-1wVR4b, .card-o7rAq-, .enableContainer-2DIT9Q, .accountList-33MS45, .container-_phMUq, .feature-2w65J5, .details-1YZMDP>div, .preview-2Vkbi6, .profileBannerPreview-3FLQKD, .card-FDVird:before, .card-3IImnr, .card-11DMwv, .previewContainer-1SS3uO, .error-20ZZpF, .warning-3C2pOH, .membershipDialog-rVL-t_, .videoWrapper-3YdgHH, .background-2hs1sP, .box-J4N4jE, .info-1Vr1AV, .bannerUpsellContainer-1q83km, .avatarUploaderInnerSquare-1VbIoAin {
+.container-cMG81i, .attendeeCTA-3ZZQWt, .input-cIJ7To, .item-26Dhrx, .powercord-entities-manage-tabs, .powercord-account, .activeGame-14JI7o, .formNotice-2_hHWR, .css-118dehu-control, .previewContainer-37c2Si, .auditLog-2ph_aK, .background-1QDuV2, .roleRow-30TwGe, .bd-addon-card, .membershipDialogHouse2-35h9SY, .codeRedemptionRedirect-1wVR4b, .card-o7rAq-, .enableContainer-2DIT9Q, .accountList-33MS45, .container-_phMUq, .feature-2w65J5, .details-1YZMDP>div, .preview-2Vkbi6, .profileBannerPreview-3FLQKD, .card-FDVird:before, .card-3IImnr, .card-11DMwv, .previewContainer-1SS3uO, .error-20ZZpF, .warning-3C2pOH, .membershipDialog-rVL-t_, .videoWrapper-3YdgHH, .background-2hs1sP, .box-J4N4jE, .info-1Vr1AV, .bannerUpsellContainer-1q83km, .avatarUploaderInnerSquare-1VbIoAin {
   border-radius: var(--border-radius-1) !important;
 }
 .avatarUploaderInner-3UNxY3:not(.bannerUploaderInnerSquare-1ddxpx), .codeRedemptionRedirect-1wVR4b, .auditLog-2ph_aK, .card-o7rAq-, .activeGame-14JI7o, .cardPrimary-1Hv-to, .card-3AyPWq, .profileBackgroundPreview-3BVL0Q, .profileBannerPreview-3FLQKD .avatar-2PN2-j, .card-3IImnr, .card-11DMwv, .notEnoughMembersError-1KwJkE, .accountProfileCard-1XCH88, .info-1Vr1AV {
@@ -934,7 +968,7 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
   line-height: 16px;
 }
 div[role="radiogroup"]+div:not(.disabled-2HSEFa) label::after {
-  content: "\A Enabling this setting will cause issues when using Zelk";
+  content: "\A Changing these settings *will* cause issues when using this theme!";
   white-space: pre;
   color: var(--text-danger);
   font-size: 14px;
@@ -964,13 +998,14 @@ div[role="radiogroup"]+.disabled-2HSEFa {
 .header-2mZ9Ov {
   margin-right: 0;
 }
-.item-PXvHYJ.selected-3s45Ha {
+/* Settings menu list items */
+.side-2ur1Qk>.item-3XjbnG:hover {
   background-color: var(--hover-color-lighter) !important;
 }
-.item-PXvHYJ:hover {
-  color: var(--text-normal) !important;
+.side-2ur1Qk>.item-3XjbnG.selected-g-kMVV, .side-2ur1Qk>.item-3XjbnG.selected-g-kMVV:hover{
+  background-color: var(--accent-color) !important;
+  color: var(--text-dark) !important;
 }
-
 
 /* Sliders */
 .barFill-23-gu- {
@@ -989,17 +1024,20 @@ div[role="radiogroup"]+.disabled-2HSEFa {
 }
 
 /* Switches */
-.container-3auIfb:not([style*="218"]), .bd-switch-checked .bd-switch-body {
+.container-2nx-BQ:not([style*="218"]), .bd-switch-checked .bd-switch-body {
   background-color: var(--background-modifier-selected) !important;
 }
-.container-3auIfb, .bd-switch-body {
+.container-2nx-BQ, .bd-switch-body {
   background-color: var(--hover-color-darker) !important;
 }
 svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   display: none;
 }
-.container-3auIfb>svg>rect, .bd-switch-handle {
+.container-2nx-BQ>svg>rect, .bd-switch-handle {
   fill: var(--interactive-selected);
+}
+.container-2nx-BQ>svg>svg>path {
+  fill: transparent !important;
 }
 
 /* Checkboxes */
@@ -1021,6 +1059,42 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 .checked-3_4uQ9 .checkbox-1ix_J3>svg>path {
   d: path("m 15.466774,2.0213696 c -0.292825,0.06328 -0.562681,0.2281415 -0.752534,0.4598818 L 6.3109468,12.09696 3.3008117,9.0868255 C 2.7973432,8.5832902 1.8811117,8.5832633 1.377603,9.0867586 0.87410779,9.5902673 0.87413455,10.506499 1.3776699,11.009967 L 5.3911832,15.023481 6.4363691,16.026859 7.3561325,14.939866 16.720998,4.2371636 C 17.480113,3.410741 16.566036,1.795877 15.466774,2.0213696 Z");
   transform: scale(1.4);
+}
+
+/* Buttons */
+/* LookFilled ColorBrand */
+.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ {
+  background-color: var(--accent-color) !important;
+  color: var(--text-dark) !important;
+}
+.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+  background-color: var(--hover-color-lighter) !important;
+  color: var(--text-normal) !important;
+}
+/* Grey field buttons */
+.fieldButton-14lHvK.button-f2h6uQ.lookFilled-yCfaCM.colorGrey-2iAG-B {
+  background-color: var(--hover-color-lighter) !important;
+  color: var(--text-normal) !important;
+}
+.fieldButton-14lHvK.button-f2h6uQ.lookFilled-yCfaCM.colorGrey-2iAG-B:hover {
+  background-color: var(--hover-color) !important;
+}
+/* LookOutlined Red */
+.button-f2h6uQ.lookOutlined-3yKVGo.colorRed-rQXKgM {
+  border-color: var(--red) !important;
+  color: var(--text-normal) !important;
+}
+.button-f2h6uQ.lookOutlined-3yKVGo.colorRed-rQXKgM:hover {
+  background-color: var(--red) !important;
+  color: var(--text-dark) !important;
+}
+.button-f2h6uQ.lookFilled-yCfaCM.colorRed-rQXKgM {
+  background-color: var(--red) !important;
+  color: var(--text-dark) !important;
+}
+.button-f2h6uQ.lookFilled-yCfaCM.colorRed-rQXKgM:hover {
+  background-color: var(--light-red) !important;
+  color: var(--text-dark) !important;
 }
 
 /* Menus */
@@ -1061,6 +1135,11 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 }
 .theme-light .colorDefault-CDqZdO:active {
   color: var(--text-normal);
+}
+
+/* Bar backgrounds */
+.radioBar-3w9XY- {
+  background-color: var(--hover-color-lighter) !important;
 }
 
 /* call */
@@ -1535,7 +1614,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   display: none;
 }
 .form-3gdLxP>div {
-  box-shadow: 0px 0px 18px 2px var(--hover-color);
+  box-shadow: 0px 0px 14px 2px var(--hover-color);
 }
 .form-3gdLxP>div, .form-3gdLxP>div>div {
   border-radius: var(--border-radius-1) !important;
@@ -1830,6 +1909,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   background-color: var(--background-2);
   transform: translateX(38px);
   box-shadow: 0px 0px 12px 0px var(--hover-color);
+  border-radius: var(--border-radius-1);
 }
 .channelTextArea-1FufC0.channelTextArea-1VQBuV>.container-1ZA19X>.containerBackground-Ang24O {
   display: none;
