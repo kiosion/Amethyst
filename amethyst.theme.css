@@ -217,6 +217,10 @@
 .scroller-hE2gWq>.header-Imy05m {
   display: none;
 }
+.body-16rSsp.inset-SbsSFp>section {
+  background-color: var(--background-2);
+  box-shadow: 0px 0px 12px 0px var(--hover-color);
+}
 /* Nitro store page main section */
 .homeWrapperNormal-bu1BS6.homeWrapper-L4ors0 {
   background-color: var(--background-2);
@@ -293,15 +297,24 @@
 }
 
 /* Top pill bar container */
+.tabBar-ra-EuL.topPill-3DJJNV, .children-3xh0VB {
+  overflow: visible;
+}
 .container-ZMc96U.themed-Hp1KC_ {
   margin-top: 4px;
 }
 /* Top pill friends list tabs */
+.item-3mHhwr.item-3XjbnG.themed-2-lozF {
+  background-color: var(--background-2) !important;
+}
+.item-3mHhwr.item-3XjbnG.themed-2-lozF.selected-g-kMVV {
+  background-color: var(--hover-color-lighter) !important;
+}
 .tabBar-ra-EuL.topPill-3DJJNV>div:hover {
   cursor: pointer !important;
   background-color: var(--hover-color-lighter) !important;
 }
-.tabBar-ra-EuL.topPill-3DJJNV>div[aria-selected="true"], .tabBar-ra-EuL.topPill-3DJJNV>div[aria-selected="true"]:hover {
+.tabBar-ra-EuL.topPill-3DJJNV>div[aria-selected="true"], .tabBar-ra-EuL.topPill-3DJJNV>div[aria-selected="true"]:hover, not:div[aria-controls="add_friend-tab"] {
   cursor: normal !important;
   background-color: var(--hover-color-lighter) !important;
 }
@@ -310,11 +323,14 @@
   color: var(--text-dark) !important;
   background-color: var(--green) !important;
   cursor: pointer !important;
+  box-shadow: 0px 0px 4px 0px var(--green);
+  overflow: visible;
 }
 .item-3mHhwr.item-3XjbnG[aria-controls="add_friend-tab"]:hover {
   color: var(--text-dark) !important;
   background-color: var(--light-green) !important;
   cursor: pointer !important;
+  box-shadow: 0px 0px 6px 0px var(--green);
 }
 
 /* Search bar */
@@ -1155,8 +1171,11 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   margin: 2px 8px;
   border-radius: var(--border-radius-1);
 }
-.body-2wLx-E, .body-1Ukv50, .activity-1gTu-L, .avatar-37jOim, .headerTop-3GPUSF, .headerTop-2cWpdB, .body-3HBlXn, .topSection-13QKHs, .avatar-3QF_VA, .aboutMeSection---MkQa, .footer-3UKYOU, .footer-1N3bR3, .bodyInnerWrapper-26fQXj, .profileBannerPreview-3_l0Wd, .popoutInfo-16MuYF {
+.body-2wLx-E, .body-1Ukv50, .activity-1gTu-L, .avatar-37jOim, .headerTop-3GPUSF, .headerTop-2cWpdB, .body-3HBlXn, .topSection-13QKHs, .avatar-3QF_VA, .aboutMeSection---MkQa, .footer-3UKYOU, .footer-1N3bR3, .bodyInnerWrapper-26fQXj, .profileBannerPreview-3_l0Wd, .popoutInfo-16MuYF, .rolesList-3uZoaa {
   background-color: var(--background-2) !important;
+}
+.root-jbEB5E.rolesList-3uZoaa {
+  margin-top: 0 !important;
 }
 .bodyInnerWrapper-26fQXj {
   padding: 0 8px 0 0;
@@ -1290,12 +1309,12 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 }
 
 /* Better roles | thanks to Bowser65#1337 */
-.role-2irmRk {
+.role-2TIOKu {
   position: relative;
   overflow: hidden;
   border-radius: 11px;
 }
-.roleCircle-3xAZ1j::before {
+.roleCircle-1EgnFN::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1795,7 +1814,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   display: none;
 }
 
-/* Emoji picker */
+/* Emoji autocomplete popup */
 .autocomplete-3NRXG8.autocomplete-3jLKbj.autocompleteAttached-bt_md- {
   transform: translateY(-10px);
 }
@@ -1804,6 +1823,16 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 }
 .scroller-18M1mG.thin-31rlnD.scrollerBase-_bVAAt>div>.base-2v-uc0.selectable-1MM9tu.selected-3H3-RC {
   background-color: var(--hover-color-lighter) !important;
+}
+
+/* Sticker autocomplete popup */
+.channelTextArea-1FufC0.channelTextArea-1VQBuV>.container-1ZA19X {
+  background-color: var(--background-2);
+  transform: translateX(38px);
+  box-shadow: 0px 0px 12px 0px var(--hover-color);
+}
+.channelTextArea-1FufC0.channelTextArea-1VQBuV>.container-1ZA19X>.containerBackground-Ang24O {
+  display: none;
 }
 
 /* Transitions & Animations*/
