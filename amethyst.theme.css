@@ -128,7 +128,7 @@ S06 MEMBER LIST PANEL
 S07 USER AREA
   - STATUS POPUP
   - ICONS
-  - SPOTIFY
+  - CALL UI
 S08 USER PROFILES
   - POPUPS
   - MODALS
@@ -1189,6 +1189,13 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   background-color: var(--hover-color-lighter);
   border-radius: var(--border-radius-2);
 }
+/* CALL UI */
+.container-1zzFcN {
+  background-color: var(--background-tertiary);
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--mid-shadow) var(--hover-color);
+}
 
 /* BUTTONS */
 /* LookFilled ColorBrand */
@@ -1402,8 +1409,8 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .lookInverted-2D7oAl .contents-1UYEBX {
   color: var(--interactive-selected);
 }
-.tabBarContainer-37hZsr {
-  border: none;
+.tabBarContainer-sCZC4w {
+  padding: 0px 20px !important;
 }
 .avatar-37jOim, .avatar-3QF_VA, .avatarUploaderInner-Oiob_P, .avatar-1uQSZT {
   border-color: var(--background-tertiary);
@@ -1535,6 +1542,7 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 }
 .actionButton-iarQTd.button-f2h6uQ.lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
   background-color: var(--light-green) !important;
+  box-shadow: var(--low-shadow) var(--light-green);
 }
 /* Server profile roles | thanks to Bowser65#1337 */
 .role-2TIOKu {
@@ -2225,7 +2233,7 @@ div.content-8jnR93 {
   background-color: var(--background-tertiary) !important;
   box-shadow: var(--high-shadow) var(--hover-color);
   border-bottom: 0 !important;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   padding: 10px 10px 4px 10px !important;
   border-radius: var(--border-radius-1);
 }
