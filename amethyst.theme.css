@@ -113,9 +113,9 @@ S01 BACKGROUND
   - SERVER LIST SIDEBAR
 S02 HOME PAGES
   - DM LIST / DM STYLING
-  - FRIENDS VIEW
-  - NITRO UPSELL VIEW
-  - SERVER DISCOVERY VIEW
+  - FRIENDS LIST PAGE
+  - NITRO PAGE
+  - SERVER DISCOVERY PAGE
 S03 TOP TOOLBAR
 S04 MAIN CHAT VIEW
   - MESSAGE FORM
@@ -286,8 +286,11 @@ S15 MISC
 .categoryItem-ONe8JV.container-1oeRFJ.selected-1-Z6gm>.itemInner-1XfZdz>div>div>div {
   color: var(--text-dark) !important;
 }
-/* FRIENDS VIEW */
+/* FRIENDS LIST PAGE */
 /* Panel styling */
+.peopleList-2VBrVI {
+  border-top: 0 !important;
+}
 .peopleColumn-1wMU14, .chatContent-3KubbW, .pageWrapper-1PgVDX, .scroller-3X7KbA, .stageSection-3mAD8V {
   border-radius: var(--border-radius-1);
   margin-left: 10px;
@@ -312,11 +315,14 @@ S15 MISC
   margin-right: 8px;
 }
 /* Friends search bar */
+.searchBar-2aylmZ {
+  margin: 16px 30px 8px 30px;
+}
 .searchBar-2aylmZ.container-2oNtJn {
   overflow: visible;
 }
 .searchBar-2aylmZ.container-2oNtJn>.inner-2pOSmK {
-  box-shadow: 0px 0px 12px 0px var(--hover-color);
+  box-shadow: var(--mid-shadow);
   overflow: visible;
 }
 .tabBody-2dgbAs {
@@ -341,7 +347,7 @@ S15 MISC
 .wrapper-2RrXDg {
   border: none;
 }
-/* NITRO UPSELL VIEW */
+/* NITRO PAGE */
 .homeWrapperNormal-bu1BS6.homeWrapper-L4ors0 {
   background-color: var(--background-2);
 }
@@ -627,7 +633,7 @@ S15 MISC
   fill: var(--text-normal);
 }
 .searchBar-zdmu7v:hover>.icon-1nNws_>div>svg>path {
-  fill: var(--accent-color);
+  fill: var(--text-secondary);
 }
 /* Search bar popup */
 .popout_2024>div, .popout_2024>.container-2McqkF.elevationBorderHigh-3drnJX {
@@ -1480,9 +1486,6 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .header-4zuFdR, .customStatusActivity-nmH3DF {
   margin-left: 8px;
 }
-.listScroller-3GmIYj {
-  margin: 0 12px 12px 12px;
-}
 .userPopout-xaxa6l .customStatus-oN4ZZY, .userPopout-xaxa6l .aboutMeSection-1Fw5Ia {
   padding: 0 12px 12px 0;
 }
@@ -1493,6 +1496,9 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
   height: 220px;
 }
 /* Connected Accounts */
+.infoScroller-1QMpon.thin-31rlnD.scrollerBase-_bVAAt {
+  padding: 0 20px !important;
+}
 .connectedAccounts-1YaT2t>div {
   background-color: var(--background-1);
   border-radius: var(--border-radius-2);
@@ -2206,7 +2212,7 @@ div.content-8jnR93 {
   box-shadow: var(--high-shadow);
   border-bottom: 0 !important;
   margin-bottom: 16px;
-  padding: 10px !important;
+  padding: 10px 10px 4px 10px !important;
   border-radius: var(--border-radius-1);
 }
 .container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_>div>.coverWrapper-YAplwJ {
@@ -2234,8 +2240,6 @@ div.content-8jnR93 {
 .container-6sXIoE.withTimeline-824fT_>.timeline-UWmgAx:hover>.bar-g2ZMIm>.barFill-Dhkah7 {
   background: var(--green);
 }
-/* MESSAGELOGGER */
-
 
 /* S14 ANIMATIONS */
 @keyframes slideintop {
@@ -2271,9 +2275,6 @@ div.content-8jnR93 {
 
 /* S14 MISC */
 /* DIVIDERS / INDICATORS */
-.divider-JfaTT5, .peopleList-2VBrVI {
-  border-top: 1px solid var(--border-color);
-}
 .tabBarContainer-1s1u-z, .userInfoSection-q_35fn+.userInfoSection-q_35fn {
   border-top: transparent;
 }
@@ -2343,7 +2344,7 @@ div.content-8jnR93 {
 .menu-3sdvDG ::-webkit-scrollbar {
   display: unset;
 }
-/* Boost & Nitro */
+/* BOOST & NITRO */
 .perksModal-1pSu7w {
   background-color: var(--background-tertiary) !important;
 }
@@ -2409,4 +2410,9 @@ div.content-8jnR93 {
 }
 .serverBoostTabItem-3vujbv .icon-21VyCF {
   display: none;
+}
+/* LOGIN MODAL */
+.authBoxExpanded-AN2aH1.authBox-1HR6Ha.theme-dark {
+  background-color: var(--background-tertiary) !important;
+  border-radius: var(--border-radius-1) !important;
 }
