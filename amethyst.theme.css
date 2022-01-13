@@ -1197,13 +1197,13 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   box-shadow: var(--mid-shadow) var(--hover-color);
 }
 /* Call buttons */
-.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover {
+.connection-3k9QeF>div>.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover {
   background-color: transparent;
 }
-.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover:nth-of-type(2n+2)>div>svg>path {
+.connection-3k9QeF>div>.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover:nth-of-type(2n+2)>div>svg>path {
   fill: var(--red);
 }
-.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover:nth-of-type(2n+1)>div>svg>path {
+.connection-3k9QeF>div>.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover:nth-of-type(2n+1)>div>svg>path {
   fill: var(--text-secondary);
 }
 
