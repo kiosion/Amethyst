@@ -982,7 +982,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 /* S05 CHANNEL LIST PANEL */
 /* Padding for server channel list */
 .scroller-1ox3I2.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
-  padding-bottom: 170px;
+  padding-bottom: 200px;
 }
 /* Sidebar styling */
 .sidebar-1tnWFu {
@@ -1195,6 +1195,16 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   margin-bottom: 10px;
   border-radius: var(--border-radius-1);
   box-shadow: var(--mid-shadow) var(--hover-color);
+}
+/* Call buttons */
+.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover {
+  background-color: transparent;
+}
+.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover:nth-of-type(2n+2)>div>svg>path {
+  fill: var(--red);
+}
+.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ:hover:nth-of-type(2n+1)>div>svg>path {
+  fill: var(--text-secondary);
 }
 
 /* BUTTONS */
