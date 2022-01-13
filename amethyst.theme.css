@@ -338,6 +338,9 @@ S15 MISC
   background-color: var(--background-2);
   box-shadow: 0px 0px 12px 0px var(--hover-color);
 }
+.wrapper-2RrXDg {
+  border: none;
+}
 /* NITRO UPSELL VIEW */
 .homeWrapperNormal-bu1BS6.homeWrapper-L4ors0 {
   background-color: var(--background-2);
@@ -391,40 +394,15 @@ S15 MISC
 .guildList-3GXKvP>div>.card-2TuZPZ:hover {
   box-shadow: var(--high-shadow);
 }
+.sidebar-1tnWFu>div>.categoryItem-Kc_HK_ {
+  margin-right: 10px;
+}
 .sidebar-1tnWFu>div>.categoryItem-Kc_HK_.selected-1-Z6gm {
   background-color: var(--accent-color);
   color: var(--text-dark);
 }
-.categoryItem-1QIroW {
-  margin-right: 8px;
-}
-.card-3DjzTQ, .searchBox-3Y2Vi7, .searchBox-3Y2Vi7 * {
-  background-color: var(--background-tertiary) !important;
-}
-.selectedCategoryItem-28UllF .itemInner-gPkiWb {
-  background-color: var(--background-modifier-selected) !important;
-}
-.selectedCategoryItem-28UllF, .categoryPill-34fszg.selected-1dONk0 .categoryLabel-2G3r2V {
-  color: var(--interactive-selected);
-}
-.inputDefault-_djjkz {
-  color: var(--text-normal) !important;
-}
-.scroller-1d5FgU {
-  padding: 32px !important;
-}
-.searchBox-3Y2Vi7 {
-  border-radius: var(--border-radius-1);
-  box-shadow: none !important;
-}
-.tag-3vHqSU {
-  background-color: var(--background-secondary) !important;
-  color: var(--text-normal);
-  border-radius: 22px;
-}
-.tag-3vHqSU:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal);
+.inputWrapper-1YNMmM.searchBoxInputWrapper-3XLwVB>input {
+  background-color: transparent;
 }
 
 /* S03 TOP TOOLBAR */
@@ -1142,6 +1120,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 
 /* S07 USER AREA */
 .panels-3wFtMD {
+  background-color: transparent;
   transform: translate(10px, -32px);
   position: absolute;
   bottom: 0;
@@ -2012,6 +1991,10 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 /* Bar / Container backgrounds */
 .radioBar-3w9XY-, .container-3EtAkD {
   background-color: var(--hover-color) !important;
+  border-radius: var(--border-radius-2);
+}
+.horizontal-1Piu5-.itemFilled-1cPbtg {
+  border-radius: var(--border-radius-2);
 }
 /* Dropdowns */
 .menu-1QACrS, .scroller-1bVxF5.thin-31rlnD.scrollerBase-_bVAAt {
@@ -2028,6 +2011,15 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 }
 
 /* S12 MODALS */
+/* Tooltip Popups */
+div>.layer-2aCOJ3>div>.tooltipPointer-3L49xb {
+  border-top-color: var(--background-2) !important;
+}
+div>.layer-2aCOJ3>div {
+  background-color: var(--background-2) !important;
+  border-radius: var(--border-radius-2);
+  box-shadow: var(--mid-shadow) !important;
+}
 /* Menu / popup scrollers */
 .scroller-1bVxF5.thin-31rlnD.scrollerBase-_bVAAt>div>div.focused-3qFvc8, .submenuContainer-3EVTeH>div.focused-3qFvc8, .submenuContainer-3EVTeH>div>div>div>div>div.focused-3qFvc8, .scroller-1bVxF5.thin-31rlnD.scrollerBase-_bVAAt>div.focused-3qFvc8 {
   background-color: var(--hover-color-lighter) !important;
@@ -2135,11 +2127,11 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   background-color: var(--brand-experiment);
 }
 /* SHORTCUTS */
-.keyboardShortcutsModal-3piNz7 {
+.keyboardShortcutsModal-2CRmCm {
   background-color: var(--background-tertiary) !important;
   border-radius: var(--border-radius-1);
 }
-.keybindShortcut-1BD6Z1 span {
+.keybindShortcut-3zF1P9 span {
   background-color: var(--background-1);
   color: var(--text-normal) !important;
   box-shadow: none !important;
@@ -2147,10 +2139,10 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   padding: 4px 8px;
   height: auto;
 }
-.ddrArrows-lSnH7P {
+.ddrArrows-24s05s {
   display: none;
 }
-.keybindDescription-2RDbC2 {
+.keybindDescription-oXh6w_ {
   color: var(--text-muted) !important;
 }
 /* QUICK SWITCHER */
@@ -2216,6 +2208,12 @@ div.content-8jnR93 {
   margin-bottom: 16px;
   padding: 10px !important;
   border-radius: var(--border-radius-1);
+}
+.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_>div>.coverWrapper-YAplwJ {
+  border-radius: var(--border-radius-1) !important;
+}
+.container-6sXIoE.withTimeline-824fT_>div>.coverWrapper-YAplwJ {
+  border-radius: var(--border-radius-2) !important;
 }
 .container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ {
   padding: 0px 8px 10px 8px !important;
