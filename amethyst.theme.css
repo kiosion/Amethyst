@@ -1210,7 +1210,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 /* CALL UI */
 .container-1zzFcN {
   background-color: var(--background-tertiary);
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   border-radius: var(--border-radius-1);
   box-shadow: var(--mid-shadow) var(--hover-color);
 }
@@ -1238,6 +1238,13 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP:hover {
   background-color: var(--green) !important;
   box-shadow: var(--low-shadow) var(--green) !important;
+}
+/* Steam panel */
+.panels-3wFtMD>.panel-2ZFCRb.activityPanel-9icbyU {
+  background-color: var(--background-tertiary);
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--med-shadow) var(--hover-color);
+  margin-bottom: 6px;
 }
 
 /* BUTTONS */
@@ -1641,7 +1648,7 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .bottomControls-31YuPK>:last-child>div:last-child>button {
   margin-right: 16px;
 }
-.avatarSpeaking-2pCGrZ, .avatarSpeaking-33RRJU, .border-2Vy6FN.speaking-7QZEkv {
+.avatarSpeaking-2pCGrZ, .avatarSpeaking-33RRJU, .border-2Vy6FN.speaking-7QZEkv, .avatar-2EVtgZ.speaking-3K28iH {
   box-shadow: inset 0 0 0 2px var(--accent-color), inset 0 0 0 3px var(--background-secondary);
 }
 /* In-call action buttons */
@@ -1819,6 +1826,15 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .closeButton-PCZcma {
   background-color: transparent;
   border-radius: var(--border-radius-2);
+}
+.closeButton-PCZcma {
+  border-color: var(--text-secondary) !important;
+}
+.closeButton-PCZcma>svg>path {
+  fill: var(--text-secondary) !important;
+}
+.closeButton-PCZcma>div {
+  color: var(--text-secondary) !important;
 }
 .contentRegionScroller-26nc1e .tools-3-3s-N {
   position: relative;
@@ -2267,7 +2283,7 @@ div.content-8jnR93 {
   background-color: var(--background-tertiary) !important;
   box-shadow: var(--high-shadow) var(--hover-color);
   border-bottom: 0 !important;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   padding: 10px 10px 4px 10px !important;
   border-radius: var(--border-radius-1);
 }
