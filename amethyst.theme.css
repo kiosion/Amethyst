@@ -1492,7 +1492,7 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .footer-3naVBw {
   display: var(--message);
 }
-.note-Go5ZP2 textarea, .note-Go5ZP2, .userInfoSection-2u2hir:first-of-type, .bodyTitle-2Az3VQ.fontDisplay-3Gtuks.uppercase-2unHJn {
+.note-Go5ZP2 textarea, .note-Go5ZP2, .userInfoSection-2u2hir:first-of-type>.note-3M15gE, .userInfoSection-2u2hir>.userInfoSectionHeader-2mYYun:nth-of-type(2n+2), .bodyTitle-2Az3VQ.fontDisplay-3Gtuks.uppercase-2unHJn {
   display: var(--notes);
 }
 .body-2wLx-E {
