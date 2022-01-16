@@ -465,6 +465,9 @@ S15 MISC
   line-height: 30px;
 }
 /* Home Toolbar */
+.toolbar-3_r2xA>.inviteToolbar-2k2nqz:first-child>div {
+  border-radius: var(--border-radius-1) 0px 0px var(--border-radius-1);
+}
 .container-ZMc96U.themed-ANHk51, .container-1taM1r {
   background-color: var(--background-tertiary);
 }
@@ -567,6 +570,9 @@ S15 MISC
   color: var(--background-primary);
 }
 .iconWrapper-2awDjA.clickable-ZD7xvu:hover>svg {
+  color: var(--background-primary);
+}
+.iconWrapper-2awDjA.clickable-ZD7xvu:hover>svg>foreignObject>svg {
   color: var(--background-primary);
 }
 /* Server Toolbar */
@@ -1243,7 +1249,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 .panels-3wFtMD>.panel-2ZFCRb.activityPanel-9icbyU {
   background-color: var(--background-tertiary);
   border-radius: var(--border-radius-1);
-  box-shadow: var(--med-shadow) var(--hover-color);
+  box-shadow: var(--mid-shadow) var(--hover-color);
   margin-bottom: 6px;
 }
 .panels-3wFtMD>.panel-2ZFCRb.activityPanel-9icbyU>.body-1FrnJD>.actions-zk2vB_>button:hover {
@@ -1264,6 +1270,14 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   background-color: var(--accent-color) !important;
   color: var(--text-dark) !important;
   box-shadow: 0px 0px 10px 0px var(--accent-color) !important;
+}
+/* LookFilled default */
+.lookFilled-yCfaCM {
+  background-color: var(--hover-color-darker);
+}
+.lookFilled-yCfaCM:hover {
+  background-color: var(--hover-color-lighter);
+  box-shadow: var(--mid-shadow) var(--hover-color-lighter);
 }
 /* LookFilled Grey */
 .lookFilled-yCfaCM.colorGrey-2iAG-B {
@@ -1399,6 +1413,20 @@ button.lookBlank-3eh9lL:hover>div>div {
   background: var(--accent-color) !important;
 }
 .button-3k0cO7.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-3cPPsm:hover>div {
+  color: var(--text-dark);
+}
+/* Invite inline */
+.wrapper-1HIH0j {
+  background-color: var(--background-tertiary);
+  border-radius: var(--border-radius-2);
+}
+.wrapper-1HIH0j>div>.button-2b4VEQ {
+  background-color: var(--green);
+  color: var(--text-dark);
+}
+.wrapper-1HIH0j>div>.button-2b4VEQ:hover {
+  background-color: var(--light-green);
+  box-shadow: var(--low-shadow) var(--light-green);
   color: var(--text-dark);
 }
 /* Misc red buttons (TODO) */
@@ -2318,7 +2346,7 @@ div.content-8jnR93 {
   background-color: var(--background-tertiary) !important;
   box-shadow: var(--high-shadow) var(--hover-color);
   border-bottom: 0 !important;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   padding: 10px 10px 4px 10px !important;
   border-radius: var(--border-radius-1);
 }
