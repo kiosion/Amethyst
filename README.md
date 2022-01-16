@@ -3,7 +3,7 @@
 Amethyst is my fork of the Zelk BetterDiscord theme, using <a href="https://github.com/dracula/dracula-theme" target="_blank">Dracula</a>-inspired colours, along with some more UI tweaks and quality-of-life changes.
 
 ### INSTALL
-Download and move `amethyst.theme.css` into your BetterDiscord themes folder.
+[Download](https://github.com/kiosion/Amethyst/releases/download/v0.0.2/amethyst.theme.css) and move `amethyst.theme.css` into your BetterDiscord themes folder.
 
 ### PREVIEW
 For more previews of the theme, click [here](https://github.com/kiosion/Amethyst/tree/master/preview)
