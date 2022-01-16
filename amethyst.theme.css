@@ -799,11 +799,16 @@ div>.activeButtonChild-2hgLAO>svg>path, .buttons-uaqb-5>.separator-3ng7S5>.butto
 #app-mount .sprite-2iCowe {
     background-image: none !important;
 }
+/* Inline code blocks */
 .markup-2BOw-j code {
   background-color: var(--hover-color);
   border-radius: var(--border-radius-2);
 }
 code.inline {
+  background-color: var(--hover-color);
+}
+/* Inline datestamps */
+.timestamp-6-ptG3 {
   background-color: var(--hover-color);
 }
 .theme-dark .autocomplete-3l_oCd, .theme-dark .autocomplete-1vrmpx, .theme-light .autocomplete-3l_oCd, .theme-light .autocomplete-1vrmpx {
