@@ -6,7 +6,9 @@ Amethyst is my fork of the Zelk BetterDiscord theme, using <a href="https://gith
 [Download](https://github.com/kiosion/Amethyst/releases/download/v0.0.2/amethyst.theme.css) and move `amethyst.theme.css` into your BetterDiscord themes folder.
 
 ### PREVIEW
-For more previews of the theme, click [here](https://github.com/kiosion/Amethyst/tree/master/preview)
+<img src="img/preview.png" alt="Theme preview"/>
+
+For more previews of the theme, check [here](https://github.com/kiosion/Amethyst/tree/master/preview)
 
 ### ISSUES
 This is just a pet project of mine; it's not visually perfect by any means. Check out [TODO.md](https://github.com/kiosion/Amethyst/tree/master/TODO.md) for a complete list of issues I'm working on.
