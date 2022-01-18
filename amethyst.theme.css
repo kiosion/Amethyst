@@ -108,7 +108,6 @@
 
 /* 
 CONTENTS:
-
 S01 BACKGROUND
   - SERVER LIST SIDEBAR
 S02 HOME PAGES
@@ -1060,6 +1059,9 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   top: 48px;
 }
 /* Voice channel members styling */
+.list-2x9Cl9 {
+  padding-top: 8px !important;
+}
 .voiceUser-3nRK-K:hover, .draggable-S2aEx4>.voiceUser-3nRK-K:hover {
   background-color: transparent;
 }
