@@ -1008,30 +1008,10 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 /* Padding for server channel list */
 .scroller-1ox3I2.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
   padding-bottom: 200px;
-  background-color: var(--background-primary);
-  border-radius: var(--border-radius-1);
-}
-
-.sidebar-1tnWFu, .container-1NXEtd {
-  background-color: transparent;
-}
-
-.content-2a4AW9 {
-  background-color: transparent;
-  border-radius: var(--border-radius-1);
-}
-.container-1-ERn5 {
-  background-color: var(--background-tertiary);
-}
-.container-1-ERn5.clickable-vvKY2q>.header-3OsQeK {
-  border-radius: var(--border-radius-1);
 }
 
 /* Sidebar styling */
 /* Header styling */
-.header-3OsQeK {
-  background-color: var(--background-tertiary);
-}
 .sidebar-1tnWFu {
   margin-top: 10px;
 }
@@ -1242,7 +1222,10 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   background-color: var(--hover-color-lighter);
   border-radius: var(--border-radius-2);
 }
-/* CALL UI */
+/* SERVER CALL UI */
+.scroller-2MALzE.videoGrid-1tZm-F.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN>.listItems-6eZzQ1 {
+  padding-right: 8px !important;
+}
 .container-1zzFcN {
   background-color: var(--background-tertiary);
   margin-bottom: 6px;
