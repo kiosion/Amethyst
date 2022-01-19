@@ -1008,8 +1008,30 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 /* Padding for server channel list */
 .scroller-1ox3I2.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
   padding-bottom: 200px;
+  background-color: var(--background-primary);
+  border-radius: var(--border-radius-1);
 }
+
+.sidebar-1tnWFu, .container-1NXEtd {
+  background-color: transparent;
+}
+
+.content-2a4AW9 {
+  background-color: transparent;
+  border-radius: var(--border-radius-1);
+}
+.container-1-ERn5 {
+  background-color: var(--background-tertiary);
+}
+.container-1-ERn5.clickable-vvKY2q>.header-3OsQeK {
+  border-radius: var(--border-radius-1);
+}
+
 /* Sidebar styling */
+/* Header styling */
+.header-3OsQeK {
+  background-color: var(--background-tertiary);
+}
 .sidebar-1tnWFu {
   margin-top: 10px;
 }
@@ -1060,7 +1082,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 }
 /* Voice channel members styling */
 .list-2x9Cl9 {
-  padding-top: 8px !important;
+  padding-top: 4px !important;
 }
 .voiceUser-3nRK-K:hover, .draggable-S2aEx4>.voiceUser-3nRK-K:hover {
   background-color: transparent;
@@ -1177,7 +1199,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 /* S07 USER AREA */
 .panels-3wFtMD {
   background-color: transparent;
-  transform: translate(10px, -32px);
+  transform: translate(10px, -22px);
   position: absolute;
   bottom: 0;
   width: 220px;
@@ -1264,6 +1286,10 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 }
 .panels-3wFtMD>.panel-2ZFCRb.activityPanel-9icbyU>.body-1FrnJD>.actions-zk2vB_>button:hover>div>svg>path {
   fill: var(--red) !important;
+}
+/* Stream preview popout */
+.streamPreviewWrapper-rIrOy5.mounted-2LsfHh {
+  padding-left: 0 !important;
 }
 
 /* BUTTONS */
@@ -1491,12 +1517,6 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .bodyTitle-3FWCs2, .bodyTitle-1ySSKn, .footer-1N3bR3, .protip-2urNh2 {
   display: none;
 }
-.footer-3naVBw {
-  display: var(--message);
-}
-.note-Go5ZP2 textarea, .note-Go5ZP2, .userInfoSection-2u2hir:first-of-type>.note-3M15gE, .userInfoSection-2u2hir>.userInfoSectionHeader-2mYYun:nth-of-type(2n+2), .bodyTitle-2Az3VQ.fontDisplay-3Gtuks.uppercase-2unHJn {
-  display: var(--notes);
-}
 .body-2wLx-E {
   height: calc(100% - 167px);
 }
@@ -1592,6 +1612,18 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
   margin: 24px 290px 24px 24px;
 }
 /* Popout */
+.bodyInnerWrapper-2bQs1k {
+  background-color: var(--background-tertiary) !important;
+}
+.footer-3naVBw {
+  display: var(--message);
+}
+.bodyTitle-2Az3VQ.base-21yXnu.size12-oc4dx4.muted-eZM05q.uppercase-2unHJn:nth-of-type(2n+2), .note-Go5ZP2 textarea, .note-Go5ZP2, .userInfoSection-2u2hir:first-of-type>.note-3M15gE, .userInfoSection-2u2hir>.userInfoSectionHeader-2mYYun:nth-of-type(2n+2), .bodyTitle-2Az3VQ.fontDisplay-3Gtuks.uppercase-2unHJn {
+  display: var(--notes);
+}
+.bodyTitle-2Az3VQ.base-21yXnu.size12-oc4dx4.muted-eZM05q.uppercase-2unHJn:nth-of-type(2n+1), .root-jbEB5E.flex-3BkGQD.wrap-7NZuTn.rolesList-3uZoaa {
+  background-color: var(--background-tertiary);
+}
 .userPopout-xaxa6l {
   border-radius: var(--border-radius-1);
   border: 1px solid var(--border-color);
@@ -1659,6 +1691,9 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
   box-shadow: var(--low-shadow) var(--light-green);
 }
 /* Server profile roles | thanks to Bowser65#1337 */
+.rolesList-3uZoaa {
+  margin-bottom: 8px !important;
+}
 .role-2TIOKu {
   position: relative;
   overflow: hidden;
