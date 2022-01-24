@@ -1243,10 +1243,10 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   fill: var(--text-secondary);
 }
 /* VIDEO / STREAM BUTTONS */
-.actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP>div>div>svg, .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP>div>div {
+.actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP>div>div>svg, .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP>div>div, .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP>div>svg {
   color: var(--text-normal) !important;
 }
-.actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP:hover>div>div>svg, .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP:hover>div>div {
+.actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP:hover>div>div>svg, .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP:hover>div>div, .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP:hover>div>svg {
   color: var(--text-dark) !important;
 }
 .actionButtons-2vEOUh>.button-1EGGcP.buttonColor-3bP3fX.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP {
@@ -1257,6 +1257,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   background-color: var(--green) !important;
   box-shadow: var(--low-shadow) var(--green) !important;
 }
+
 /* Stream / screenshare panel */
 .panels-3wFtMD>.panel-2ZFCRb.activityPanel-9icbyU {
   background-color: var(--background-tertiary);
@@ -1706,6 +1707,9 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .topControls-23RE3h.controlSection-1mNixL {
   margin-top: 4px;
 }
+.wrapper-1gVUIN.minimum-fXpVNc {
+  background-color: var(--background-tertiary) !important;
+}
 .container-2x5lvQ section {
   border-radius: var(--border-radius-1);
   background-color: var(--background-tertiary) !important;
@@ -1730,7 +1734,7 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 .bottomControls-31YuPK>:last-child>div:last-child>button {
   margin-right: 16px;
 }
-.avatarSpeaking-2pCGrZ, .avatarSpeaking-33RRJU, .border-2Vy6FN.speaking-7QZEkv, .avatar-2EVtgZ.speaking-3K28iH {
+.avatarSpeaking-2pCGrZ, .avatarSpeaking-33RRJU, .border-2Vy6FN.speaking-7QZEkv, .border-2BJQjd.speaking-3RWJBr, .avatar-2EVtgZ.speaking-3K28iH {
   box-shadow: inset 0 0 0 2px var(--accent-color), inset 0 0 0 3px var(--background-secondary);
 }
 /* In-call action buttons */
