@@ -1275,6 +1275,10 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 .streamPreviewWrapper-rIrOy5.mounted-2LsfHh {
   padding-left: 0 !important;
 }
+/* Activity preview popout */
+.animatorRight-xAUgTY.translate-PeW1wK.didRender-2SiRlm>.container-8Futzw.thin-31rlnD.scrollerBase-_bVAAt {
+  margin-left: 0 !important;
+}
 
 /* BUTTONS */
 /* LookFilled ColorBrand */
