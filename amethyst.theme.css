@@ -670,6 +670,7 @@ S15 MISC
   right: 0;
   bottom: 0;
   pointer-events: none;
+  transform: translateY(8px);
 }
 .form-3gdLxP::before {
   display: none;
@@ -747,11 +748,11 @@ div>.activeButtonChild-2hgLAO>svg>path, .buttons-uaqb-5>.separator-3ng7S5>.butto
   background-color: var(--background-primary);
 }
 /* Reply bar */
-/* .channelTextArea-1FufC0.channelTextArea-1VQBuV {
-  background-color: var(--accent-color) !important;
-} */
-.attachedBars-2BCP3l {
-  background-color: transparent !important;
+.popout_5155>.channelTextArea-1FufC0.channelTextArea-1VQBuV, .attachedBars-2BCP3l>div>.clipContainer-31nYlH, .clipContainer-31nYlH.container-A2jo65 {
+  background-color: transparent;
+}
+.channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l {
+  background-color: var(--accent-color);
 }
 .channelTextArea-1FufC0.channelTextArea-1VQBuV, .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l, .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l>div>.clipContainer-31nYlH, .clipContainer-31nYlH>div, .clipContainer-31nYlH>div>div {
   overflow: visible;
@@ -857,6 +858,8 @@ code.inline {
   border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
   transform: translateY(-60px);
   box-shadow: var(--low-shadow) var(--accent-color);
+  padding-bottom: 4px;
+  padding-top: 4px;
 }
 .jumpToPresentBar-1cEnH0.barBase-3xxDXu>button, .jumpToPresentBar-1cEnH0.barBase-3xxDXu>button>svg>path {
   color: var(--text-dark);
