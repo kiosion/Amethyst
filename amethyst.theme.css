@@ -1325,6 +1325,13 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 .animatorRight-xAUgTY.translate-PeW1wK.didRender-2SiRlm>.container-8Futzw.thin-31rlnD.scrollerBase-_bVAAt {
   margin-left: 0 !important;
 }
+/* Spotify listening-along ui */
+.listeningAlong-6YvYsc {
+  background-color: var(--background-primary);
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--mid-shadow) var(--hover-color);
+  margin-bottom: 6px;
+}
 
 /* BUTTONS */
 /* LookFilled ColorBrand */
