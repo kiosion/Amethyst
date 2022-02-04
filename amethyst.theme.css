@@ -1327,7 +1327,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 }
 /* Spotify listening-along ui */
 .listeningAlong-6YvYsc {
-  background-color: var(--background-primary);
+  background-color: var(--background-tertiary);
   border-radius: var(--border-radius-1);
   box-shadow: var(--mid-shadow) var(--hover-color);
   margin-bottom: 6px;
