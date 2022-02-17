@@ -587,6 +587,12 @@ S15 MISC
   background-color: var(--light-green) !important;
   cursor: pointer !important;
 }
+.addFriendInputWrapper-kkoSV9 {
+  background-color: var(--background-tertiary);
+}
+.addFriendInputWrapper-kkoSV9>.inputWrapper-1YNMmM.addFriendInput-1Ta-rO>input {
+  background-color: transparent;
+}
 /* Toolbar icons (green) */
 .iconWrapper-2awDjA.clickable-ZD7xvu:hover[aria-label="Start Voice Call"], .iconWrapper-2awDjA.clickable-ZD7xvu:hover[aria-label="Start Video Call"], .iconWrapper-2awDjA.clickable-ZD7xvu:hover[aria-label="New Group DM"] {
   background-color: var(--green);
@@ -2151,6 +2157,22 @@ div[role="radiogroup"]+.disabled-2HSEFa {
 }
 .container-1eFT6O .selected-2114Fj {
   background-color: var(--background-modifier-active);
+}
+/* Channel permissions page */
+.sidebarScrollable-2mW9Ls>.scroller-3_YDR2.thin-31rlnD.scrollerBase-_bVAAt {
+  overflow: visible;
+}
+.role-3pGE29.selected-g-kMVV, .role-3pGE29.selected-g-kMVV:hover, .role-3pGE29[aria-selected="true"], .role-3pGE29[aria-selected="true"]:hover {
+  background-color: var(--accent-color) !important;
+  color: var(--text-dark) !important;
+  border-radius: var(--border-radius-2) !important;
+  box-shadow: var(--low-shadow) var(--accent-color);
+}
+.role-3pGE29 {
+  border-radius: var(--border-radius-2) !important;
+}
+.role-3pGE29:hover {
+  background-color: var(--hover-color-lighter) !important;
 }
 
 /* S11 CONTROLS */
