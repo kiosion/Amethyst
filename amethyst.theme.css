@@ -2496,6 +2496,17 @@ div>.layer-2aCOJ3>.tooltip-14MtrL {
 .toast-g4bfgI {
   border-radius: var(--border-radius-1);
 }
+/* Account Switcher */
+.animatedNode-zo4rIT>.content-2hZxGK.thin-31rlnD.scrollerBase-_bVAAt {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+.animatedNode-zo4rIT>.content-2hZxGK.thin-31rlnD.scrollerBase-_bVAAt>.list-3-WAYB {
+  border-radius: var(--border-radius-1);
+}
+.theme-dark .hintText-1gwhJG, .hintText-1gwhJG {
+  color: var(--green);
+}
 
 /* S13 PLUGINS */
 /* Misc */
