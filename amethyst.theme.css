@@ -611,8 +611,14 @@ S15 MISC
 }
 /* Search bar */
 .search-39IXmY {
-  margin: 1px 4px 1px 1px;
+  margin: 1px 8px 1px 8px;
   order: -1;
+  padding: 5px 3px;
+  background-color: var(--background-1);
+  border-radius: var(--border-radius-1);
+}
+.search-2Mwzzq, .searchBar-jGtisZ {
+  background-color: transparent !important;
 }
 .search-1FM8Qc:not(.open-3y3yI_) .DraftEditor-root {
   transition: opacity 150ms;
@@ -624,6 +630,9 @@ S15 MISC
   margin-right: 8px;
   transition: opacity 150ms;
   border: 2px solid var(--background-secondary);
+}
+.DraftEditor-root {
+  transform: translateY(-4px);
 }
 .searchBar-zdmu7v[aria-expanded="true"] .DraftEditor-root {
   border-color: var(--background-modifier-selected);
@@ -747,6 +756,12 @@ div>.activeButtonChild-2hgLAO>svg>path, .buttons-uaqb-5>.separator-3ng7S5>.butto
 .menu-1QACrS.styleFlexible-x0_sIC.menu-1dOGCq {
   transform: translateY(-6px);
   box-shadow: var(--mid-shadow) var(--hover-color) !important;
+}
+/* Typign indicator */
+.typing-2J1mQU {
+  transform: translateY(-2px);
+  box-shadow: none !important;
+  padding: 0 .4rem;
 }
 /* CHAT */
 .content-1jQy2l {
@@ -1687,6 +1702,12 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
   flex-grow: 1;
   justify-content: space-between;
 }
+.headerTagWithNickname-1U8zZH {
+  margin-top: .2rem !important;
+}
+.customStatus-3XAoF9 {
+  margin-top: .1rem !important;
+}
 .userInfo-iCloHO .container-q03LZO {
   margin-right: 8px;
 }
@@ -1759,11 +1780,17 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
   height: 220px;
 }
 /* Activity buttons */
-/* Spotify activity buttons */
-/* .activityUserPopout-2MzGCj>.buttonsWrapper-2ARRp1>button {
+/* Spotify activity */
+.activityUserPopout-2MzGCj>.buttonsWrapper-2ARRp1>button {
   background-color: var(--hover-color-lighter);
   border-radius: var(--border-radius-2);
-} */
+}
+.activityUserPopout-2MzGCj>.buttonsWrapper-2ARRp1>button:hover {
+  background-color: var(--hover-color-lighter);
+}
+.assetsLargeImageSpotify-17ME3M {
+  border-radius: var(--border-radius-2);
+}
 /* Connected Accounts */
 .infoScroller-1QMpon.thin-31rlnD.scrollerBase-_bVAAt {
   padding: 0 20px !important;
@@ -2228,7 +2255,6 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
   transform: scale(1.4);
 }
 /* MENUS / DROPDOWNS / INPUTS */
-
 .select-1Ia3hD.lookFilled-1GseHa, .inputDefault-3FGxgL.input-2g-os5 {
   background-color: var(--hover-color);
 }
@@ -2296,6 +2322,10 @@ svg.slider-TkfMQL svg, .bd-switch-slider>svg {
 }
 .select-2TCrqx div[class$="option"], .select-2TCrqx div[class$="singleValue"] {
   color: var(--text-normal);
+}
+/* BUTTONS */
+button[disabled].lookFilled-yCfaCM.colorPrimary-2AuQVo {
+  background-color: var(--background-1);
 }
 
 /* S12 MODALS */
@@ -2495,6 +2525,17 @@ div>.layer-2aCOJ3>.tooltip-14MtrL {
 }
 .toast-g4bfgI {
   border-radius: var(--border-radius-1);
+}
+/* Account Switcher */
+.animatedNode-zo4rIT>.content-2hZxGK.thin-31rlnD.scrollerBase-_bVAAt {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+.animatedNode-zo4rIT>.content-2hZxGK.thin-31rlnD.scrollerBase-_bVAAt>.list-3-WAYB {
+  border-radius: var(--border-radius-1);
+}
+.theme-dark .hintText-1gwhJG, .hintText-1gwhJG {
+  color: var(--green);
 }
 
 /* S13 PLUGINS */
