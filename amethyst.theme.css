@@ -786,12 +786,13 @@ div>.activeButtonChild-2hgLAO>svg>path, .buttons-uaqb-5>.separator-3ng7S5>.butto
   border-color: var(--background-modifier-selected);
   background-color: var(--background-primary);
 }
-/* Reply bar */
+/* Attached Bars */
 .popout_5155>.channelTextArea-1FufC0.channelTextArea-1VQBuV, .attachedBars-2BCP3l>div>.clipContainer-31nYlH, .clipContainer-31nYlH.container-A2jo65 {
   background-color: transparent;
 }
 .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l {
   background-color: var(--accent-color);
+  margin-bottom: .6rem;
 }
 .channelTextArea-1FufC0.channelTextArea-1VQBuV, .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l, .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l>div>.clipContainer-31nYlH, .clipContainer-31nYlH>div, .clipContainer-31nYlH>div>div {
   overflow: visible;
@@ -1021,6 +1022,13 @@ div[id="---new-messages-bar"]>.content-3spvdd {
   transform: translateX(38px);
   box-shadow: var(--mid-shadow) var(--hover-color);
   border-radius: var(--border-radius-1);
+}
+/* SLASH COMMANDS POPUP AUTOCOMPLETE */
+.scroller-2MALzE.list-2u03C-.thin-31rlnD.scrollerBase-_bVAAt, .scroller-2MALzE.list-2u03C-.thin-31rlnD.scrollerBase-_bVAAt .wrapper-1NNaWG.categoryHeader-OpJ1Ly, .scroller-2MALzE.list-2u03C-.thin-31rlnD.scrollerBase-_bVAAt .selectable-1MM9tu {
+  background-color: var(--background-2);
+}
+.scroller-2MALzE.list-2u03C-.thin-31rlnD.scrollerBase-_bVAAt .selectable-1MM9tu.selected-3H3-RC {
+  background-color: var(--hover-color-lighter) !important;
 }
 .channelTextArea-1FufC0.channelTextArea-1VQBuV>.container-1ZA19X>.containerBackground-Ang24O {
   display: none;
@@ -1617,6 +1625,9 @@ button[aria-label="Send a gift"],button[aria-label="Spread some cheer! Gift Nitr
 }
 
 /* S08 USER PROFILES */
+.focusLock-2tveLW[aria-label="User Profile Modal"] .body-1Ukv50 {
+  overflow: scroll !important;
+}
 .focusLock-2tveLW[aria-label="User Profile Modal"], .focusLock-2tveLW[aria-label="User Profile Modal"]>.root-8LYsGj.root-g14mjS>.body-1Ukv50 {
   height: 58%;
 }
