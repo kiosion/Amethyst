@@ -115,6 +115,7 @@ S02 HOME PAGES
   - FRIENDS LIST PAGE
   - NITRO PAGE
   - SERVER DISCOVERY PAGE
+  - STUDENT HUB
 S03 TOP TOOLBAR
 S04 MAIN CHAT VIEW
   - MESSAGE FORM
@@ -428,6 +429,34 @@ S15 MISC
 }
 .inputWrapper-1YNMmM.searchBoxInputWrapper-3XLwVB>input {
   background-color: transparent;
+}
+/* STUDENT HUB VIEW */
+.content-1jQy2l > .pageContainer-36uo3F {
+  border-radius: var(--border-radius-1);
+  margin: 0 10px 10px 10px;
+}
+.cardsContainer-39dCVY > .card-3N2v9t {
+  background-color: var(--background-2);
+  box-shadow: var(--mid-shadow) var(--hover-color);
+}
+.joinButton-1B9qQr.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+  background-color: var(--green);
+  color: var(--text-dark);
+}
+.joinButton-1B9qQr.lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
+  background-color: var(--light-green);
+  box-shadow: var(--low-shadow) var(--light-green);
+}
+.itemInner-3k3Sn6.layout-1qmrhw {
+  margin: 0 8px !important;
+  border-radius: var(--border-radius-2);
+}
+.optionItem-2tdutc.selected-1-Z6gm>.itemInner-3k3Sn6.layout-1qmrhw {
+  box-shadow: var(--low-shadow) var(--accent-color);
+  color: var(--text-dark);
+}
+.tabBarItem-15vAXA.selected-g-kMVV {
+  border-bottom: 2px solid var(--text-light) !important;
 }
 
 /* S03 TOP TOOLBAR */
@@ -792,7 +821,6 @@ div>.activeButtonChild-2hgLAO>svg>path, .buttons-uaqb-5>.separator-3ng7S5>.butto
 }
 .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l {
   background-color: var(--accent-color);
-  margin-bottom: .6rem;
 }
 .channelTextArea-1FufC0.channelTextArea-1VQBuV, .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l, .channelTextArea-1FufC0.channelTextArea-1VQBuV>.attachedBars-2BCP3l>div>.clipContainer-31nYlH, .clipContainer-31nYlH>div, .clipContainer-31nYlH>div>div {
   overflow: visible;
