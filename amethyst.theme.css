@@ -434,6 +434,7 @@ S15 MISC
 .content-1jQy2l > .pageContainer-36uo3F {
   border-radius: var(--border-radius-1);
   margin: 0 10px 10px 10px;
+  max-width: none !important;
 }
 .cardsContainer-39dCVY > .card-3N2v9t {
   background-color: var(--background-2);
