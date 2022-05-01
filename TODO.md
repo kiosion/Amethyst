@@ -1,6 +1,5 @@
 # To-do:
 
-- Fix choppy animations
 - Fix message form padding 
     - multiple lines
     - editing a message
