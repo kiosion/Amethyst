@@ -1709,8 +1709,17 @@ section.panels-3wFtMD>.container-YkUktl>div>button:nth-of-type(3n+2):hover>div>s
 	padding-top: 10px !important;
 }
 
+.rightTrayIcon-1m3hnG.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ {
+	background-color: transparent;
+}
+
 .videoControls-353CsJ>.topControls-23RE3h.controlSection-1mNixL>div>.headerWrapper-1ULEPv>section {
 	background-color: transparent !important;
+}
+
+.volumeButton-3IDSX- {
+	margin: 16px;
+	padding-left: 2px;
 }
 
 .container-1zzFcN {
