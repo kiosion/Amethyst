@@ -2271,6 +2271,14 @@ button[aria-label="Spread some cheer! Gift Nitro in special holiday gift boxes."
 	margin: 24px 290px 24px 24px;
 }
 
+.top-K_jibn .item-3XjbnG {
+	border-bottom: unset;
+}
+
+.top-K_jibn .item-3XjbnG.selected-g-kMVV {
+	border-bottom: 2px solid var(--interactive-active);
+}
+
 /* Popout */
 .bodyInnerWrapper-2bQs1k {
 	background-color: var(--background-tertiary) !important;
