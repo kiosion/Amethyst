@@ -282,6 +282,10 @@ S15 MISC
 	background-color: var(--background-secondary);
 }
 
+.sidebar-1tnWFu {
+	margin-right: 10px;
+}
+
 .chatContent-3KubbW,
 .sidebar-1tnWFu,
 .tabBody-2dgbAs,
@@ -645,7 +649,8 @@ S15 MISC
 }
 
 .container-ZMc96U.themed-Hp1KC_ {
-	margin-top: 4px;
+	padding-top: 4px;
+  margin-top: 4px;
 }
 
 /* Top pill friends list tabs */
@@ -951,6 +956,15 @@ div>.activeButtonChild-2hgLAO>svg>path,
 	background-color: var(--background-primary);
 }
 
+/* Inline blocks / code / sys messages */
+[id^=message-accessories] {
+  padding-top: 6px;
+}
+.container-3i3IzO.systemMessageContainer-3F3V9U {
+  background-color: var(--background-2);
+  border-radius: var(--border-radius-2);
+}
+
 /* Attached Bars */
 .popout_5155>.channelTextArea-1FufC0.channelTextArea-1VQBuV,
 .attachedBars-2BCP3l>div>.clipContainer-31nYlH,
@@ -1224,6 +1238,37 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 	background-color: var(--background-primary);
 }
 
+.resizeHandle-PBRzPC {
+  transform: translateX(-2px);
+  margin-left: -6px;
+  position: relative;
+  z-index: 20;
+}
+
+.container-3XgAHv {
+  background-color: transparent;
+}
+
+.chat-1-OBC7 {
+  margin-top: 6px;
+  background-color: transparent;
+}
+
+.chatContent-3KubbW {
+  margin-left: 0;
+  background-color: var(--background-1);
+  border-radius: var(--border-radius-1);
+  overflow: hidden;
+}
+
+.messagesWrapper-RpOMA3 {
+  border-radius: var(--border-radius-1);
+}
+
+.chat-1-OBC7:before {
+  display: none;
+}
+
 /* EMOJI PICKER WINDOW */
 .positionLayer-1cndvf.layer-2aCOJ3 {
 	transform: translateY(-10px);
@@ -1378,7 +1423,7 @@ div[id="---new-messages-bar"]>.content-3spvdd {
 /* S05 CHANNEL LIST PANEL */
 /* Padding for server channel list */
 .scroller-1ox3I2.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
-	padding-bottom: 200px;
+	padding-bottom: 300px;
 }
 
 /* Sidebar styling */
