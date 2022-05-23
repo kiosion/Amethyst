@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "max-line-length": null,
+    "value-keyword-case": null,
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "selector-pseudo-class-no-unknown": null,
+    "string-quotes": "single",
+    "selector-pseudo-element-colon-notation": "single",
+    "shorthand-property-no-redundant-values": true,
+    "color-hex-length": "long",
+    "color-hex-case": "lower",
+    "color-no-invalid-hex": true,
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "selector-type-case": "lower",
+    "selector-list-comma-newline-after": "always",
+    "rule-empty-line-before": "never",
+    "comment-empty-line-before": "always",
+    "comment-whitespace-inside": "always",
+    "number-no-trailing-zeros": true,
+    "unit-case": "lower",
+    "declaration-block-semicolon-newline-before": "never-multi-line",
+    "declaration-block-semicolon-space-after": "always-single-line",
+    "declaration-block-semicolon-space-before": "never",
+    "indentation": [2, {
+      "indentInsideParens": "twice",
+      "except": ["param"]
+    }]
+  },
+  "fix": true
+}

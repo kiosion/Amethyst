@@ -1,0 +1,17 @@
+{
+  "name": "amethyst",
+  "version": "1.0.0",
+  "description": "<div align=center><h1>Amethyst</h1></div>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiosion/Amethyst.git"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^12.4.1",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}

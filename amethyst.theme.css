@@ -8,26 +8,33 @@
 * @invite kio
 */
 
-@import url(https://kiosion.github.io/Amethyst/css/base.css);
-
+@import url('https://kiosion.github.io/Amethyst/css/base.css');
 :root {
+
   /* change to 'unset' from 'none' to show elements */
+
   /* scrollbars */
   --scrollbars: none;
+
   /* profile notes */
   --notes: none;
+
   /* direct message box */
   --message: none;
+
   /* fonts */
-  --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-primary: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+
   /* border radius' */
   --border-radius-1: 14px;
   --border-radius-2: 8px;
+
   /* shadow/glow intensities */
-  --low-shadow: 0px 0px 12px -2px;
-  --mid-shadow: 0px 0px 14px 0px;
-  --high-shadow: 0px 0px 18px 2px;
+  --low-shadow: 0 0 12px -2px;
+  --mid-shadow: 0 0 14px 0;
+  --high-shadow: 0 0 18px 2px;
+
   /* gif/sticker buttons in msg bar */
   --gif-sticker-buttons: none;
 }
@@ -54,9 +61,7 @@
   --dark-blue: #30c6e8;
   --light-red: #ff9999;
   --red: #ff5555;
-}
 
-.theme-dark {
   /* background */
   --background-primary: var(--background-1);
   --background-primary-alt: var(--background-1);
@@ -67,12 +72,14 @@
   --background-floating: var(--background-1);
   --background-mentioned: #cca7ff15;
   --background-mentioned-hover: #cca7ff2a;
+
   /* modifiers */
   --background-modifier-hover: var(--background-1);
   --background-modifier-active: var(--background-1);
   --background-modifier-selected: var(--accent-color);
   --background-modifier-accent: var(--background-1);
   --background-message-hover: var(--hover-color);
+
   /* text */
   --text-normal: var(--white);
   --text-secondary: var(--white-darker);
@@ -87,6 +94,7 @@
   --channels-default: var(--text-secondary);
   --header-primary: var(--text-normal);
   --header-secondary: var(--text-muted);
+
   /* more */
   --settings-icon-color: var(--white);
   --control-brand-foreground: var(--accent-color);
@@ -95,6 +103,7 @@
   --switch: var(--background-2);
   --activity-card-background: var(--background-2);
   --brand-experiment: var(--accent-color) !important;
+
   /* buttons */
   --button-background: var(--background-2);
   --button-background-hover: var(--accent-color);

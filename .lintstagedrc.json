@@ -1,0 +1,3 @@
+{
+  "*.css": "npx stylelint --fix"
+}
