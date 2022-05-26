@@ -241,7 +241,10 @@ S15 MISC
 .peopleList-2VBrVI {
   border-top: 0 !important;
 }
-.peopleColumn-1wMU14,
+.peopleColumn-1wMU14 {
+  border-radius: var(--border-radius-1);
+  background-color: var(--background-primary) !important;
+}
 .chatContent-3KubbW,
 .pageWrapper-1PgVDX,
 .scroller-3X7KbA,
