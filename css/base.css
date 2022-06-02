@@ -482,7 +482,8 @@ S15 MISC
 .toolbar-3_r2xA > .iconWrapper-2awDjA,
 .toolbar-3_r2xA > div > .iconWrapper-2awDjA,
 .toolbar-3_r2xA > .inviteToolbar-2k2nqz > .iconWrapper-2awDjA,
-.toolbar-3_r2xA > .anchor-1MIwyf > div {
+.toolbar-3_r2xA > .anchor-1MIwyf > div,
+.toolbar-3_r2xA > :last-child {
   background-color: var(--background-primary);
 }
 .inviteToolbar-2k2nqz > div {
@@ -494,6 +495,14 @@ S15 MISC
 .toolbar-3_r2xA .clickable-ZD7xvu {
   padding: 7px 7px 29px;
   margin: 1px;
+}
+.toolbar-3_r2xA .chatButtonSpacer-16BvMu {
+  margin-right: 8px;
+  pointer-events: none;
+  transform: translateY(8px);
+}
+.disabledButtonOverlay-1_LsqE {
+  pointer-events: none;
 }
 .toolbar-3_r2xA > div:first-child > button.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F > div {
   border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
@@ -513,7 +522,8 @@ S15 MISC
 
 /* toolbar icon hover fx */
 .toolbar-3_r2xA .clickable-ZD7xvu:hover,
-.toolbar-3_r2xA > div > button.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F:hover > div {
+.toolbar-3_r2xA > div > button.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F:hover > div,
+.toolbar-3_r2xA > :last-child:hover {
   background-color: var(--button-background-hover);
 }
 .toolbar-3_r2xA > div > button.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F:hover > div > svg {
@@ -540,8 +550,14 @@ S15 MISC
   border-radius: var(--border-radius-1) !important;
 }
 .toolbar-3_r2xA > :last-child > div,
-.toolbar-3_r2xA > :last-child {
+.toolbar-3_r2xA > :last-child,
+.toolbar-3_r2xA > :last-child > button > div {
   border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
+}
+.toolbar-3_r2xA > :last-child {
+  margin-left: 1px;
+  height: 2.3rem;
+  width: 2.3rem;
 }
 .icon-1ELUnB.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label='Threads'] > svg {
   transform: translateY(10px) !important;
