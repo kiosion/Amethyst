@@ -133,6 +133,11 @@ S15 MISC
 
 /* S02 HOME */
 
+/* dm search bar */
+.searchBar-3TnChZ {
+  display: none;
+}
+
 /* DM LIST */
 .scroller-WSmht3.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
   border-top-right-radius: var(--border-radius-1);
@@ -239,11 +244,39 @@ S15 MISC
 
 /* Panel styling */
 .peopleList-2VBrVI {
-  border-top: 0 !important;
+  border-top: 0;
+  margin-top: 0;
+  background-color: var(--background-primary);
 }
 .peopleColumn-1wMU14 {
   border-radius: var(--border-radius-1);
-  background-color: var(--background-primary) !important;
+  background-color: transparent;
+}
+.peopleColumn-1wMU14 > div:nth-of-type(2) {
+  background-color: var(--background-primary);
+  border-top-left-radius: var(--border-radius-2);
+  border-top-right-radius: var(--border-radius-2);
+}
+.peopleListItem-u6dGxF {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: var(--border-radius-1);
+}
+.peopleListItem-u6dGxF:hover,
+.peopleListItem-u6dGxF:focus {
+  background-color: var(--hover-color);
+}
+.actionButton-3-B2x-.highlight-3DSi7b {
+  background-color: var(--hover-color-lighter);
+}
+.actionButton-3-B2x- > svg,
+.actionButton-3-B2x- > svg > path {
+  transition: none !important;
+}
+.actionButton-3-B2x-.highlight-3DSi7b:hover {
+  background-color: var(--accent-color);
+  box-shadow: var(--low-shadow) var(--accent-color);
+  color: var(--text-dark);
 }
 .chatContent-3KubbW,
 .pageWrapper-1PgVDX,
@@ -287,14 +320,20 @@ S15 MISC
 
 /* Friends search bar */
 .searchBar-2aylmZ {
-  margin: 16px 30px 8px;
-}
-.searchBar-2aylmZ.container-2oNtJn {
+  margin: 0 0 8px;
+  background-color: var(--background-primary);
+  border-radius: var(--border-radius-1);
   overflow: visible;
 }
-.searchBar-2aylmZ.container-2oNtJn > .inner-2pOSmK {
-  box-shadow: var(--mid-shadow) var(--hover-color);
+.searchBar-2aylmZ > .inner-2pOSmK {
+  border-radius: var(--border-radius-1);
+  padding: 8px;
   overflow: visible;
+}
+.searchBar-2aylmZ:hover > .inner-2pOSmk,
+.searchBar-2aylmZ:focus > .inner-2pOSmk,
+.searchBar-2aylmZ:focus-within > .inner-2pOSmk {
+  box-shadow: var(--mid-shadow) var(--accent-color);
 }
 .tabBody-2dgbAs {
   margin-right: 10px;
@@ -2643,14 +2682,28 @@ svg.slider-TkfMQL svg,
 /* MENUS / DROPDOWNS / INPUTS */
 .select-1Ia3hD.lookFilled-1GseHa,
 .inputDefault-3FGxgL.input-2g-os5 {
-  background-color: var(--hover-color);
+  background-color: var(--background-quaternary);
+  border-radius: var(--border-radius-2);
+}
+.select-1Ia3hD.open-1FRZsK.lookFilled-1GseHa {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.popout-1KHNAq {
+  border-bottom-left-radius: var(--border-radius-2);
+  border-bottom-right-radius: var(--border-radius-2);
 }
 .popout-1KHNAq,
 .popout-1KHNAq > .option-2eIyOn {
-  background-color: var(--background-tertiary);
+  background-color: var(--background-quaternary);
 }
 .popout-1KHNAq > .option-2eIyOn:hover {
   background-color: var(--hover-color-lighter);
+}
+.option-2eIyOn[aria-selected='true']:not(.option-2eIyOn.multi-1HXDiv),
+.option-2eIyOn[aria-selected='true']:not(.option-2eIyOn.multi-1HXDiv) > .selectedIcon-19TbzU > circle {
+  color: var(--text-dark);
+  fill: var(--text-dark);
 }
 .menu-3sdvDG,
 .quickSelectPopout-X1hvgV,
