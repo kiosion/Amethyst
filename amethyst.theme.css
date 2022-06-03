@@ -43,6 +43,7 @@
 .theme-dark {
   --background-1: #373949;
   --background-2: #282a36;
+  --background-3: #1e2029;
   --border-color: #373949;
   --hover-color: #22242e81;
   --hover-color-lighter: #5d607781;
@@ -68,6 +69,7 @@
   --background-secondary: var(--background-1);
   --background-secondary-alt: var(--background-1);
   --background-tertiary: var(--background-2);
+  --background-quaternary: var(--background-3);
   --background-1-gradient: var(--background-2);
   --background-floating: var(--background-1);
   --background-mentioned: #cca7ff15;
