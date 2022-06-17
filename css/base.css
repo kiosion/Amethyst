@@ -525,6 +525,10 @@ S15 MISC
 .toolbar-3_r2xA > :last-child {
   background-color: var(--background-primary);
 }
+.toolbar-3_r2xA .anchor-1MIwyf.anchorUnderlineOnHover-2qPutX {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
 .inviteToolbar-2k2nqz > div {
   padding: 7px 7px 29px 10px !important;
   border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
