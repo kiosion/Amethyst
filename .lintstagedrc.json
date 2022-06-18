@@ -1,3 +1,3 @@
 {
-  "*.css": "npx stylelint --fix"
+  "*.scss": ["npx stylelint --fix", "npm run sass", "git add *.css"]
 }
