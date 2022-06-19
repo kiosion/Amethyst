@@ -18,6 +18,7 @@
     "scss/double-slash-comment-whitespace-inside": "always",
     "scss/dollar-variable-pattern": null,
     "scss/operator-no-unspaced": true,
+    "scss/no-global-function-names": null,
     "max-line-length": null,
     "value-keyword-case": null,
     "selector-class-pattern": null,
