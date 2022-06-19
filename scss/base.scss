@@ -2085,11 +2085,6 @@ div[id='---new-messages-bar'] {
   // Server sidebars
   > .sidebar-1tnWFu {
     margin-top: 58px;
-
-    // Friends list scroller
-    .scroller-WSmht3 {
-      margin-top: 48px;
-    }
   }
 
   // Home / friends container
@@ -2598,16 +2593,18 @@ div[id='---new-messages-bar'] {
     margin-top: 6px;
   }
   &.idle-39sGPO {
+    /* stylelint-disable */
     .topControls-23RE3h {
       opacity: 1 !important;
       transform: unset !important;
-      transform: unset !important;
+      -webkit-transform: unset !important;
     }
     .chatButton-10jXXp:not(.chatButtonShowing-1aD1ch) {
       opacity: 1 !important;
       transform: unset !important;
-      transform: unset !important;
+      -webkit-transform: unset !important;
     }
+    /* stylelint-enable */
   }
 }
 
