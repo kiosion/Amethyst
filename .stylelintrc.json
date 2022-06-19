@@ -16,6 +16,8 @@
     "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
     "scss/double-slash-comment-empty-line-before": "always",
     "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/dollar-variable-pattern": null,
+    "scss/no-global-function-names": null,
     "scss/operator-no-unspaced": true,
     "max-line-length": null,
     "value-keyword-case": null,
