@@ -116,7 +116,7 @@ $settingsIconGap: 14px;
     margin-right: #{$settingsIconGap};
     background: currentColor;
     z-index: 2;
-    mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/questionmark.svg') center/contain no-repeat;
+    -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/questionmark.svg') center/contain no-repeat;
   }
 }
 
@@ -225,25 +225,25 @@ $settingsicons: (
   @if str-index($key, 'nth-child') {
     #bd-settings-sidebar .ui-tab-bar-item {
       &:#{$key}:before {
-        mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/{$value}.svg') center/contain no-repeat;
+        -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/{$value}.svg') center/contain no-repeat;
       }
     }
   } @else {
     .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG {
       @if str-index($key, 'bd-') {
         &.#{$key}:before {
-          mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
         }
       } @else {
         &[aria-controls='#{$key}' i]:before {
-          mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
         }
       }
 
       @if str-index($key, ' ') {
         $dashed: str-replace($key);
         &[aria-controls='#{$dashed}' i]:before {
-          mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
         }
       }
     }

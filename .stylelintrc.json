@@ -45,6 +45,7 @@
     "declaration-block-semicolon-space-after": "always-single-line",
     "declaration-block-semicolon-space-before": "never",
     "value-no-vendor-prefix": null,
+    "property-no-vendor-prefix": null,
     "indentation": [2, {
       "indentInsideParens": "twice",
       "except": ["param"]
