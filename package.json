@@ -16,5 +16,8 @@
   "scripts": {
     "prepare": "husky install",
     "sass": "node-sass scss/ -o css/ --output-style compressed"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^4.0.0"
   }
 }
