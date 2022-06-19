@@ -13,6 +13,7 @@ $border-size-map: (
     'medium': 8px,
     'large': 14px,
     'round': 50%,
+    'none': 0,
   );
 $edge-map: (
     'top': ('top-left', 'top-right'),
@@ -1058,7 +1059,7 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   }
   > :last-child {
     margin-left: 1px;
-    height: 2.3rem;
+    height: 36px;
     width: 40px;
     border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
     > div,
@@ -1077,18 +1078,19 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 
 // This fucking chat button. it is so bad. oh my god. please discord, put it actually INSIDE the top toolbar
 .chatButton-10jXXp {
-  top: 14px;
+  top: 12px;
   right: 8px;
   width: 40px;
   height: 36px;
-  margin-top: 2px;
-  border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
   background-color: var(--background-primary);
+
+  @include border-radius('right', 'large');
+  @include border-radius('left', 'none');
   svg {
     color: var(--text-normal) !important;
   }
   &:hover {
-    background-color: var(--button-background-active);
+    background-color: #{$color-accent};
     svg {
       color: var(--text-dark) !important;
     }
@@ -1242,10 +1244,10 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   > .icon-1nNws_ {
     transition: background-color 150ms, color 150ms;
   }
-  > .searchBar-zdmu7v.open3y3yI_ > .icon-1nNws_ {
+  > .searchBar-jGtisZ.open-1F8u2c > .icon-1nNws_ {
     background-color: #{$color-accent} !important;
   }
-  &.open-3y3yI_ {
+  &.open-1F8u2c {
     .DraftEditor-root {
       background-color: var(--background-secondary);
 
@@ -1255,29 +1257,30 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
       transition: opacity 150ms;
       border: 2px solid var(--background-secondary);
     }
-    .searchBar-zdmu7v {
+    .searchBar-jGtisZ {
       width: 281px;
     }
   }
-  &:not(.open-3y3yI_) {
+  &:not(.open-1F8u2c) {
     .DraftEditor-root {
       transition: opacity 150ms;
       opacity: 0;
     }
-    .searchBar-zdmu7v {
+    .searchBar-jGtisZ {
       width: 40px;
     }
   }
 }
 .DraftEditor-root {
   transform: translateY(-4px);
-  .searchBar-zdmu7v[aria-expanded='true'] & {
+  .searchBar-jGtisZ[aria-expanded='true'] & {
     border-color: var(--background-modifier-selected);
   }
 }
-.searchBar-zdmu7v {
+.searchBar-jGtisZ {
   background-color: transparent;
-  height: 36px;
+  height: 26px;
+  width: 181px;
   &[aria-expanded='true'] {
     .icon-3cZ1F_,
     .icon-1nNws_:hover .icon-3cZ1F {
@@ -1286,11 +1289,10 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   }
   > .icon-1nNws_ {
     background-color: var(--background-primary);
-
-    @include border-radius('all', 'large');
-
     height: 36px;
     width: 36px;
+
+    @include border-radius('all', 'large');
     > div > svg {
       color: var(--text-normal);
     }
@@ -1300,6 +1302,9 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
     > div > svg {
       color: var(--text-dark);
     }
+  }
+  .open-1F8u2c & {
+    width: 221px;
   }
 }
 .public-DraftEditorPlaceholder-root {
@@ -1311,17 +1316,39 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 .searchFilter-2ESiM3 {
   background-color: var(--background-modifier-hover) !important;
 }
+.layer-2aCOJ3 {
 
-// Search bar popup
-.popout_2024 {
-  > div {
-    background-color: var(--background-primary) !important;
-    > ul > li:after {
-      background: linear-gradient(90deg, rgba(54, 57, 63, 0), var(--background-primary) 80%) !important;
+  // transform: translate(-54px, 8px);
+  @include border-radius('all', 'large');
+
+  // Search bar popup
+  .container-2McqkF.elevationBorderHigh-3drnJX {
+    background-color: var(--background-tertiary);
+
+    @include border-radius('all', 'large');
+    ul[role='group'] {
+      background-color: var(--background-tertiary);
+      .option-ayUoaq {
+        @include border-radius('all', 'medium');
+        &:after {
+          background: linear-gradient(90deg, transparent, var(--background-tertiary) 100%) !important;
+        }
+      }
+    }
+    .queryContainer-ZunrLZ {
+      background-color: var(--background-quaternary);
+    }
+    .resultsGroup-cfY57t {
+      @include border-radius('all', 'large');
     }
   }
-  > .container-2McqkF.elevationBorderHigh-3drnJX {
-    background-color: var(--background-primary) !important;
+
+  // Pinnes messages popup
+  > div[aria-modal='true'] {
+    &,
+    > .messagesPopoutWrap-3zryHW {
+      border-radius: var(--border-radius-1) !important;
+    }
   }
 }
 
@@ -1334,6 +1361,17 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
     background-color: var(--background-primary) !important;
 
     @include border-radius('all', 'large');
+  }
+}
+
+// Pinned messages popup
+.messagesPopoutWrap-3zryHW {
+  > .messagesPopout-eVzQcI {
+    &.thin-31rlnD {
+      &.scrollerBase-_bVAAt {
+        background-color: var(--background-tertiary) !important;
+      }
+    }
   }
 }
 
@@ -1943,25 +1981,6 @@ div[id='---new-messages-bar'] {
   }
 }
 
-// Pinned messages popup
-.messagesPopoutWrap-3zryHW {
-  > .messagesPopout-eVzQcI {
-    &.thin-31rlnD {
-      &.scrollerBase-_bVAAt {
-        background-color: var(--background-tertiary) !important;
-      }
-    }
-  }
-}
-.layer-2aCOJ3 {
-  > div[aria-modal='true'] {
-    &,
-    > .messagesPopoutWrap-3zryHW {
-      border-radius: var(--border-radius-1) !important;
-    }
-  }
-}
-
 // Inbox popup, mentions tab
 .header-145e10 {
   &.header-1w9Q93 {
@@ -2094,6 +2113,27 @@ div[id='---new-messages-bar'] {
       justify-content: flex-end;
       .children-3xh0VB {
         transform: translateX(-248px);
+      }
+    }
+  }
+  .wrapper-1gVUIN {
+    &.chatSidebarOpen--YCxhs {
+      .callContainer-HtHELf {
+        width: 50%;
+        margin-right: 8px;
+      }
+    }
+    .callContainer-HtHELf {
+      overflow: visible;
+      max-width: calc(100% - 10px);
+      .topControls-23RE3h {
+        overflow: visible;
+        .headerWrapper-1ULEPv {
+          justify-content: flex-end;
+          .children-3xh0VB {
+            transform: translateX(-248px);
+          }
+        }
       }
     }
   }
@@ -2325,6 +2365,7 @@ div[id='---new-messages-bar'] {
   background: transparent;
 }
 .members-3WRCEx {
+  padding-bottom: 32px;
   &.thin-31rlnD {
     &.scrollerBase-_bVAAt {
       &.fade-1R6FHN {
@@ -2375,7 +2416,7 @@ div[id='---new-messages-bar'] {
   margin-left: 5px;
 }
 
-// S07 USER AREA
+// User area panels
 .panels-3wFtMD {
   background-color: transparent;
   transform: translate(10px, -22px);
@@ -2430,6 +2471,16 @@ div[id='---new-messages-bar'] {
       }
     }
   }
+
+  // Voice channel panel
+  .container-1zzFcN {
+    background-color: var(--background-tertiary);
+    border: none;
+    margin-bottom: 6px;
+
+    @include border-radius('all', 'large');
+    @include box-shadow($color-hover, 'small', 1);
+  }
 }
 
 // Status menu
@@ -2467,6 +2518,16 @@ div[id='---new-messages-bar'] {
 
       @include border-radius('all', 'medium');
     }
+    &[role='menuitemcheckbox'] {
+      &[aria-checked='true'] {
+        .checkbox-hADx5o {
+          color: #{$color-accent};
+        }
+        .check-3HZJs4 {
+          color: var(--text-dark);
+        }
+      }
+    }
   }
 
   // Server settings pane list
@@ -2498,37 +2559,56 @@ div[id='---new-messages-bar'] {
 }
 
 // Server call UI
-.videoControls-353CsJ {
-  > .topControls-23RE3h {
-    &.controlSection-1mNixL {
-      margin-top: 0 !important;
-      padding-top: 10px !important;
-      > div > .headerWrapper-1ULEPv > section {
-        background-color: transparent !important;
-      }
-    }
-  }
-}
-.rightTrayIcon-1m3hnG {
-  &.button-f2h6uQ {
-    &.lookBlank-21BCro {
-      &.colorBrand-I6CyqQ {
-        background-color: transparent;
-      }
-    }
-  }
-}
-.volumeButton-3IDSX- {
-  margin: 16px;
-  padding-left: 2px;
-}
-.container-1zzFcN {
+.root-2f-lk1 {
   background-color: var(--background-tertiary);
-  margin-bottom: 6px;
+  .videoControls-353CsJ {
+    > .topControls-23RE3h {
+      &.controlSection-1mNixL {
+        margin-top: 0 !important;
+        padding-top: 10px !important;
+        > div > .headerWrapper-1ULEPv > section {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+  .rightTrayIcon-1m3hnG {
+    &.button-f2h6uQ {
+      &.lookBlank-21BCro {
+        &.colorBrand-I6CyqQ {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .volumeButton-3IDSX- {
+    margin: 16px;
+    padding-left: 2px;
+  }
+  .container-1zzFcN {
+    background-color: var(--background-tertiary);
+    margin-bottom: 6px;
+    box-shadow: var(--mid-shadow) #{$color-hover};
 
-  @include border-radius('all', 'large');
-
-  box-shadow: var(--mid-shadow) #{$color-hover};
+    @include border-radius('all', 'large');
+  }
+}
+.root-22AK9z {
+  .topControls-23RE3h {
+    margin-top: 6px;
+  }
+  &.idle-39sGPO {
+    .topControls-23RE3h {
+      opacity: 1 !important;
+      transform: unset !important;
+      transform: unset !important;
+    }
+    .chatButton-10jXXp:not(.chatButtonShowing-1aD1ch) {
+      opacity: 1 !important;
+      transform: unset !important;
+      transform: unset !important;
+    }
+  }
 }
 
 // Call buttons
@@ -3200,11 +3280,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 // Call interface
 
 // Header
-.topControls-23RE3h {
-  &.controlSection-1mNixL {
-    margin-top: 4px;
-  }
-}
 .wrapper-1gVUIN {
   &.minimum-fXpVNc {
     background-color: var(--background-tertiary) !important;
@@ -4380,14 +4455,14 @@ div.content-8jnR93 {
   &Header-rlkkJd,
   &Header-l2pbOh,
   &Header-3YAxb0 {
-    border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+    @include border-radius('top', 'large');
   }
   &Body-16Chc9,
   &Body-x9kBBp,
   &Body-3aUxuc,
   &-2pEkRl > :last-child,
   &Body-3gjrjH {
-    border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
+    @include border-radius('bottom', 'large');
   }
   &MarkerLabelPlusIcon-1OS7E9 {
     color: #{$color-accent};
