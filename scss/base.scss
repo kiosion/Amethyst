@@ -25,13 +25,74 @@ $edge-map: (
     'bottom-left': 'bottom-left',
     'bottom-right': 'bottom-right',
   );
+$icons-map: (
+    'account': ('My Account-tab'),
+    'profile': ('Profile & Customization-tab'),
+    'privacy': ('Privacy & Safety-tab', 'MODERATION-tab'),
+    'apps': ('Authorized Apps-tab'),
+    'connections': ('Connections-tab'),
+    'subscriptions': ('Subscriptions-tab'),
+    'premium': ('Premium-tab'),
+    'nitro': ('Discord Nitro-tab'),
+    'boosts': ('Nitro Server Boost-tab', 'GUILD_PREMIUM-tab'),
+    'gift': ('Library Inventory-tab'),
+    'billing': ('Billing-tab'),
+    'appearance': ('Appearance-tab'),
+    'accessibility': ('Accessibility-tab'),
+    'voice': ('Voice & Video-tab'),
+    'party': ('Powermode Settings-tab'),
+    'text': ('Text & Images-tab'),
+    'notifications': ('Notifications-tab'),
+    'keybinds': ('Keybinds-tab'),
+    'language': ('Language-tab'),
+    'windows': ('Windows-tab'),
+    'streamermode': ('Streamer Mode-tab'),
+    'advanced': ('Advanced-tab'),
+    'games': ('Game Activity-tab'),
+    'overlay': ('Overlay-tab'),
+    'changelog': ('ChangeLog-tab', 'Change Log-tab'),
+    'hypesquad': ('Hypesquad Online-tab'),
+    'experiments': ('Experiments-tab'),
+    'developer': ('Developer Options-tab'),
+    'hotspots': ('Hotspot Options-tab'),
+    'dismissable': ('Dismissible Content Options-tab'),
+    'pluginrepo': ('PluginRepo-tab'),
+    'themerepo': ('ThemeRepo-tab'),
+    'updatecheck': ('pc-updater-tab', 'updater-tab'),
+    'betterdiscord': ('bdCompat-tab'),
+    'logout': ('Logout-tab'),
+    'overview': ('OVERVIEW-tab', 'accountinfo-tab'),
+    'roles': ('ROLES-tab', 'PERMISSIONS-tab'),
+    'stickers': ('STICKERS-tab'),
+    'automoderation': ('GUILD_AUTOMOD_MESSAGE_FILTER-tab'),
+    'audit': ('AUDIT_LOG-tab', 'AUDIT_LOG_V2-tab'),
+    'integrations': ('INTEGRATIONS-tab', 'status-tab'),
+    'widgets': ('WIDGET-tab'),
+    'template': ('GUILD_TEMPLATES-tab'),
+    'vanityurl': ('VANITY_URL-tab'),
+    'community': ('COMMUNITY-tab'),
+    'voicetext': ('text_in_voice-tab'),
+    'analytics': ('ANALYTICS-tab'),
+    'partner': ('PARTNER-tab'),
+    'rules': ('MEMBER_VERIFICATION-tab'),
+    'discovery': ('DISCOVERY-tab'),
+    'welcome': ('COMMUNITY_WELCOME-tab'),
+    'threads': ('THREADS-tab'),
+    'members': ('MEMBERS-tab'),
+    'invites': ('INSTANT_INVITES-tab'),
+    'bans': ('BANS-tab'),
+    'delete': ('DELETE-tab'),
+    'settings': ('bd-settings-tab', 'astra-settings-tab', 'pc-general-tab', 'lightcord-tab', 'core-tab', 'Settings-tab', 'nth-child(3)'),
+    'emotes': ('bd-emotes-tab', 'Emotes-tab', 'EMOJI-tab', 'nth-child(4)'),
+    'custom': ('bd-customcss-tab', 'CustomCSS-tab', 'nth-child(7)'),
+    'plugins': ('bd-plugins-tab', 'Plugins-tab', 'pc-moduleManager-plugins-tab', 'nth-child(5)'),
+    'themes': ('bd-themes-tab', 'Themes-tab', 'pc-moduleManager-themes-tab', 'nth-child(6)'),
+  );
 
 // Mixins / functions
 @mixin background-opacity($color, $opacity: 0.3) {
-  background: $color;
-  background: rgba($color, $opacity);
+  background: rgba($color, $opacity) !important;
 }
-
 @mixin box-shadow($color, $size: 'medium', $intensity: 1) {
   @if map-has-key($shadow-size-map, $size) {
     box-shadow: map-get($shadow-size-map, $size) rgba($color, $intensity);
@@ -39,7 +100,6 @@ $edge-map: (
     @error '#{$size} is not defined in $shadow-size-map';
   }
 }
-
 @mixin border-radius($edge: 'all', $size: 'default') {
   @if map-has-key($border-size-map, $size) {
     @if $edge == 'all' {
@@ -59,8 +119,6 @@ $edge-map: (
     @error '#{$size} is not defined in $border-size-map';
   }
 }
-
-// CSS vars to SCSS vars
 
 // Colors
 $color-background-primary: #373949;
@@ -119,131 +177,39 @@ $settingsIconGap: 14px;
     -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/questionmark.svg') center/contain no-repeat;
   }
 }
-
-$settingsicons: (
-    'My Account-tab': 'account',
-    'Profile Customization-tab': 'profile',
-    'Privacy & Safety-tab': 'privacy',
-    'MODERATION-tab': 'privacy',
-    'Authorized Apps-tab': 'apps',
-    'Connections-tab': 'connections',
-    'Subscriptions-tab': 'subscriptions',
-    'Premium-tab': 'premium',
-    'Discord Nitro-tab': 'nitro',
-    'Nitro Server Boost-tab': 'boosts',
-    'GUILD_PREMIUM-tab': 'boosts',
-    'Library Inventory-tab': 'gift',
-    'Billing-tab': 'billing',
-    'Appearance-tab': 'appearance',
-    'Accessibility-tab': 'accessibility',
-    'Voice & Video-tab': 'voice',
-    'Powermode Settings-tab': 'party',
-    'Text & Images-tab': 'text',
-    'Notifications-tab': 'notifications',
-    'Keybinds-tab': 'keybinds',
-    'Language-tab': 'language',
-    'Windows-tab': 'windows',
-    'Streamer Mode-tab': 'streamermode',
-    'Advanced-tab': 'advanced',
-    'Game Activity-tab': 'games',
-    'Overlay-tab': 'overlay',
-    'ChangeLog-tab': 'changelog',
-    'Change Log-tab': 'changelog',
-    'Hypesquad Online-tab': 'hypesquad',
-    'Experiments-tab': 'experiments',
-    'Developer Options-tab': 'developer',
-    'Hotspot Options-tab': 'hotspots',
-    'Dismissible Content Options-tab': 'dismissable',
-    'PluginRepo-tab': 'pluginrepo',
-    'ThemeRepo-tab': 'themerepo',
-    'pc-updater-tab': 'updatecheck',
-    'updater-tab': 'updatecheck',
-    'bdCompat-tab': 'betterdiscord',
-    'Logout-tab': 'logout',
-    'OVERVIEW-tab': 'overview',
-    'accountinfo-tab': 'overview',
-    'ROLES-tab': 'roles',
-    'PERMISSIONS-tab': 'roles',
-    'STICKERS-tab': 'stickers',
-    'GUILD_AUTOMOD_MESSAGE_FILTER-tab': 'automoderation',
-    'AUDIT_LOG-tab': 'audit',
-    'AUDIT_LOG_V2-tab': 'audit',
-    'INTEGRATIONS-tab': 'integrations',
-    'status-tab': 'integrations',
-    'WIDGET-tab': 'widgets',
-    'GUILD_TEMPLATES-tab': 'template',
-    'VANITY_URL-tab': 'vanityurl',
-    'COMMUNITY-tab': 'community',
-    'text_in_voice-tab': 'voicetext',
-    'ANALYTICS-tab': 'analytics',
-    'PARTNER-tab': 'partner',
-    'MEMBER_VERIFICATION-tab': 'rules',
-    'DISCOVERY-tab': 'discovery',
-    'COMMUNITY_WELCOME-tab': 'welcome',
-    'THREADS-tab': 'threads',
-    'MEMBERS-tab': 'members',
-    'INSTANT_INVITES-tab': 'invites',
-    'BANS-tab': 'bans',
-    'DELETE-tab': 'delete',
-    'bd-settings-tab': 'settings',
-    'astra-settings-tab': 'settings',
-    'pc-general-tab': 'settings',
-    'lightcord-tab': 'settings',
-    'core-tab': 'settings',
-    'Settings-tab': 'settings',
-    'bd-emotes-tab': 'emotes',
-    'Emotes-tab': 'emotes',
-    'EMOJI-tab': 'emotes',
-    'bd-customcss-tab': 'custom',
-    'CustomCSS-tab': 'custom',
-    'bd-plugins-tab': 'plugins',
-    'Plugins-tab': 'plugins',
-    'pc-moduleManager-plugins-tab': 'plugins',
-    'bd-themes-tab': 'themes',
-    'Themes-tab': 'themes',
-    'pc-moduleManager-themes-tab': 'themes',
-    'nth-child(3)': 'settings',
-    'nth-child(4)': 'emotes',
-    'nth-child(5)': 'plugins',
-    'nth-child(6)': 'themes',
-    'nth-child(7)': 'custom',
-  );
-
 @function str-replace($string, $search: ' ', $replace: '-') {
   @while str-index($string, $search) {
     $index: str-index($string, $search);
-
     @if $index {
       @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
     }
   }
-
   @return $string;
 }
-
-@each $key, $value in $settingsicons {
-  @if str-index($key, 'nth-child') {
-    #bd-settings-sidebar .ui-tab-bar-item {
-      &:#{$key}:before {
-        -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/{$value}.svg') center/contain no-repeat;
-      }
-    }
-  } @else {
-    .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG {
-      @if str-index($key, 'bd-') {
-        &.#{$key}:before {
-          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
-        }
-      } @else {
-        &[aria-controls='#{$key}' i]:before {
-          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+@each $value, $keys in $icons-map {
+  @each $key in $keys {
+    @if str-index($key, 'nth-child') {
+      #bd-settings-sidebar .ui-tab-bar-item {
+        &:#{$key}:before {
+          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/{$value}.svg') center/contain no-repeat;
         }
       }
-
-      @if str-index($key, ' ') {
-        $dashed: str-replace($key);
-        &[aria-controls='#{$dashed}' i]:before {
-          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+    } @else {
+      .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG {
+        @if str-index($key, 'bd-') {
+          &.#{$key}:before {
+            -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+          }
+        } @else {
+          &[aria-controls='#{$key}' i]:before {
+            -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+          }
+        }
+        @if str-index($key, ' ') {
+          $dashed: str-replace($key);
+          &[aria-controls='#{$dashed}' i]:before {
+            -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+          }
         }
       }
     }
@@ -595,10 +561,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   &[aria-posinset='1'] {
     > .linkButton-2NshQj {
       &.selected-3veCBZ {
-        background-color: #{$color-accent} !important;
-
         @include border-radius('all', 'large');
-
+        background-color: #{$color-accent} !important;
         box-shadow: var(--low-shadow) #{$color-accent};
         > a {
           color: var(--text-dark) !important;
@@ -626,10 +590,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   &[aria-posinset='2'] {
     > .linkButton-2NshQj {
       &.selected-3veCBZ {
-        background-color: #{$color-accent} !important;
-
         @include border-radius('all', 'large');
-
+        background-color: #{$color-accent} !important;
         box-shadow: var(--low-shadow) #{$color-accent};
         > a {
           color: var(--text-dark) !important;
@@ -644,9 +606,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   }
   > .interactiveSelected-29CP8y {
     &.selected-3veCBZ {
-      background-color: #{$color-hover--lighter} !important;
-
       @include border-radius('all', 'medium');
+      background-color: #{$color-hover--lighter} !important;
     }
   }
 }
@@ -678,19 +639,16 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 }
 .peopleColumn-1wMU14 {
   @include border-radius('all', 'large');
-
   background-color: transparent;
 }
 .peopleColumn-1wMU14 > div:nth-of-type(2) {
   background-color: var(--background-primary);
-
   @include border-radius('top', 'medium');
 }
 .peopleListItem-u6dGxF {
+  @include border-radius('all', 'large');
   margin-top: 0;
   margin-bottom: 0;
-
-  @include border-radius('all', 'large');
 }
 .peopleListItem-u6dGxF:hover,
 .peopleListItem-u6dGxF:focus {
@@ -713,7 +671,6 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 .scroller-3X7KbA,
 .stageSection-3mAD8V {
   @include border-radius('all', 'large');
-
   margin-left: 10px;
   background-color: var(--background-primary) !important;
 }
@@ -742,10 +699,9 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 
   // Stages content
   .content-3YMskv {
+    @include border-radius('all', 'large');
     background-color: var(--background-primary);
     padding: 0 16px 16px;
-
-    @include border-radius('all', 'large');
   }
 }
 .pageWrapper-1PgVDX,
@@ -756,16 +712,13 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 
 // Friends search bar
 .searchBar-2aylmZ {
+  @include border-radius('all', 'large');
   margin: 0 0 8px;
   background-color: var(--background-primary);
-
-  @include border-radius('all', 'large');
-
   overflow: visible;
 }
 .searchBar-2aylmZ > .inner-2pOSmK {
   @include border-radius('all', 'large');
-
   padding: 8px;
   overflow: visible;
 }
@@ -807,7 +760,6 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 }
 .scroller-29cQFV.auto-2K3UW5.scrollerBase-_bVAAt {
   @include border-radius('all', 'large');
-
   margin: 6px 10px 10px 0;
 }
 
@@ -837,16 +789,13 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   background-color: var(--background-tertiary) !important;
 }
 .pageWrapper-2PwDoS {
-  margin: 10px;
-
   @include border-radius('all', 'large');
-
+  margin: 10px;
   background-color: var(--background-primary) !important;
 }
 .guildList-3GXKvP > div > .card-2TuZPZ {
-  background-color: var(--background-tertiary);
-
   @include box-shadow($color-hover, 'medium', 1);
+  background-color: var(--background-tertiary);
 }
 .guildList-3GXKvP > div > .card-2TuZPZ:hover {
   @include box-shadow($color-hover, 'large', 1);
@@ -862,9 +811,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   background-color: transparent;
 }
 .cardsContainer-39dCVY > .card-3N2v9t {
-  background-color: #{$color-background-tertiary};
-
   @include box-shadow($color-hover, 'medium', 1);
+  background-color: #{$color-background-tertiary};
 }
 .joinButton-1B9qQr {
   &.lookFilled-yCfaCM {
@@ -872,18 +820,16 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
       background-color: #{$color-green};
       color: var(--text-dark);
       &:hover {
-        background-color: #{$color-green--lighter};
-
         @include box-shadow($color-green--lighter, 'small', 1);
+        background-color: #{$color-green--lighter};
       }
     }
   }
 }
 .itemInner-3k3Sn6 {
   &.layout-1qmrhw {
-    margin: 0 8px !important;
-
     @include border-radius('all', 'medium');
+    margin: 0 8px !important;
   }
 }
 .optionItem-2tdutc {
@@ -891,7 +837,6 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
     > .itemInner-3k3Sn6 {
       &.layout-1qmrhw {
         @include box-shadow($color-accent, 'small', 1);
-
         color: var(--text-dark);
       }
     }
@@ -908,9 +853,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 // General Toolbar
 .topPill-30KHOu {
   &:not(.container-7uh5fX>div) {
-    height: 38px;
-
     @include border-radius('all', 'medium');
+    height: 38px;
   }
 }
 .focusLock-Ns3yie .top-28JiJ- .item-PXvHYJ,
@@ -921,14 +865,12 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 .container-7uh5fX .tab-PQvTH4,
 .container-2PDP7D .tab-XC_yrg {
   @include border-radius('all', 'medium');
-
   padding: 0 25px;
   height: 30px;
   border: 0;
 }
 .container-7uh5fX .tab-17bjMB {
   @include border-radius('all', 'medium');
-
   padding: 0 10px;
   border: 0;
 }
@@ -941,20 +883,17 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 }
 .container-ZMc96U .topPill-30KHOu .item-PXvHYJ {
   @include border-radius('all', 'medium');
-
   margin-top: 4px;
   height: 30px;
 }
 .contentWidth-xLB44s .top-28JiJ- .item-PXvHYJ {
   @include border-radius('all', 'medium');
-
   padding: 5px 25px 0;
   height: 30px;
   border: 0;
 }
 .tabBarItem-2QyJ0U {
   @include border-radius('all', 'medium');
-
   padding: 5px 8px;
 }
 .top-28JiJ- {
@@ -1078,14 +1017,13 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 
 // This fucking chat button. it is so bad. oh my god. please discord, put it actually INSIDE the top toolbar
 .chatButton-10jXXp {
+  @include border-radius('right', 'large');
+  @include border-radius('left', 'none');
   top: 12px;
   right: 8px;
   width: 40px;
   height: 36px;
   background-color: var(--background-primary);
-
-  @include border-radius('right', 'large');
-  @include border-radius('left', 'none');
   svg {
     color: var(--text-normal) !important;
   }
@@ -1097,10 +1035,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   }
 }
 .inviteToolbar-2k2nqz > div {
-  padding: 7px 7px 29px 10px !important;
-
   @include border-radius('left', 'large');
-
+  padding: 7px 7px 29px 10px !important;
   background-color: var(--button-background);
   margin: 1px;
 }
@@ -1156,22 +1092,17 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
     &.themed-2-lozF {
       background-color: var(--background-tertiary) !important;
       &.selected-g-kMVV {
-        background-color: #{$color-hover--lighter} !important;
-
         @include box-shadow($color-hover--lighter, 'small', 1);
         @include border-radius('all', 'medium');
+        background-color: #{$color-hover--lighter} !important;
       }
     }
     &[aria-controls='add_friend-tab'] {
+      @include border-radius('all', 'medium');
       color: var(--text-dark) !important;
       background-color: #{$color-green} !important;
-
-      @include border-radius('all', 'medium');
-
       cursor: pointer !important;
-
       @include box-shadow($color-green, 'small', 1);
-
       overflow: visible;
       &:hover {
         color: var(--text-dark) !important;
@@ -1190,9 +1121,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
     }
     &:hover {
       cursor: pointer !important;
-      background-color: #{$color-hover--lighter} !important;
-
       @include border-radius('all', 'medium');
+      background-color: #{$color-hover--lighter} !important;
     }
   }
 }
@@ -1229,12 +1159,11 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 
 // Search bar
 .search-39IXmY {
+  @include border-radius('all', 'large');
   margin: 0 8px;
   order: -1;
   padding: 5px 3px;
   background-color: #{$color-background-primary};
-
-  @include border-radius('all', 'large');
 }
 .search-2Mwzzq,
 .searchBar-jGtisZ {
@@ -1249,10 +1178,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   }
   &.open-1F8u2c {
     .DraftEditor-root {
-      background-color: var(--background-secondary);
-
       @include border-radius('all', 'medium');
-
+      background-color: var(--background-secondary);
       margin-right: 8px;
       transition: opacity 150ms;
       border: 2px solid var(--background-secondary);
@@ -1291,7 +1218,6 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
     background-color: var(--background-primary);
     height: 36px;
     width: 36px;
-
     @include border-radius('all', 'large');
     > div > svg {
       color: var(--text-normal);
@@ -1323,9 +1249,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 
   // Search bar popup
   .container-2McqkF.elevationBorderHigh-3drnJX {
-    background-color: var(--background-tertiary);
-
     @include border-radius('all', 'large');
+    background-color: var(--background-tertiary);
     ul[role='group'] {
       background-color: var(--background-tertiary);
       .option-ayUoaq {
@@ -1358,9 +1283,8 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   margin-bottom: 10px;
   background-color: transparent !important;
   > .scroller-3iiyhZ.thin-31rlnD.scrollerBase-_bVAAt {
-    background-color: var(--background-primary) !important;
-
     @include border-radius('all', 'large');
+    background-color: var(--background-primary) !important;
   }
 }
 
@@ -1390,7 +1314,6 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   }
   > div {
     @include box-shadow($color-hover, 'large', 0.6);
-
     pointer-events: all;
   }
   > div,
@@ -1458,9 +1381,8 @@ div > .activeButtonChild-2hgLAO > svg > path,
 
 // Upload modal
 .menu-1QACrS.styleFlexible-x0_sIC.menu-1dOGCq {
-  transform: translateY(-6px);
-
   @include box-shadow($color-hover, 'medium', 1);
+  transform: translateY(-6px);
 }
 
 // Typing indicator
@@ -1480,14 +1402,20 @@ div > .activeButtonChild-2hgLAO > svg > path,
   // STUDENT HUB VIEW
   > .pageContainer-36uo3F {
     @include border-radius('all', 'large');
-
     margin: 0 10px 10px;
     max-width: none !important;
   }
 }
 
-// Message action buttons
+// Chat message
 .message-2CShn3 {
+  transition: background-color 100ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  &:hover,
+  &.selected-2LX7Jy {
+    @include background-opacity($color-background-quaternary, 0.3);
+  }
+
+  // Action buttons
   .buttonContainer-1502pf {
     border: none;
     .buttons-3dF5Kd {
@@ -1495,15 +1423,15 @@ div > .activeButtonChild-2hgLAO > svg > path,
       overflow: visible;
       .wrapper-2vIMkT {
         @include border-radius('all', 'medium');
-
+        @include box-shadow($color-hover, 'medium', 0.6);
         overflow: visible;
         border: none;
         .button-3bklZh {
+          background-color: #{$color-background-tertiary};
           border: none;
           &:hover,
           &.selected-69H4ua {
-            @include box-shadow($color-accent, 'small', 0.6);
-
+            @include box-shadow($color-accent, 'small', 0.7);
             background-color: #{$color-accent};
             > svg {
               color: var(--text-dark) !important;
@@ -1515,6 +1443,9 @@ div > .activeButtonChild-2hgLAO > svg > path,
           &:last-of-type {
             @include border-radius('right', 'medium');
           }
+        }
+        &:hover {
+          @include box-shadow($color-hover, 'large', 0.8);
         }
       }
     }
@@ -1533,9 +1464,7 @@ div > .activeButtonChild-2hgLAO > svg > path,
   margin-right: 10px;
   margin-left: 0;
   background-color: #{$color-background-primary};
-
   @include border-radius('all', 'large');
-
   overflow: hidden;
 }
 .embedFull-1HGV2S {
@@ -1553,11 +1482,9 @@ div > .activeButtonChild-2hgLAO > svg > path,
   .reaction-3vwAF2 {
     background-color: #{$color-hover--lighter};
     border-color: transparent;
-
     @include border-radius('all', 'medium');
     &.reactionMe-1PwQAc {
       @include background-opacity($color-accent, 0.4);
-
       border-color: transparent;
       &:hover {
         @include background-opacity($color-accent, 0.3);
@@ -1576,7 +1503,6 @@ div > .activeButtonChild-2hgLAO > svg > path,
 .container-3i3IzO {
   &.systemMessageContainer-3F3V9U {
     background-color: #{$color-background-tertiary};
-
     @include border-radius('all', 'medium');
   }
 }
@@ -1631,7 +1557,6 @@ div > .activeButtonChild-2hgLAO > svg > path,
 // Inline code blocks
 .markup-2BOw-j code {
   background-color: #{$color-hover};
-
   @include border-radius('all', 'medium');
 }
 code.inline {
@@ -1646,7 +1571,6 @@ code.inline {
 .autocomplete-1vrmpx {
   background-color: var(--background-tertiary);
   border: 1px solid #{$color-border};
-
   @include border-radius('all', 'large');
 }
 .autocomplete-1vrmpx .selected-3xBBKs,
@@ -1655,7 +1579,6 @@ code.inline {
 }
 .selected-1Tbx07 {
   background-color: var(--background-modifier-hover);
-
   @include border-radius('all', 'medium');
 }
 .categoryHeader-O1zU94 {
@@ -1684,7 +1607,6 @@ code.inline {
 }
 .reactionSelected-1pqISm {
   @include border-radius('all', 'medium');
-
   background-color: var(--background-modifier-selected) !important;
   .colorStandard-2KCXvj {
     color: var(--interactive-selected);
@@ -1708,9 +1630,7 @@ code.inline {
   background-color: #{$color-accent};
   border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
   transform: translateY(-60px);
-
   @include box-shadow($color-accent, 'small', 1);
-
   padding-bottom: 4px;
   padding-top: 4px;
   > button,
@@ -1733,7 +1653,6 @@ code.inline {
 }
 .wrapper-2aW0bm {
   @include border-radius('all', 'medium');
-
   border: 1px solid #{$color-border};
 }
 .button-1ZiXG9 {
@@ -1774,12 +1693,10 @@ div[id='---new-messages-bar'] {
 }
 .messagesWrapper-RpOMA3 {
   overflow: hidden;
-
   @include border-radius('all', 'large');
 }
 .newMessagesBar-1hF-9G {
   background-color: #{$color-accent} !important;
-
   @include box-shadow($color-accent, 'small', 1);
   > button {
     color: var(--text-dark);
@@ -1809,7 +1726,6 @@ div[id='---new-messages-bar'] {
   }
   .chat-1WUuAG {
     @include border-radius('all', 'large');
-
     background-color: var(--background-primary);
   }
 }
@@ -1819,7 +1735,6 @@ div[id='---new-messages-bar'] {
 }
 .channelTextAreaInner-1WnnRS {
   @include border-radius('all', 'large');
-
   background-color: var(--background-primary);
 }
 .resizeHandle-PBRzPC {
@@ -1963,7 +1878,6 @@ div[id='---new-messages-bar'] {
       background-color: var(--background-tertiary);
       transform: translateX(38px);
       box-shadow: var(--mid-shadow) #{$color-hover};
-
       @include border-radius('all', 'large');
       > .containerBackground-Ang24O {
         display: none;
@@ -2034,7 +1948,6 @@ div[id='---new-messages-bar'] {
     > div > .channel-3NJZ1V {
       > .channelHeader-DFRX8q {
         @include border-radius('all', 'large');
-
         margin-bottom: 8px;
       }
       > .messages-23can0 {
@@ -2094,7 +2007,6 @@ div[id='---new-messages-bar'] {
     .nowPlayingColumn-1eCBCN {
       overflow: hidden;
       margin-left: 10px;
-
       @include border-radius('all', 'large');
       .scroller-hE2gWq {
         padding-left: 0 !important;
@@ -2165,33 +2077,36 @@ div[id='---new-messages-bar'] {
 
 // Channel / voice channel styling
 .containerDefault-YUSmu3 {
+  .content-1gYQeQ {
+    transition:
+      background-color 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+      box-shadow 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    @include border-radius('all', 'medium');
+    path {
+      transition: fill 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+    > a > div > div {
+      transition: color 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+  }
   &:hover {
     &,
     > div,
-    > div > .content-1gYQeQ,
-    > div > div > .content-1gYQeQ {
+    .content-1gYQeQ {
       background-color: transparent;
     }
   }
-  &.selected-2TbFuo > div,
-  &.selected-2TbFuo > div > div,
-  > div > .modeSelected-3DmyhH {
-    > .content-1gYQeQ {
+  &.selected-2TbFuo,
+  .modeSelected-3DmyhH {
+    .content-1gYQeQ {
       background-color: #{$color-accent} !important;
-
-      @include border-radius('all', 'medium');
       @include box-shadow($color-accent, 'small', 0.9);
-    }
-  }
-  &.selected-2TbFuo > div > .content-1gYQeQ,
-  > div > .modeSelected-3DmyhH > .content-1gYQeQ {
-    > div > svg > path,
-    > a > div > svg > path,
-    > .children-1MGS9G > div > svg > path {
-      fill: var(--text-dark);
-    }
-    > a > div > div {
-      color: var(--text-dark);
+      path {
+        fill: var(--text-dark);
+      }
+      > a > div > div {
+        color: var(--text-dark);
+      }
     }
   }
 
@@ -2239,7 +2154,6 @@ div[id='---new-messages-bar'] {
     @include border-radius('all', 'medium');
     > div {
       background-color: #{$color-hover--lighter} !important;
-
       @include border-radius('all', 'medium');
     }
   }
@@ -2257,7 +2171,6 @@ div[id='---new-messages-bar'] {
       &,
       &:hover {
         background-color: #{$color-hover--lighter} !important;
-
         @include border-radius('all', 'medium');
       }
     }
@@ -2366,7 +2279,6 @@ div[id='---new-messages-bar'] {
       &.fade-1R6FHN {
         margin-right: 10px;
         margin-bottom: 10px;
-
         @include border-radius('all', 'large');
       }
     }
@@ -2399,7 +2311,6 @@ div[id='---new-messages-bar'] {
     &.selected-1-Z6gm {
       > .layout-1qmrhw {
         background-color: #{$color-hover--lighter};
-
         @include border-radius('all', 'medium');
       }
     }
@@ -2407,7 +2318,6 @@ div[id='---new-messages-bar'] {
 }
 .bannerPlaceholder-edbQI2 {
   @include border-radius('all', 'large');
-
   margin-left: 5px;
 }
 
@@ -2418,13 +2328,10 @@ div[id='---new-messages-bar'] {
   position: absolute;
   bottom: 0;
   width: 220px;
-
   @include border-radius('all', 'large');
   > .container-YkUktl {
     background-color: var(--background-tertiary);
-
     @include border-radius('all', 'large');
-
     box-shadow: var(--high-shadow) #{$color-hover};
     height: 44px;
     > div > button {
@@ -2452,9 +2359,7 @@ div[id='---new-messages-bar'] {
   > .panel-2ZFCRb {
     &.activityPanel-9icbyU {
       background-color: var(--background-tertiary);
-
       @include border-radius('all', 'large');
-
       box-shadow: var(--mid-shadow) #{$color-hover};
       margin-bottom: 6px;
       &,
@@ -2472,7 +2377,6 @@ div[id='---new-messages-bar'] {
     background-color: var(--background-tertiary);
     border: none;
     margin-bottom: 6px;
-
     @include border-radius('all', 'large');
     @include box-shadow($color-hover, 'small', 1);
   }
@@ -2496,11 +2400,9 @@ div[id='---new-messages-bar'] {
 .menu-1QACrS {
   &.styleFixed-2_NfVL {
     &.menu-1AgizY {
-      background-color: var(--background-tertiary);
-      transform: translate(-8px, -6px) !important;
-
       @include border-radius('all', 'large');
-
+      background-color: var(--background-quaternary);
+      transform: translate(-8px, -6px) !important;
       box-shadow: var(--mid-shadow) #{$color-hover};
       width: 220px !important;
     }
@@ -2510,7 +2412,6 @@ div[id='---new-messages-bar'] {
   &.colorDefault-CDqZdO {
     &.focused-3qFvc8 {
       background-color: #{$color-hover--lighter};
-
       @include border-radius('all', 'medium');
     }
     &[role='menuitemcheckbox'] {
@@ -2584,7 +2485,6 @@ div[id='---new-messages-bar'] {
     background-color: var(--background-tertiary);
     margin-bottom: 6px;
     box-shadow: var(--mid-shadow) #{$color-hover};
-
     @include border-radius('all', 'large');
   }
 }
@@ -2593,7 +2493,6 @@ div[id='---new-messages-bar'] {
     margin-top: 6px;
   }
   &.idle-39sGPO {
-    /* stylelint-disable */
     .topControls-23RE3h {
       opacity: 1 !important;
       transform: unset !important;
@@ -2604,7 +2503,6 @@ div[id='---new-messages-bar'] {
       transform: unset !important;
       -webkit-transform: unset !important;
     }
-    /* stylelint-enable */
   }
 }
 
@@ -2667,10 +2565,8 @@ div[id='---new-messages-bar'] {
 
 // Spotify listening-along ui
 .listeningAlong-6YvYsc {
-  background-color: var(--background-tertiary);
-
   @include border-radius('all', 'large');
-
+  background-color: var(--background-tertiary);
   box-shadow: var(--mid-shadow) #{$color-hover};
   margin-bottom: 6px;
 }
@@ -2678,10 +2574,8 @@ div[id='---new-messages-bar'] {
 // Notice region popups
 .noticeRegion-qjyUVg {
   .container-20TyK0 {
-    background-color: var(--background-quaternary) !important;
-
     @include border-radius('all', 'large');
-
+    background-color: var(--background-quaternary) !important;
     box-shadow: var(--mid-shadow) #{$color-hover};
     padding: 12px 12px 12px 18px;
     .lookFilled-yCfaCM.colorGreen-3y-Z79 {
@@ -2695,6 +2589,14 @@ div[id='---new-messages-bar'] {
 }
 
 // BUTTONS
+.fieldButton-14lHvK,
+.lookOutlined-3yKVGo,
+.lookFilled-yCfaCM {
+  transition:
+    box-shadow 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+    background-color 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+    color 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 
 // Field buttons
 .fieldButton-14lHvK {
@@ -2704,10 +2606,10 @@ div[id='---new-messages-bar'] {
       &.colorGrey-2iAG-B {
         background-color: var(--background-quaternary) !important;
         color: var(--text-normal) !important;
-        box-shadow: var(--mid-shadow) #{$color-hover} !important;
+        @include box-shadow($color-hover, 'small', 0.6);
         &:hover {
           background-color: #{$color-hover--lighter} !important;
-          box-shadow: var(--mid-shadow) #{$color-hover--lighter} !important;
+          @include box-shadow($color-hover--lighter, 'small', 1);
         }
       }
     }
@@ -2730,12 +2632,12 @@ div[id='---new-messages-bar'] {
   &.colorRed-rQXKgM {
     border-color: #{$color-red} !important;
     color: var(--text-normal) !important;
-    box-shadow: var(--mid-shadow) #{$color-hover} !important;
+    @include box-shadow($color-hover, 'small', 0.6);
     &:hover {
       border-color: #{$color-red--lighter} !important;
       background-color: #{$color-red--lighter} !important;
       color: var(--text-dark) !important;
-      box-shadow: 0 0 10px 0 #{$color-red--lighter} !important;
+      @include box-shadow($color-red--lighter, 'small', 1);
     }
   }
 }
@@ -2754,20 +2656,21 @@ div[id='---new-messages-bar'] {
   &.colorBrand-I6CyqQ {
     background-color: #{$color-accent} !important;
     color: var(--text-dark) !important;
-    box-shadow: var(--mid-shadow) #{$color-hover} !important;
+    @include box-shadow($color-hover, 'small', 0.6);
     &:hover {
       background-color: #{$color-accent} !important;
       color: var(--text-dark) !important;
-      box-shadow: 0 0 10px 0 #{$color-accent} !important;
+      @include box-shadow($color-accent, 'small', 1);
     }
   }
 
   // Grey
   &.colorGrey-2iAG-B {
     background-color: #{$color-hover--darker} !important;
+    @include box-shadow($color-hover, 'small', 0.6);
     &:hover {
       background-color: #{$color-hover--lighter} !important;
-      box-shadow: var(--mid-shadow) #{$color-hover--lighter} !important;
+      @include box-shadow($color-hover--lighter, 'small', 1);
     }
   }
 
@@ -2775,11 +2678,11 @@ div[id='---new-messages-bar'] {
   &.colorRed-rQXKgM {
     background-color: #{$color-red} !important;
     color: var(--text-dark) !important;
-    box-shadow: var(--mid-shadow) #{$color-hover} !important;
+    @include box-shadow($color-hover, 'small', 0.6);
     &:hover {
       background-color: #{$color-red--lighter} !important;
       color: var(--text-dark) !important;
-      box-shadow: 0 0 10px 0 #{$color-red--lighter} !important;
+      @include box-shadow($color-red--lighter, 'small', 1);
     }
   }
 }
@@ -2901,7 +2804,6 @@ button.lookBlank-3eh9lL {
 // Invite inline
 .wrapper-1HIH0j {
   background-color: var(--background-tertiary);
-
   @include border-radius('all', 'medium');
   > div > .button-2b4VEQ {
     background-color: #{$color-green};
@@ -3021,7 +2923,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 }
 .listRow-2nO1T6 {
   margin: 2px 8px;
-
   @include border-radius('all', 'large');
 }
 .root-jbEB5E {
@@ -3154,7 +3055,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 }
 .userPopout-xaxa6l {
   @include border-radius('all', 'large');
-
   border: 1px solid #{$color-border};
 }
 .tabBar-2hXqzU {
@@ -3207,7 +3107,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 .activityUserPopout-2MzGCj {
   > .buttonsWrapper-2ARRp1 > button {
     background-color: #{$color-hover--lighter};
-
     @include border-radius('all', 'medium');
     &:hover {
       background-color: #{$color-hover--lighter};
@@ -3224,9 +3123,7 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 }
 .connectedAccounts-1YaT2t > div {
   background-color: var(--background-primary);
-
   @include border-radius('all', 'medium');
-
   padding: 6px 10px;
 }
 
@@ -3284,7 +3181,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 }
 .container-2x5lvQ section {
   @include border-radius('all', 'large');
-
   background-color: var(--background-tertiary) !important;
   border: 1px solid #{$color-border};
 }
@@ -3298,7 +3194,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 }
 .list-2luk8a .content-1Wq3SX {
   margin-right: 10px;
-
   @include border-radius('all', 'medium');
 }
 .bottomControls-31YuPK > :last-child > div > button {
@@ -3363,7 +3258,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
         > div > svg {
           color: var(--text-normal) !important;
         }
-
         background: #{$color-hover--lighter} !important;
       }
     }
@@ -3429,7 +3323,6 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 .standardSidebarView-E9Pc3j {
   > .contentRegion-3HkfJJ {
     margin: 10px;
-
     @include border-radius('all', 'large');
   }
 }
@@ -3568,9 +3461,7 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
 }
 .closeButton-PCZcma {
   background-color: transparent;
-
   @include border-radius('all', 'medium');
-
   border-color: var(--text-secondary) !important;
   > svg > path {
     fill: var(--text-secondary) !important;
@@ -3663,26 +3554,31 @@ div {
 // Profile customization tab
 .bioTextArea-dDGOeC {
   background-color: var(--background-tertiary) !important;
-
   @include border-radius('all', 'medium');
 }
 
 // Settings menu list items
+.sidebarRegion-1VBisG,
+.sidebarRegionScroller-FXiQOh,
+.sidebar-nqHbhN {
+  overflow-x: visible !important;
+}
 .side-2ur1Qk {
+  overflow: visible;
   > .item-3XjbnG {
+    transition:
+      background-color 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+      box-shadow 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+      color 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    @include border-radius('all', 'medium');
     &:hover {
       background-color: #{$color-hover--lighter} !important;
-
-      @include border-radius('all', 'medium');
     }
     &.selected-g-kMVV,
     &.selected-g-kMVV:hover {
       background-color: #{$color-accent} !important;
       color: var(--text-dark) !important;
-
-      @include border-radius('all', 'medium');
-
-      box-shadow: var(--low-shadow) #{$color-accent};
+      @include box-shadow($color-accent, 'small', 0.9);
     }
   }
 }
@@ -3704,7 +3600,6 @@ div {
 .searchContainer-16qhPt > div > .inner-2pOSmK,
 .content-2a4AW9 > div > .container-3EtAkD {
   @include border-radius('all', 'medium');
-
   box-shadow: 0 0 12px -2px #{$color-hover};
 }
 
@@ -3720,12 +3615,10 @@ div {
 }
 .notice-1Qe0b_ {
   background-color: var(--background-tertiary);
-
   @include border-radius('all', 'large');
 }
 .tooltip-2QfLtc {
   @include border-radius('all', 'large');
-
   background-color: var(--background-tertiary);
   border: 1px solid #{$color-border};
 }
@@ -3741,7 +3634,6 @@ div {
 }
 .container-1eFT6O {
   @include border-radius('all', 'large');
-
   border: 1px solid #{$color-border};
   .selected-2114Fj {
     background-color: var(--background-modifier-active);
@@ -3850,7 +3742,6 @@ svg.slider-TkfMQL svg,
 .select-1Ia3hD.lookFilled-1GseHa,
 .inputDefault-3FGxgL.input-2g-os5 {
   background-color: var(--background-quaternary);
-
   @include border-radius('all', 'medium');
 }
 .select-1Ia3hD.open-1FRZsK.lookFilled-1GseHa {
@@ -3915,7 +3806,6 @@ svg.slider-TkfMQL svg,
 .quickSelectPopoutOption-opKBx9,
 .bd-select .bd-select-option {
   margin: 8px;
-
   @include border-radius('all', 'medium');
 }
 .css-1yz4bi9-option,
@@ -3923,7 +3813,6 @@ svg.slider-TkfMQL svg,
 .css-1ba14n5-option {
   margin: 8px !important;
   width: auto;
-
   @include border-radius('all', 'medium');
 }
 .colorBrand-3cPPsm {
@@ -3942,7 +3831,6 @@ svg.slider-TkfMQL svg,
 .radioBar-3w9XY-,
 .container-3EtAkD {
   background-color: #{$color-hover} !important;
-
   @include border-radius('all', 'medium');
 }
 .horizontal-1Piu5-.itemFilled-1cPbtg {
@@ -3952,15 +3840,13 @@ svg.slider-TkfMQL svg,
 // Dropdowns
 .menu-1QACrS,
 .scroller-1bVxF5.thin-31rlnD.scrollerBase-_bVAAt {
-  background-color: var(--background-tertiary);
-
+  background-color: var(--background-quaternary);
   @include border-radius('all', 'large');
 }
 .select-2TCrqx > div,
 .bd-select,
 .select-2TCrqx > div > div {
   @include border-radius('all', 'large');
-
   background-color: var(--background-secondary);
   border-color: var(--background-secondary) !important;
 }
@@ -3992,9 +3878,7 @@ div > .layer-2aCOJ3 > div > .tooltipPointer-3L49xb {
 }
 div > .layer-2aCOJ3 > .tooltip-14MtrL {
   background-color: var(--background-quaternary) !important;
-
   @include border-radius('all', 'medium');
-
   box-shadow: var(--mid-shadow) #{$color-hover} !important;
 }
 
@@ -4037,7 +3921,6 @@ div > .layer-2aCOJ3 > .tooltip-14MtrL {
 }
 .option-3KoAJB {
   @include border-radius('all', 'large');
-
   margin: 8px;
   color: var(--text-normal) !important;
   > div {
@@ -4076,7 +3959,6 @@ div > .layer-2aCOJ3 > .tooltip-14MtrL {
 .messageGroupWrapper-o-Zw7G {
   margin: 0 10px 10px 4px;
   background-color: var(--background-tertiary);
-
   @include border-radius('all', 'large');
 }
 .messageGroupCozy-2iY6cT,
@@ -4151,7 +4033,6 @@ div > .layer-2aCOJ3 > .tooltip-14MtrL {
 // SHORTCUTS
 .keyboardShortcutsModal-2CRmCm {
   background-color: var(--background-tertiary) !important;
-
   @include border-radius('all', 'large');
 }
 .keybindShortcut-3zF1P9 span {
@@ -4251,7 +4132,6 @@ div > .layer-2aCOJ3 > .tooltip-14MtrL {
 // Misc
 div.content-8jnR93 {
   background-color: #{$color-hover} !important;
-
   @include border-radius('all', 'medium');
 }
 .button-VcfFL2 {
@@ -4285,7 +4165,6 @@ div.content-8jnR93 {
     border-bottom: 0 !important;
     margin-bottom: 6px;
     padding: 10px 10px 4px !important;
-
     @include border-radius('all', 'large');
     > div > .coverWrapper-YAplwJ {
       border-radius: var(--border-radius-2) !important;
@@ -4386,7 +4265,6 @@ div.content-8jnR93 {
 .select-2fjwPw,
 .card-2Mz_4z {
   background-color: var(--background-secondary) !important;
-
   @include border-radius('all', 'large');
 }
 .wrapper-3D2qGf,
@@ -4398,7 +4276,6 @@ div.content-8jnR93 {
   background: var(--background-secondary) !important;
   border-color: #{$color-border} !important;
   padding: 10px;
-
   @include border-radius('all', 'large');
 }
 .hljs {
@@ -4440,7 +4317,6 @@ div.content-8jnR93 {
 }
 .ctaBar-2nFzdG {
   @include border-radius('all', 'large');
-
   background-image: none !important;
 }
 .perk-2WeBWW,
