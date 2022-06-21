@@ -1087,42 +1087,37 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 }
 
 // Top pill friends list tabs
-.item-3mHhwr {
-  &.item-3XjbnG {
-    &.themed-2-lozF {
-      background-color: var(--background-tertiary) !important;
-      &.selected-g-kMVV {
-        @include box-shadow($color-hover--lighter, 'small', 1);
-        @include border-radius('all', 'medium');
-        background-color: #{$color-hover--lighter} !important;
-      }
-    }
-    &[aria-controls='add_friend-tab'] {
-      @include border-radius('all', 'medium');
-      color: var(--text-dark) !important;
-      background-color: #{$color-green} !important;
-      cursor: pointer !important;
-      @include box-shadow($color-green, 'small', 1);
-      overflow: visible;
-      &:hover {
-        color: var(--text-dark) !important;
-        background-color: #{$color-green--lighter} !important;
-        cursor: pointer !important;
-      }
-    }
-  }
-}
 .tabBar-ra-EuL {
-  > .item-3mHhwr {
-    &[aria-selected='true'],
-    &[aria-selected='true']:hover {
-      cursor: normal !important;
-      background-color: #{$color-hover--lighter} !important;
-    }
-    &:hover {
-      cursor: pointer !important;
+  .item-3mHhwr {
+    &.item-3XjbnG {
       @include border-radius('all', 'medium');
-      background-color: #{$color-hover--lighter} !important;
+      background-color: var(--background-tertiary);
+      &.selected-g-kMVV,
+      &[aria-selected='true'] {
+        @include box-shadow($color-hover--lighter, 'small', 0.6);
+        background-color: #{$color-hover--lighter};
+      }
+      &:not(.disabled-1nofHP) {
+        &[aria-selected='true'],
+        &[aria-selected='true']:hover,
+        &:hover {
+          cursor: normal !important;
+          background-color: #{$color-hover--lighter};
+        }
+      }
+      &[aria-controls='add_friend-tab'] {
+        color: var(--text-dark) !important;
+        background-color: #{$color-green} !important;
+        cursor: pointer !important;
+        @include box-shadow($color-green, 'small', 1);
+        overflow: visible;
+        &:hover,
+        &[aria-selected='true'] {
+          color: var(--text-dark) !important;
+          background-color: #{$color-green--lighter} !important;
+          cursor: pointer !important;
+        }
+      }
     }
   }
 }
@@ -1134,6 +1129,18 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
     background-color: transparent;
   }
 }
+
+// Friends pending page
+.emptyStateContainer-1NHrfT,
+.emptyState-30PyIN {
+  .image-20MDYu {
+    mix-blend-mode: luminosity;
+  }
+}
+
+// Friends blocked page
+
+// Add friends page
 
 // Toolbar icons
 .iconWrapper-2awDjA {
@@ -3862,6 +3869,9 @@ svg.slider-TkfMQL svg,
 // BUTTONS
 button {
   &[disabled] {
+    &:hover {
+      box-shadow: initial !important;
+    }
     &.lookFilled-yCfaCM {
       &.colorPrimary-2AuQVo {
         background-color: #{$color-background-primary};
