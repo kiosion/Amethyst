@@ -1,119 +1,31 @@
 /**
 * @name Amethyst
-* @version 0.1.0
-* @description A fork of Zelk, using a Dracula-inspired colour scheme and comtaining various tweaks and quality-of-life changes.
+* @version 0.2.0
+* @description A dark, minimal, modern rework of Discord's UI, with a purple colour scheme & miscillaneous UI tweaks. 
 * @author kiosion
 * @authorId 346430063006187531
 * @source https://github.com/kiosion/Amethyst
-* @invite kio
+* @invite kiosion
 */
 
 @import url('https://kiosion.github.io/Amethyst/css/base.css');
-:root {
 
-  /* change to 'unset' from 'none' to show elements */
+/* change variables to 'unset' from 'none' to show elements */
+:root {
 
   /* scrollbars */
   --scrollbars: none;
 
-  /* profile notes */
+  /* profile card notes */
   --notes: none;
 
-  /* direct message box */
+  /* profile card dm box */
   --message: none;
 
-  /* fonts */
+  /* default fonts */
   --font-primary: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-display: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 
-  /* border radius' */
-  --border-radius-1: 14px;
-  --border-radius-2: 8px;
-
-  /* shadow/glow intensities */
-  --low-shadow: 0 0 12px -2px;
-  --mid-shadow: 0 0 14px 0;
-  --high-shadow: 0 0 18px 2px;
-
   /* gif/sticker buttons in msg bar */
   --gif-sticker-buttons: none;
-}
-
-/* Dark colours */
-.theme-dark {
-  --background-1: #373949;
-  --background-2: #282a36;
-  --background-3: #1e2029;
-  --border-color: #373949;
-  --hover-color: #22242e81;
-  --hover-color-lighter: #5d607781;
-  --hover-color-darker: #15151b81;
-  --accent-color: #caa3ff;
-  --white: #f8f8f2;
-  --white-darker: #aab3ce;
-  --muted-color: #6d7dab;
-  --purple: #bd93f9;
-  --light-orange: #f7c38c;
-  --orange: #ffb86c;
-  --light-green: #94ffaf;
-  --green: #51fd7c;
-  --light-blue: #cdf5fe;
-  --blue: #68e1fd;
-  --dark-blue: #30c6e8;
-  --light-red: #ff9999;
-  --red: #ff5555;
-
-  /* background */
-  --background-primary: var(--background-1);
-  --background-primary-alt: var(--background-1);
-  --background-secondary: var(--background-1);
-  --background-secondary-alt: var(--background-1);
-  --background-tertiary: var(--background-2);
-  --background-quaternary: var(--background-3);
-  --background-1-gradient: var(--background-2);
-  --background-floating: var(--background-1);
-  --background-mentioned: #cca7ff15;
-  --background-mentioned-hover: #cca7ff2a;
-
-  /* modifiers */
-  --background-modifier-hover: var(--background-1);
-  --background-modifier-active: var(--background-1);
-  --background-modifier-selected: var(--accent-color);
-  --background-modifier-accent: var(--background-1);
-  --background-message-hover: var(--hover-color);
-
-  /* text */
-  --text-normal: var(--white);
-  --text-secondary: var(--white-darker);
-  --text-positive: var(--white);
-  --text-muted: var(--muted-color);
-  --text-link: var(--blue);
-  --text-dark: var(--background-2);
-  --interactive-selected: var(--text-normal);
-  --interactive-active: var(--text-normal);
-  --interactive-normal: var(--text-normal);
-  --interactive-muted: var(--muted-color);
-  --channels-default: var(--text-secondary);
-  --header-primary: var(--text-normal);
-  --header-secondary: var(--text-muted);
-
-  /* more */
-  --settings-icon-color: var(--white);
-  --control-brand-foreground: var(--accent-color);
-  --info-warning-foreground: var(--orange);
-  --tab-selected: var(--background-1);
-  --switch: var(--background-2);
-  --activity-card-background: var(--background-2);
-  --brand-experiment: var(--accent-color) !important;
-
-  /* buttons */
-  --button-background: var(--background-2);
-  --button-background-hover: var(--accent-color);
-  --button-background-active: var(--background-1);
-  --button-accent: var(--accent-color);
-  --button-accent-hover: var(--accent-color);
-  --button-accent-active: var(--background-1);
-  --button-destructive: var(--red);
-  --button-destructive-hover: var(--light-red);
-  --button-destructive-active: var(--red);
 }

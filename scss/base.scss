@@ -42,19 +42,19 @@
       color: var(--text-normal) !important;
       &:nth-of-type(3n+1) {
         &:hover {
+          @include box-shadow($color-green, 'small', 0.8);
           background-color: #{$color-green} !important;
-          box-shadow: var(--low-shadow) #{$color-green} !important;
           color: var(--text-dark) !important;
         }
       }
       &:nth-of-type(3n+2):hover,
       &:nth-of-type(3n+3) {
+        @include box-shadow($color-red, 'small', 0.8);
         background-color: #{$color-red} !important;
-        box-shadow: var(--low-shadow) #{$color-red} !important;
         color: var(--text-dark) !important;
         &:hover {
+          @include box-shadow($color-red--lighter, 'small', 0.8);
           background-color: #{$color-red--lighter} !important;
-          box-shadow: var(--low-shadow) #{$color-red--lighter} !important;
           color: var(--text-dark) !important;
         }
       }
@@ -85,9 +85,9 @@
         background-color: var(--background-primary) !important;
         color: var(--text-normal) !important;
         &:hover {
+          @include box-shadow($color-green, 'small', 0.8);
           background-color: #{$color-green} !important;
           color: var(--text-dark) !important;
-          box-shadow: var(--low-shadow) #{$color-green} !important;
         }
       }
     }
@@ -103,8 +103,8 @@
     > .linkButton-2NshQj {
       &.selected-3veCBZ {
         @include border-radius('all', 'large');
+        @include box-shadow($color-accent, 'small', 0.8);
         background-color: #{$color-accent} !important;
-        box-shadow: var(--low-shadow) #{$color-accent};
         > a {
           color: var(--text-dark) !important;
         }
@@ -186,8 +186,8 @@
   transition: none !important;
 }
 .actionButton-3-B2x-.highlight-3DSi7b:hover {
+  @include box-shadow($color-accent, 'small', 0.8);
   background-color: #{$color-accent};
-  box-shadow: var(--low-shadow) #{$color-accent};
   color: var(--text-dark);
 }
 .chatContent-3KubbW,
@@ -249,7 +249,7 @@
 .searchBar-2aylmZ:hover > .inner-2pOSmk,
 .searchBar-2aylmZ:focus > .inner-2pOSmk,
 .searchBar-2aylmZ:focus-within > .inner-2pOSmk {
-  box-shadow: var(--mid-shadow) #{$color-accent};
+  @include box-shadow($color-accent, 'medium', 1);
 }
 .tabBody-2dgbAs {
   margin-right: 10px;
@@ -268,8 +268,8 @@
   display: none;
 }
 .body-16rSsp.inset-SbsSFp > section {
+  @include box-shadow($color-hover, 'medium', 1);
   background-color: var(--background-tertiary);
-  box-shadow: var(--mid-shadow) #{$color-hover};
 }
 .wrapper-2RrXDg {
   border: none;
@@ -1420,7 +1420,7 @@ div[id='---new-messages-bar'] {
     > .container-1ZA19X {
       background-color: var(--background-tertiary);
       transform: translateX(38px);
-      box-shadow: var(--mid-shadow) #{$color-hover};
+      @include box-shadow($color-hover, 'medium', 1);
       @include border-radius('all', 'large');
       > .containerBackground-Ang24O {
         display: none;
@@ -1445,8 +1445,8 @@ div[id='---new-messages-bar'] {
       background-color: var(--background-primary);
       &:hover,
       &.active-1grPyy {
+        @include box-shadow($color-hover--lighter, 'small', 1);
         background-color: #{$color-hover--lighter} !important;
-        box-shadow: var(--low-shadow) #{$color-hover--lighter};
       }
     }
     > div > .secondary-2bzKEX {
@@ -1804,8 +1804,8 @@ div[id='---new-messages-bar'] {
   &Bottom-3Ojk6R,
   &Top-1DJtGv {
     > div {
+      @include box-shadow($color-accent, 'small', 0.8);
       background-color: #{$color-accent};
-      box-shadow: var(--low-shadow) #{$color-accent};
       color: var(--text-dark);
     }
   }
@@ -1873,9 +1873,9 @@ div[id='---new-messages-bar'] {
   width: 220px;
   @include border-radius('all', 'large');
   > .container-YkUktl {
-    background-color: var(--background-tertiary);
     @include border-radius('all', 'large');
-    box-shadow: var(--high-shadow) #{$color-hover};
+    @include box-shadow($color-hover, 'large', 1);
+    background-color: var(--background-tertiary);
     height: 44px;
     > div > button {
       background-color: transparent !important;
@@ -1903,7 +1903,7 @@ div[id='---new-messages-bar'] {
     &.activityPanel-9icbyU {
       background-color: var(--background-tertiary);
       @include border-radius('all', 'large');
-      box-shadow: var(--mid-shadow) #{$color-hover};
+      @include box-shadow($color-hover, 'medium', 1);
       margin-bottom: 6px;
       &,
       > .body-1FrnJD > .actions-zk2vB_ > button:hover > div > svg > path {
@@ -1946,7 +1946,7 @@ div[id='---new-messages-bar'] {
       @include border-radius('all', 'large');
       background-color: var(--background-quaternary);
       transform: translate(-8px, -6px) !important;
-      box-shadow: var(--mid-shadow) #{$color-hover};
+      @include box-shadow($color-hover, 'medium', 1);
       width: 220px !important;
     }
   }
@@ -2027,7 +2027,7 @@ div[id='---new-messages-bar'] {
   .container-1zzFcN {
     background-color: var(--background-tertiary);
     margin-bottom: 6px;
-    box-shadow: var(--mid-shadow) #{$color-hover};
+    @include box-shadow($color-hover, 'medium', 1);
     @include border-radius('all', 'large');
   }
 }
@@ -2074,7 +2074,7 @@ div[id='---new-messages-bar'] {
 .actionButtons-2vEOUh {
   > .button-1EGGcP.button-f2h6uQ.lookFilled-yCfaCM.sizeSmall-wU2dO-.grow-2sR_-F.button-1EGGcP {
     background-color: #{$color-hover--lighter} !important;
-    box-shadow: var(--low-shadow) #{$color-hover} !important;
+    @include box-shadow($color-hover, 'small', 1);
     > div {
       &,
       > div,
@@ -2083,8 +2083,8 @@ div[id='---new-messages-bar'] {
       }
     }
     &:hover {
+      @include box-shadow($color-green, 'small', 0.8);
       background-color: #{$color-green} !important;
-      box-shadow: var(--low-shadow) #{$color-green} !important;
       > div {
         &,
         > div,
@@ -2110,7 +2110,7 @@ div[id='---new-messages-bar'] {
 .listeningAlong-6YvYsc {
   @include border-radius('all', 'large');
   background-color: var(--background-tertiary);
-  box-shadow: var(--mid-shadow) #{$color-hover};
+  @include box-shadow($color-hover, 'medium', 1);
   margin-bottom: 6px;
 }
 
@@ -2118,14 +2118,14 @@ div[id='---new-messages-bar'] {
 .noticeRegion-qjyUVg {
   .container-20TyK0 {
     @include border-radius('all', 'large');
+    @include box-shadow($color-hover, 'medium', 1);
     background-color: var(--background-quaternary) !important;
-    box-shadow: var(--mid-shadow) #{$color-hover};
     padding: 12px 12px 12px 18px;
     .lookFilled-yCfaCM.colorGreen-3y-Z79 {
-      background-color: var(--button-accent);
+      background-color: #{$color-accent};
       color: var(--text-dark);
       &:hover {
-        box-shadow: var(--mid-shadow) var(--button-accent);
+        @include box-shadow($color-accent, 'medium', 1);
       }
     }
   }
@@ -2191,8 +2191,8 @@ div[id='---new-messages-bar'] {
   // Default
   background-color: #{$color-hover--darker};
   &:hover {
+    @include box-shadow($color-hover--lighter, 'medium', 1);
     background-color: #{$color-hover--lighter};
-    box-shadow: var(--mid-shadow) #{$color-hover--lighter};
   }
 
   // ColorBrand
@@ -2353,7 +2353,7 @@ button.lookBlank-3eh9lL {
     color: var(--text-dark);
     &:hover {
       background-color: #{$color-green--lighter};
-      box-shadow: var(--low-shadow) #{$color-green--lighter};
+      @include box-shadow($color-green--lighter, 'small', 0.8);
       color: var(--text-dark);
     }
   }
@@ -2680,8 +2680,8 @@ button[aria-label='Spread some cheer! Gift Nitro in special holiday gift boxes.'
           color: var(--text-dark);
         }
         &:hover {
+          @include box-shadow($color-green--lighter, 'small', 0.8);
           background-color: #{$color-green--lighter} !important;
-          box-shadow: var(--low-shadow) #{$color-green--lighter};
         }
       }
     }
@@ -3199,10 +3199,10 @@ div {
   &.selected-g-kMVV:hover,
   &[aria-selected='true'],
   &[aria-selected='true']:hover {
+    @include box-shadow($color-accent, 'small', 0.8);
     background-color: #{$color-accent} !important;
     color: var(--text-dark) !important;
     border-radius: var(--border-radius-2) !important;
-    box-shadow: var(--low-shadow) #{$color-accent};
   }
   &:hover {
     background-color: #{$color-hover--lighter} !important;
@@ -3423,9 +3423,9 @@ div > .layer-2aCOJ3 > div > .tooltipPointer-3L49xb {
   border-top-color: var(--background-quaternary) !important;
 }
 div > .layer-2aCOJ3 > .tooltip-14MtrL {
-  background-color: var(--background-quaternary) !important;
   @include border-radius('all', 'medium');
-  box-shadow: var(--mid-shadow) #{$color-hover} !important;
+  @include box-shadow($color-hover, 'medium', 1);
+  background-color: var(--background-quaternary) !important;
 }
 
 // Voice channel popouts
@@ -3706,12 +3706,12 @@ div.content-8jnR93 {
 // SPOTIFYCONTROLS
 .container-6sXIoE {
   &.withTimeline-824fT_ {
+    @include border-radius('all', 'large');
+    @include box-shadow($color-hover, 'large', 1);
     background-color: var(--background-tertiary) !important;
-    box-shadow: var(--high-shadow) #{$color-hover};
     border-bottom: 0 !important;
     margin-bottom: 6px;
     padding: 10px 10px 4px !important;
-    @include border-radius('all', 'large');
     > div > .coverWrapper-YAplwJ {
       border-radius: var(--border-radius-2) !important;
     }
