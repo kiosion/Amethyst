@@ -93,3 +93,9 @@ $color-text--dark: $color-background-tertiary;
   --button-destructive-hover: #{$color-red--lighter};
   --button-destructive-active: #{$color-red};
 }
+
+// Monkey patch
+:root {
+  --border-radius-1: 14px;
+  --border-radius-2: 8px;
+}
