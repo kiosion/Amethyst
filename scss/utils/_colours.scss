@@ -1,0 +1,95 @@
+// Colors
+$color-background-primary: #373949;
+$color-background-secondary: #373949;
+$color-background-tertiary: #282a36;
+$color-background-quaternary: #1e2029;
+$color-border: #373949;
+$color-hover: #22242e81;
+$color-hover--lighter: #5d607781;
+$color-hover--darker: #15151b81;
+$color-accent: #caa3ff;
+$color-white: #f8f8f2;
+$color-white--darker: #aab3ce;
+$color-muted: #6d7dab;
+$color-purple: #bd93f9;
+$color-orange--lighter: #f7c38c;
+$color-orange: #ffb86c;
+$color-green--lighter: #94ffaf;
+$color-green: #51fd7c;
+$color-blue--lighter: #cdf5fe;
+$color-blue: #68e1fd;
+$color-blue--darker: #30c6e8;
+$color-red--lighter: #ff9999;
+$color-red: #ff5555;
+
+// Text colors
+$color-text: $color-white;
+$color-text--dark: $color-background-tertiary;
+
+// Set default Discord color variables
+.theme-dark {
+
+  // Background
+  --background-primary: #{$color-background-primary};
+  --background-primary-alt: #{$color-background-primary};
+  --background-secondary: #{$color-background-secondary};
+  --background-secondary-alt: #{$color-background-secondary};
+  --background-tertiary: #{$color-background-tertiary};
+  --background-quaternary: #{$color-background-quaternary};
+  --background-1-gradient: linear-gradient(to right, #{$color-background-primary}, #{$color-background-secondary});
+  --background-floating: #{$color-background-primary};
+  --background-mentioned: #cca7ff15;
+  --background-mentioned-hover: #cca7ff2a;
+  --channeltextarea-background: #{$color-background-tertiary};
+
+  // Modifiers
+  --background-modifier-hover: #{$color-background-primary};
+  --background-modifier-active: #{$color-background-primary};
+  --background-modifier-selected: #{$color-accent};
+  --background-modifier-accent: #{$color-background-primary};
+  --background-message-hover: #{$color-hover};
+
+  // Text
+  --text-normal: #{$color-white};
+  --text-secondary: #{$color-white--darker};
+  --text-positive: #{$color-white};
+  --text-muted: #{$color-muted};
+  --text-link: #{$color-blue};
+  --text-dark: #{$color-background-tertiary};
+  --interactive-selected: #{$color-white};
+  --interactive-active: #{$color-white};
+  --interactive-normal: #{$color-white};
+  --interactive-muted: #{$color-muted};
+  --channels-default: #{$color-white--darker};
+  --header-primary: #{$color-white};
+  --header-secondary: #{$color-muted};
+
+  // More
+  --settings-icon-color: #{$color-white};
+  --control-brand-foreground: #{$color-accent};
+  --info-warning-foreground: #{$color-orange};
+  --tab-selected: #{$color-background-primary};
+  --switch: #{$color-background-tertiary};
+  --activity-card-background: #{$color-background-tertiary};
+  --brand-experiment: #{$color-accent} !important;
+  --deprecated-text-input-bg: #{$color-background-secondary};
+  --deprecated-text-input-border-disabled: #{$color-background-secondary};
+  --radio-bar-accent-color: transparent;
+  --text-brand: #{$color-accent} !important;
+  --focus-primary: #{$color-accent};
+  --text-danger: #{$color-red};
+  --settings-logout: #{$color-red};
+  --settings-guild-delete: #{$color-red};
+  --info-warning-background: #{$color-background-secondary};
+
+  // Buttons
+  --button-background: #{$color-background-tertiary};
+  --button-background-hover: #{$color-accent};
+  --button-background-active: #{$color-background-primary};
+  --button-accent: #{$color-accent};
+  --button-accent-hover: #{$color-hover};
+  --button-accent-active: #{$color-background-primary};
+  --button-destructive: #{$color-red};
+  --button-destructive-hover: #{$color-red--lighter};
+  --button-destructive-active: #{$color-red};
+}

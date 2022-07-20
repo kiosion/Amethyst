@@ -1,0 +1,30 @@
+// Mixins / functions
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: rgba($color, $opacity) !important;
+}
+@mixin box-shadow($color, $size: 'medium', $intensity: 1) {
+  @if map-has-key($shadow-size-map, $size) {
+    box-shadow: map-get($shadow-size-map, $size) rgba($color, $intensity);
+  } @else {
+    @error '#{$size} is not defined in $shadow-size-map';
+  }
+}
+@mixin border-radius($edge: 'all', $size: 'default') {
+  @if map-has-key($border-size-map, $size) {
+    @if $edge == 'all' {
+      border-radius: map-get($border-size-map, $size);
+    } @else {
+      @if map-has-key($edge-map, $edge) {
+        @each $value in map-get($edge-map, $edge) {
+
+          // @debug 'values: #{$value}';
+          border-#{$value}-radius: map-get($border-size-map, $size);
+        }
+      } @else {
+        @error '#{$edge} is not defined in $border-edge-map';
+      }
+    }
+  } @else {
+    @error '#{$size} is not defined in $border-size-map';
+  }
+}

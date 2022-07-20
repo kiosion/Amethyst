@@ -1,0 +1,80 @@
+// Home icon & inbox experiment styling
+.guilds-2JjMmN {
+  .scroller-3X7KbA {
+    .listItemWrapper-3d87LP {
+      .iconButton-2z1iK7,
+      .wrapper-3kah-n {
+        &[data-list-item-id='guildsnav___inbox-button'],
+        &[data-list-item-id='guildsnav___home'] {
+          svg,
+          .homeIcon-r0w4ny {
+            color: var(--text-normal) !important;
+          }
+          &.selected-1WnveH,
+          &.selected-1Drb7Z {
+            background-color: #{$color-accent};
+            svg,
+            .homeIcon-r0w4ny {
+              color: var(--text-dark) !important;
+              path {
+                fill: var(--text-dark) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Add/join server / Server discovery icons styling
+.circleIconButton-1VxDrg {
+  color: #{$color-accent};
+  background-color: var(--background-primary);
+  > svg > path {
+    fill: var(--text-normal);
+  }
+  .selected-2r1Hvo {
+    background-color: #{$color-accent};
+    > svg > path {
+      fill: var(--text-dark);
+    }
+  }
+}
+.verified-1eC5dy {
+  color: #{$color-accent};
+}
+.iconBackgroundTier {
+  &None-3ZkOsa,
+  &TierOne-2OQMBY,
+  &TierTwo-Eab9L6,
+  &TierThree-FWlUL9 {
+    color: #{$color-accent};
+  }
+}
+.iconTierOne-s_oiRb,
+.iconTierTwo-1JOWNK,
+.iconTierThree-3EAOB7,
+.icon-1ihkOt {
+  color: var(--background-tertiary) !important;
+}
+.listItem-GuPuDH,
+.guilds-1SWlCJ,
+.wrapper-3Njo_c {
+  width: 68px;
+}
+.expandedFolderBackground-1cujaW {
+  left: 10px;
+}
+
+// Server list Unread indicators
+.lowerBadge-3WTshO > div {
+  background-color: #{$color-red} !important;
+}
+.unreadMentionsBar-ZXXoOH {
+  .unreadMentionsIndicatorBottom-3RJMnQ &,
+  .unreadMentionsIndicatorTop-2bTgUU & {
+    background-color: #{$color-red} !important;
+    box-shadow: var(--low-shadow) #{$color-red};
+  }
+}
