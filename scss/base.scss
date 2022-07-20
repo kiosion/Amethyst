@@ -391,12 +391,13 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 // Server list sidebar
 
 // Home icon & inbox experiment styling
-.wrapper-1_HaEi.guilds-2JjMmN {
+.guilds-2JjMmN {
   .scroller-3X7KbA {
-    .listItem-3SmSlK {
-      > .listItemWrapper-3d87LP {
-        .iconButton-2z1iK7,
-        .wrapper-3kah-n {
+    .listItemWrapper-3d87LP {
+      .iconButton-2z1iK7,
+      .wrapper-3kah-n {
+        &[data-list-item-id='guildsnav___inbox-button'],
+        &[data-list-item-id='guildsnav___home'] {
           svg,
           .homeIcon-r0w4ny {
             color: var(--text-normal) !important;
@@ -407,6 +408,9 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
             svg,
             .homeIcon-r0w4ny {
               color: var(--text-dark) !important;
+              path {
+                fill: var(--text-dark) !important;
+              }
             }
           }
         }
@@ -558,7 +562,9 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
 // Selected DM list items
 .channel-1Shao0 {
   margin-right: 8px;
-  &[aria-posinset='1'] {
+  &[aria-posinset='1'],
+  &[aria-posinset='2'],
+  &[aria-posinset='3'] {
     > .linkButton-2NshQj {
       &.selected-3veCBZ {
         @include border-radius('all', 'large');
@@ -584,23 +590,6 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
             }
           }
         }
-      }
-    }
-  }
-  &[aria-posinset='2'] {
-    > .linkButton-2NshQj {
-      &.selected-3veCBZ {
-        @include border-radius('all', 'large');
-        background-color: #{$color-accent} !important;
-        box-shadow: var(--low-shadow) #{$color-accent};
-        > a {
-          color: var(--text-dark) !important;
-        }
-      }
-    }
-    &:hover {
-      > .linkButton-2NshQj {
-        background-color: transparent;
       }
     }
   }
@@ -751,16 +740,28 @@ svg path[d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-
   border: none;
 }
 
-// NITRO PAGE
+// Nitro / DM request pages
 .homeWrapperNormal-bu1BS6.homeWrapper-L4ors0 {
   background-color: var(--background-tertiary);
 }
 .headerBar-1dSpQr.container-ZMc96U:before {
   display: none;
 }
-.scroller-29cQFV.auto-2K3UW5.scrollerBase-_bVAAt {
-  @include border-radius('all', 'large');
-  margin: 6px 10px 10px 0;
+.applicationStore-2nk7Lo,
+.container-2YMsb4 {
+  overflow: visible;
+  .scroller-3x0qvT,
+  .scroller-29cQFV {
+    &.auto-2K3UW5.scrollerBase-_bVAAt {
+      @include border-radius('all', 'large');
+      margin: 6px 10px 10px 0;
+    }
+  }
+  > .tabBody-2YGSMJ {
+    &:before {
+      display: none;
+    }
+  }
 }
 
 // Grid items

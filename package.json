@@ -17,6 +17,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "compile": "node-sass scss/ -o css/ --output-style compressed"
+    "compile": "node-sass ./scss/base.scss -o ./css/ --output-style compressed && git add *.css",
+    "lint": "stylelint ./scss/*.scss --fix"
   }
 }
