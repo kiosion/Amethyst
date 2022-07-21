@@ -1,0 +1,73 @@
+// Inbox popup, mentions tab
+.header-145e10 {
+  &.header-1w9Q93 {
+    > .tabBar-1qdMr5 > div {
+      background-color: var(--background-primary);
+      &:hover,
+      &.active-1grPyy {
+        @include box-shadow($color-hover--lighter, 'small', 1);
+        background-color: #{$color-hover--lighter} !important;
+      }
+    }
+    > div > .secondary-2bzKEX {
+      > svg {
+        color: var(--text-normal);
+      }
+      &:hover {
+        background-color: #{$color-accent};
+        > svg {
+          color: var(--text-dark);
+        }
+      }
+    }
+  }
+}
+.messagesPopout-eVzQcI {
+  &.scroller-MIi2ab {
+    &.thin-31rlnD {
+      &.scrollerBase-_bVAAt {
+        > div > .container-iA3Qrz {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+          > .channelHeader-DFRX8q {
+            border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+            > .closeButton-3CiW2j {
+              transform: translateX(-12px);
+            }
+          }
+          > .messageContainer-3VTXBC {
+            border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Inbox popup, unreads tab
+.recentMentionsPopout-2bI1ZN {
+  > .scroller-145h9c.thin-31rlnD.scrollerBase-_bVAAt {
+    background-color: var(--background-tertiary);
+    > div > .channel-3NJZ1V {
+      > .channelHeader-DFRX8q {
+        @include border-radius('all', 'large');
+        margin-bottom: 8px;
+      }
+      > .messages-23can0 {
+        @include border-radius('all', 'large');
+      }
+    }
+  }
+}
+.channel-3NJZ1V {
+  > .channelHeader-DFRX8q {
+    > .button-1_oXub {
+      transform: translateX(-12px) !important;
+    }
+    > .collapseButton-39-IRc,
+    > div[role='button'],
+    > .channelNameSection-3OgeRa {
+      transform: translateX(12px);
+    }
+  }
+}

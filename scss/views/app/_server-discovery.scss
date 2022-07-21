@@ -1,0 +1,79 @@
+// Server discovery page
+.channel-1Shao0.selected-1-Z6gm {
+  color: var(--interactive-selected);
+}
+.emptyCard-1RJw8n {
+  @include border-radius('all', 'large');
+}
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+  background-color: #{$color-accent};
+  color: var(--background-primary);
+}
+.childWrapper-anI2G9 {
+  color: var(--text-normal);
+}
+.section-2gLsgF,
+.inset-3sAvek,
+.container-S9SaVf {
+  background-color: var(--background-tertiary) !important;
+}
+.pageWrapper-2PwDoS {
+  @include border-radius('all', 'large');
+  margin: 10px;
+  background-color: var(--background-primary) !important;
+}
+.guildList-3GXKvP > div > .card-2TuZPZ {
+  @include box-shadow($color-hover, 'medium', 1);
+  background-color: var(--background-tertiary);
+}
+.guildList-3GXKvP > div > .card-2TuZPZ:hover {
+  @include box-shadow($color-hover, 'large', 1);
+}
+.sidebar-1tnWFu > div > .categoryItem-Kc_HK_ {
+  margin-right: 10px;
+}
+.sidebar-1tnWFu > div > .categoryItem-Kc_HK_.selected-1-Z6gm {
+  background-color: #{$color-accent};
+  color: var(--text-dark);
+}
+.inputWrapper-1YNMmM.searchBoxInputWrapper-3XLwVB > input {
+  background-color: transparent;
+}
+.cardsContainer-39dCVY > .card-3N2v9t {
+  @include box-shadow($color-hover, 'medium', 1);
+  background-color: #{$color-background-tertiary};
+}
+.joinButton-1B9qQr {
+  &.lookFilled-yCfaCM {
+    &.colorGreen-3y-Z79 {
+      background-color: #{$color-green};
+      color: var(--text-dark);
+      &:hover {
+        @include box-shadow($color-green--lighter, 'small', 1);
+        background-color: #{$color-green--lighter};
+      }
+    }
+  }
+}
+.itemInner-3k3Sn6 {
+  &.layout-1qmrhw {
+    @include border-radius('all', 'medium');
+    margin: 0 8px !important;
+  }
+}
+.optionItem-2tdutc {
+  &.selected-1-Z6gm {
+    > .itemInner-3k3Sn6 {
+      &.layout-1qmrhw {
+        @include box-shadow($color-accent, 'small', 1);
+        color: var(--text-dark);
+      }
+    }
+  }
+}
+.tabBarItem-15vAXA {
+  &.selected-g-kMVV {
+    border-bottom: 2px solid var(--text-light) !important;
+  }
+}

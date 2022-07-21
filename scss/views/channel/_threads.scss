@@ -1,0 +1,48 @@
+// Archived thread, fullscreen view
+.chatHeaderBar-2fUORh {
+  @include border-radius('top', 'large');
+}
+.spine--Wla_O {
+  color: var(--text-muted);
+}
+.threadSidebar-1o3BTy {
+  margin: 0 10px;
+  background-color: var(--background-tertiary);
+  &,
+  .chatContent-3KubbW {
+    margin-left: 0;
+  }
+  .chat-1WUuAG {
+    @include border-radius('all', 'large');
+    background-color: var(--background-primary);
+  }
+}
+.chatHeaderBar-4vZS1x {
+  border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+  border-bottom: 1px solid #{$color-border};
+}
+.channelTextAreaInner-1WnnRS {
+  @include border-radius('all', 'large');
+  background-color: var(--background-primary);
+}
+.resizeHandle-PBRzPC {
+  transform: translateX(-2px);
+  margin-left: -6px;
+  position: relative;
+  z-index: 20;
+}
+.container-3XgAHv {
+  background-color: transparent;
+  .toolbar-3_r2xA .iconWrapper-2awDjA.clickable-ZD7xvu {
+    svg {
+      margin-right: -2px;
+    }
+  }
+}
+.chat-1-OBC7 {
+  margin-top: 6px;
+  background-color: transparent;
+  &:before {
+    display: none;
+  }
+}

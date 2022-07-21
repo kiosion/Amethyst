@@ -1,0 +1,31 @@
+// Emoji picker popout
+.positionLayer-1cndvf {
+  .layer-2aCOJ3 {
+    transform: translateY(-10px);
+  }
+}
+.contentWrapper-3vHNP2 {
+  background-color: var(--background-tertiary);
+}
+
+// Headers
+.categorySection-3j71bm {
+  > .wrapper-1NNaWG.header-1ULbqO {
+    padding-top: 4px;
+    background-color: var(--background-tertiary);
+  }
+}
+.listItems-6eZzQ1 {
+  > div {
+    > .wrapper-1NNaWG.packHeader-w9jpYl {
+      padding-top: 4px;
+      background-color: var(--background-tertiary);
+    }
+  }
+}
+.inspector-DFKXwB {
+  &,
+  &.inspector-2A2Chb {
+    background-color: var(--background-tertiary);
+  }
+}

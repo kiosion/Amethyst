@@ -1,0 +1,311 @@
+@import './top-toolbar/search';
+
+// General Toolbar
+.topPill-30KHOu {
+  &:not(.container-7uh5fX>div) {
+    @include border-radius('all', 'medium');
+    height: 38px;
+  }
+}
+.focusLock-Ns3yie .top-28JiJ- .item-PXvHYJ,
+.repoHeader-2KfNvH .top-28JiJ- .item-PXvHYJ,
+.header-2-Imhb .item-PXvHYJ,
+.contentWrapper-SvZHNd .navButton-2gQCx-,
+.searchResultsWrap-3-pOjs .tab-2j5AEF,
+.container-7uh5fX .tab-PQvTH4,
+.container-2PDP7D .tab-XC_yrg {
+  @include border-radius('all', 'medium');
+  padding: 0 25px;
+  height: 30px;
+  border: 0;
+}
+.container-7uh5fX .tab-17bjMB {
+  @include border-radius('all', 'medium');
+  padding: 0 10px;
+  border: 0;
+}
+.contentWrapper-SvZHNd {
+  .container-3ISnnM,
+  .wrapper-2iFQJ9,
+  .wrapper-1rqM3x {
+    margin-top: 16px;
+  }
+}
+.container-ZMc96U .topPill-30KHOu .item-PXvHYJ {
+  @include border-radius('all', 'medium');
+  margin-top: 4px;
+  height: 30px;
+}
+.contentWidth-xLB44s .top-28JiJ- .item-PXvHYJ {
+  @include border-radius('all', 'medium');
+  padding: 5px 25px 0;
+  height: 30px;
+  border: 0;
+}
+.tabBarItem-2QyJ0U {
+  @include border-radius('all', 'medium');
+  padding: 5px 8px;
+}
+.top-28JiJ- {
+  .brand-1Zl8en.selected-3s45Ha.item-PXvHYJ {
+    background-color: #{$color-accent};
+    color: var(--interactive-selected);
+  }
+  .item-PXvHYJ {
+    border: none;
+  }
+}
+.tabBarItem-30Te4- {
+  margin-right: 0;
+}
+.focusLock-Ns3yie .tabBarContainer-37hZsr {
+  padding-right: 20px;
+}
+.container-2PDP7D .tab-XC_yrg {
+  text-align: center;
+  line-height: 30px;
+}
+
+// Top Toolbar
+.toolbar-3_r2xA {
+  > .inviteToolbar-2k2nqz {
+    &:first-child {
+      > div {
+        border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
+      }
+    }
+  }
+  > .iconWrapper-2awDjA,
+  > div > .iconWrapper-2awDjA,
+  > .inviteToolbar-2k2nqz > .iconWrapper-2awDjA,
+  > .anchor-1MIwyf,
+  > :last-child {
+    background-color: #{$color-background-primary};
+  }
+  .anchor-1MIwyf {
+    margin: 1px;
+    height: 36px !important;
+    align-self: baseline;
+    svg path {
+      transform: translate(-1px, -2px);
+    }
+    &:hover {
+      background-color: #{$color-background-primary} !important;
+      div {
+        background-color: #{$color-accent};
+      }
+    }
+  }
+  .clickable-ZD7xvu {
+    padding: 7px 7px 29px;
+    margin: 1px;
+    &:hover {
+      background-color: var(--button-background-hover);
+    }
+  }
+  .chatButtonSpacer-16BvMu {
+    width: 40px;
+    margin-right: 10px;
+    pointer-events: none;
+    transform: translateY(8px);
+  }
+  > div {
+    &.streamQualityIndicator-n62BFt + div {
+      .lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F {
+        > div {
+          border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
+        }
+      }
+    }
+    &:first-child:not(.streamQualityIndicator-n62BFt) {
+      .lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F {
+        > div {
+          border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
+        }
+      }
+    }
+    > .lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F {
+      padding: 0 !important;
+      margin: 0 !important;
+      > div {
+        background-color: var(--background-primary);
+        padding: 6px 8px !important;
+        margin: 1px;
+        > svg {
+          color: var(--text-normal) !important;
+        }
+      }
+      &:hover > div {
+        background-color: var(--button-background-hover);
+        > svg {
+          color: var(--text-dark) !important;
+        }
+      }
+    }
+  }
+  .lastButton-3QdII0 {
+    width: 100%;
+  }
+  > :last-child {
+    margin-left: 1px;
+    height: 36px;
+    width: 40px;
+    border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
+    > div,
+    > button > div {
+      border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
+    }
+    &:hover {
+      background-color: var(--button-background-hover);
+    }
+  }
+  > :only-child,
+  > :only-child > button {
+    border-radius: var(--border-radius-1) !important;
+  }
+}
+
+// This fucking chat button. it is so bad. oh my god. please discord, put it actually INSIDE the top toolbar
+.chatButton-10jXXp {
+  @include border-radius('right', 'large');
+  @include border-radius('left', 'none');
+  top: 12px;
+  right: 8px;
+  width: 40px;
+  height: 36px;
+  background-color: var(--background-primary);
+  svg {
+    color: var(--text-normal) !important;
+  }
+  &:hover {
+    background-color: #{$color-accent};
+    svg {
+      color: var(--text-dark) !important;
+    }
+  }
+}
+.inviteToolbar-2k2nqz > div {
+  @include border-radius('left', 'large');
+  padding: 7px 7px 29px 10px !important;
+  background-color: var(--button-background);
+  margin: 1px;
+}
+.disabledButtonOverlay-1_LsqE {
+  pointer-events: none;
+}
+.icon-iDUzSK {
+  align-items: normal;
+  display: flex;
+}
+
+// toolbar icon hover fx
+.topControls-KKImPZ.controlSection-2h3cS0 > div > div > section > .toolbar-3_r2xA > .button-1xaXFt.iconWrapper-2awDjA.clickable-ZD7xvu > svg {
+  color: var(--settings-icon-color) !important;
+}
+.title-31SJ6t {
+  &.container-ZMc96U {
+    &.themed-Hp1KC_ {
+      margin-top: 4px;
+      > .toolbar-3_r2xA {
+        > div[role='button'] {
+          > svg,
+          > svg > path {
+            cursor: pointer !important;
+          }
+        }
+      }
+    }
+  }
+}
+.toolbar-3_r2xA > :first-child:not(.inviteToolbar-3F-l2g):not(.streamQualityIndicator-2Te7mW),
+.streamQualityIndicator-2Te7mW + .clickable-ZD7xvu,
+.toolbar-3_r2xA > :first-child > button {
+  border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
+}
+.icon-1ELUnB.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label='Threads'] > svg {
+  transform: translateY(10px) !important;
+}
+
+// Top pill bar container
+.tabBar-ra-EuL.topPill-3DJJNV,
+.children-3xh0VB {
+  overflow: visible;
+}
+.container-ZMc96U.themed-Hp1KC_ {
+  padding-top: 4px;
+  margin-top: 4px;
+}
+
+// Top pill friends list tabs
+.tabBar-ra-EuL {
+  .item-3mHhwr {
+    &.item-3XjbnG {
+      @include border-radius('all', 'medium');
+      background-color: var(--background-tertiary);
+      &.selected-g-kMVV,
+      &[aria-selected='true'] {
+        @include box-shadow($color-hover--lighter, 'small', 0.6);
+        background-color: #{$color-hover--lighter};
+      }
+      &:not(.disabled-1nofHP) {
+        &[aria-selected='true'],
+        &[aria-selected='true']:hover,
+        &:hover {
+          cursor: normal !important;
+          background-color: #{$color-hover--lighter};
+        }
+      }
+      &[aria-controls='add_friend-tab'] {
+        color: var(--text-dark) !important;
+        background-color: #{$color-green} !important;
+        cursor: pointer !important;
+        @include box-shadow($color-green, 'small', 1);
+        overflow: visible;
+        &:hover,
+        &[aria-selected='true'] {
+          color: var(--text-dark) !important;
+          background-color: #{$color-green--lighter} !important;
+          cursor: pointer !important;
+        }
+      }
+    }
+  }
+}
+
+// Top pill add friend tab
+.addFriendInputWrapper-kkoSV9 {
+  background-color: var(--background-tertiary);
+  > .inputWrapper-1YNMmM.addFriendInput-1Ta-rO > input {
+    background-color: transparent;
+  }
+}
+
+// Friends pending page
+.emptyStateContainer-1NHrfT,
+.emptyState-30PyIN {
+  .image-20MDYu {
+    mix-blend-mode: luminosity;
+  }
+}
+
+// Toolbar icons
+.iconWrapper-2awDjA {
+  &.clickable-ZD7xvu {
+    &:hover {
+      background-color: #{$color-accent};
+      color: var(--background-primary);
+      > svg,
+      > svg > foreignObject > svg {
+        color: var(--background-primary);
+      }
+
+      // Green icons
+      &[aria-label='Start Voice Call'],
+      &[aria-label='Start Video Call'],
+      &[aria-label='New Group DM'] {
+        background-color: #{$color-green};
+        color: var(--background-primary);
+      }
+    }
+  }
+}

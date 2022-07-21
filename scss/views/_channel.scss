@@ -1,0 +1,50 @@
+@import './channel/attached-bars';
+@import './channel/message-form';
+@import './channel/messages';
+@import './channel/threads';
+
+// Channel main view
+.content-1jQy2l {
+  margin-top: 6px;
+  &:before {
+    display: none;
+  }
+
+  // Student hub view
+  > .pageContainer-36uo3F {
+    @include border-radius('all', 'large');
+    margin: 0 10px 10px;
+    max-width: none !important;
+  }
+}
+
+// Misc
+.wrapper-39oAo3,
+.scrollableContainer-2NUZem,
+.embedFull-1HGV2S,
+.wrapper-35wsBm {
+  @include border-radius('all', 'large');
+}
+.wrapper-2aW0bm {
+  @include border-radius('all', 'medium');
+  border: 1px solid #{$color-border};
+}
+.button-1ZiXG9 {
+  &:active {
+    padding: 4px;
+  }
+}
+.channelTextArea-rNsIhG .container-JHR0NT {
+  display: none;
+}
+.stickerIcon-3TP7EM {
+  > :first-child {
+    visibility: visible;
+  }
+  > :last-child {
+    visibility: hidden;
+  }
+}
+.stickerButtonTilted-2R4_UZ {
+  transform: none;
+}

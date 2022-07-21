@@ -1,0 +1,24 @@
+// Container styling
+.content-1SgpWY {
+  .wrapper-1gVUIN {
+    &.chatSidebarOpen--YCxhs {
+      .callContainer-HtHELf {
+        width: 50%;
+        margin-right: 8px;
+      }
+    }
+    .callContainer-HtHELf {
+      overflow: visible;
+      max-width: calc(100% - 10px);
+      .topControls-23RE3h {
+        overflow: visible;
+        .headerWrapper-1ULEPv {
+          justify-content: flex-end;
+          .children-3xh0VB {
+            transform: translateX(-248px);
+          }
+        }
+      }
+    }
+  }
+}

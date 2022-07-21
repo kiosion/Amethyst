@@ -1,0 +1,60 @@
+// Scrollers
+.scroller-2MALzE {
+
+  // Emoji server list
+  &.list-obNEuP {
+    > div[role='list'] > div {
+      padding-top: 2px;
+      &[data-list-item-id='NO_LIST___expression-guild-0'] {
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  // Slash commands popup / autocomplete
+  &.list-2u03C- {
+    &.thin-31rlnD {
+      &.scrollerBase-_bVAAt {
+        &,
+        .wrapper-1NNaWG.categoryHeader-OpJ1Ly,
+        .selectable-1MM9tu {
+          background-color: #{$color-background-tertiary};
+        }
+        .selectable-1MM9tu.selected-3H3-RC {
+          background-color: #{$color-hover--lighter} !important;
+        }
+      }
+    }
+  }
+
+  // Call UI spacing
+  &.videoGrid-1tZm-F {
+    &.thin-31rlnD {
+      &.scrollerBase-_bVAAt {
+        &.fade-1R6FHN {
+          > .listItems-6eZzQ1 {
+            padding-right: 8px !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Menus / popup lists
+  &.list-13gwFt {
+    &.thin-31rlnD {
+      &.scrollerBase-_bVAAt {
+        > .listItems-6eZzQ1 {
+          inset: 6px 8px 6px 8px !important;
+        }
+      }
+    }
+  }
+}
+.scroller-1bVxF5 {
+  &.thin-31rlnD {
+    &.scrollerBase-_bVAAt {
+      padding: 6px 8px !important;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+// DM search bar
+.searchBar-3TnChZ {
+  display: none;
+}
+
+// DM list
+.scroller-WSmht3.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
+  @include border-radius('top', 'large');
+}
+.channel-1Shao0.container-1oeRFJ.selected-1-Z6gm {
+  &[data-list-item-id='private-channels-uid_10800___friends'],
+  &[data-list-item-id='private-channels-uid_10800___nitro'] {
+    div {
+      background-color: #{$color-accent};
+    }
+  }
+  > div {
+    background-color: #{$color-hover--lighter};
+    > div > svg,
+    > div > div > div,
+    > div > div > div > div {
+      color: var(--text-dark);
+    }
+  }
+}
+
+// DM Action buttons
+.size16-rrJ6ag.description-22d6ux {
+  .container-12Vzf8 {
+    button.button-f2h6uQ {
+      background-color: #{$color-hover--lighter} !important;
+      color: var(--text-normal) !important;
+      &:nth-of-type(3n+1) {
+        &:hover {
+          @include box-shadow($color-green, 'small', 0.8);
+          background-color: #{$color-green} !important;
+          color: var(--text-dark) !important;
+        }
+      }
+      &:nth-of-type(3n+2):hover,
+      &:nth-of-type(3n+3) {
+        @include box-shadow($color-red, 'small', 0.8);
+        background-color: #{$color-red} !important;
+        color: var(--text-dark) !important;
+        &:hover {
+          @include box-shadow($color-red--lighter, 'small', 0.8);
+          background-color: #{$color-red--lighter} !important;
+          color: var(--text-dark) !important;
+        }
+      }
+    }
+  }
+}
+
+// New DM Gating action buttons
+.spamBanner-1auiob {
+  border-radius: var(--border-radius-1) !important;
+  .actionButtons-2SAg-Q {
+    button.button-f2h6uQ {
+      &:nth-of-type(3n+1) {
+        background-color: #{$color-red} !important;
+        min-width: fit-content;
+        &:hover {
+          background-color: #{$color-red--lighter} !important;
+          color: var(--text-dark) !important;
+        }
+      }
+      &:nth-of-type(3n+2) {
+        background-color: var(--background-primary) !important;
+        &:hover {
+          background-color: #{$color-hover--lighter} !important;
+        }
+      }
+      &:nth-of-type(3n+3) {
+        background-color: var(--background-primary) !important;
+        color: var(--text-normal) !important;
+        &:hover {
+          @include box-shadow($color-green, 'small', 0.8);
+          background-color: #{$color-green} !important;
+          color: var(--text-dark) !important;
+        }
+      }
+    }
+  }
+}
+
+// Selected DM list items
+.channel-1Shao0 {
+  margin-right: 8px;
+  &[aria-posinset='1'],
+  &[aria-posinset='2'],
+  &[aria-posinset='3'] {
+    > .linkButton-2NshQj {
+      &.selected-3veCBZ {
+        @include border-radius('all', 'large');
+        @include box-shadow($color-accent, 'small', 0.8);
+        background-color: #{$color-accent} !important;
+        > a {
+          color: var(--text-dark) !important;
+        }
+      }
+    }
+    &:hover {
+      > .linkButton-2NshQj {
+        background-color: transparent;
+      }
+      > .linkButton-2NshQj.selected-3veCBZ {
+        .channel-1Shao0 {
+          &[aria-posinset='2'] {
+            &:hover {
+              > .linkButton-2NshQj.selected-3veCBZ {
+                background-color: #{$color-accent} !important;
+                color: var(--text-normal) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  > .interactiveSelected-29CP8y {
+    &.selected-3veCBZ {
+      @include border-radius('all', 'medium');
+      background-color: #{$color-hover--lighter} !important;
+    }
+  }
+}
+.categoryItem-ONe8JV {
+  &.container-1oeRFJ {
+    &.selected-1-Z6gm {
+      > .itemInner-1XfZdz > div {
+        > svg {
+          > path,
+          > g > path {
+            fill: var(--background-tertiary) !important;
+          }
+        }
+        > div > div {
+          color: var(--text-dark) !important;
+        }
+      }
+    }
+  }
+}

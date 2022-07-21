@@ -4,7 +4,7 @@
   "description": "<div align=center><h1>Amethyst</h1></div>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiosion/Amethyst.git"
+    "url": "https://github.com/kiosion/Amethyst"
   },
   "devDependencies": {
     "husky": "^8.0.0",
