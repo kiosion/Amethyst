@@ -78,10 +78,10 @@
       background-color: #{$color-accent} !important;
       @include box-shadow($color-accent, 'small', 0.9);
       path {
-        fill: var(--text-dark);
+        fill: $color-text--dark !important;
       }
       > a > div > div {
-        color: var(--text-dark);
+        color: $color-text--dark !important;
       }
     }
   }

@@ -109,6 +109,10 @@
     pointer-events: none;
     transform: translateY(8px);
   }
+  .streamQualityIndicator-n62BFt + div {
+    border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
+    margin-left: 12px;
+  }
   > div {
     &.streamQualityIndicator-n62BFt + div {
       .lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F {

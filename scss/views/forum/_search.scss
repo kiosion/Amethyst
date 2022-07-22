@@ -1,0 +1,16 @@
+.mainCard-3KBsBI.header-1Uy0p6 {
+  margin: {
+    top: 14px;
+  }
+  &.headerBorder-jrk0Ic {
+    transition: 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    @include box-shadow($color-hover--darker, 'large', 0.6); }
+  .formContainer-1zrOWf {
+    .titleContainer-2YK93J {
+      column-gap: 10px;
+      .inputDefault-3FGxgL.searchInput-3NGPfp {
+        background-color: transparent !important;
+      }
+    }
+  }
+}

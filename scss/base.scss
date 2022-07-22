@@ -6,6 +6,7 @@
 // Component imports
 @import './views/app';
 @import './views/channel';
+@import './views/forum';
 @import './views/guild';
 @import './views/home';
 @import './views/settings';
@@ -1491,7 +1492,7 @@ svg.slider-TkfMQL svg,
 
 // MENUS / DROPDOWNS / INPUTS
 .select-1Ia3hD.lookFilled-1GseHa,
-.inputDefault-3FGxgL.input-2g-os5 {
+.inputDefault-3FGxgL.input-2g-os5:not(.searchInput-3NGPfp) {
   background-color: var(--background-quaternary);
   @include border-radius('all', 'medium');
 }

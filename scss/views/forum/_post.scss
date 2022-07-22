@@ -1,0 +1,96 @@
+.row-uezxzk {
+  padding: {
+    bottom: 14px;
+  }
+  .container-2qVG6q:active,
+  .container-2qVG6q:hover {
+    @include box-shadow($color-hover--darker, 'large', 0.6);
+    transform: none !important;
+  }
+}
+
+// Popout sidebar
+.content-1SgpWY {
+  > .container-3XgAHv,
+  .container-3XgAHv.floating-3M3WeH {
+    .container-ZMc96U {
+      &.themed-Hp1KC_ {
+        .children-3xh0VB {
+          overflow: hidden;
+          .forumPostTitle-16pN7d {
+            display: inline-block;
+            text-overflow: ellipsis;
+            width: calc(100% - 20px);
+          }
+        }
+      }
+    }
+  }
+  > .container-3XgAHv {
+    > .chat-25x62K {
+      &:before {
+        display: none;
+      }
+      .chatContent-3KubbW {
+        margin: {
+          top: 6px;
+        }
+        .scrollerInner-2PPAp2 {
+          .container-27JV1h.container-1yy5xN {
+            +li {
+              background-color: $color-background-tertiary;
+              padding: {
+                bottom: 12px;
+              }
+              > div {
+                @include border-radius('bottom', 'medium');
+                background-color: $color-background-primary;
+                margin: {
+                  bottom: 0;
+                }
+                padding: {
+                  top: 14px;
+                  bottom: 8px;
+                }
+              }
+              +.container-3YcgdM {
+                border: none;
+                background-color: $color-background-tertiary;
+                margin: {
+                  top: 0;
+                  bottom: 0;
+                }
+                padding: {
+                  top: 0;
+                  bottom: 0;
+                }
+                +.divider-AZrXIA {
+                  display: none;
+                  +li {
+                    background-color: $color-background-tertiary;
+                    margin: {
+                      top: 0;
+                    }
+                    padding: {
+                      top: 14px;
+                    }
+                    > div {
+                      @include border-radius('top', 'medium');
+                      background-color: $color-background-primary;
+                      margin: {
+                        top: 0;
+                      }
+                      padding: {
+                        top: 8px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,13 @@
 // Top header bar
 .content-1SgpWY {
-  .container-ZMc96U {
-    &.themed-Hp1KC_ {
-      justify-content: flex-end;
-      .children-3xh0VB {
-        transform: translateX(-248px);
+  > .chat-2ZfjoI {
+    > .container-ZMc96U {
+      &.themed-Hp1KC_,
+      &.transparent-1lUmft {
+        justify-content: flex-end;
+        .children-3xh0VB {
+          transform: translateX(-248px);
+        }
       }
     }
   }

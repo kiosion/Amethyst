@@ -1,0 +1,18 @@
+// DM call ui
+.content-1SgpWY {
+  .chat-2ZfjoI {
+    .callContainer-HtHELf {
+      overflow: visible;
+      .videoFrame-11rde6 {
+        margin-right: 12px;
+        .videoWrapper-qKddsp {
+          display: contents;
+          .videoSizer-ZRgT6y {
+            @include border-radius('all', 'medium');
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
