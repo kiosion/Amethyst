@@ -1,0 +1,26 @@
+.sidebarContainer-1kWKqZ {
+  transform: translateY(-24px);
+
+  // Top card
+  > .sidebarCard-1Gn1ch {
+    > .markup-eYLPri,
+    > .text-sm-normal-3Zj3Iv {
+      &,
+      > div {
+        color: $color-white--darker !important;
+      }
+    }
+  }
+
+  // Tags
+  > .container-2IhveL {
+    .tags-3s41VI {
+      .pill-3pRQlO {
+        &:hover,
+        &:active {
+          background-color: $color-background-tertiary;
+        }
+      }
+    }
+  }
+}

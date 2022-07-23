@@ -99,6 +99,13 @@
           color: var(--text-dark) !important;
         }
       }
+      .numberBadge-37OJ3S {
+        background-color: #{$color-red} !important;
+        color: #{$color-text};
+        padding: {
+          right: 0;
+        }
+      }
     }
     &:hover {
       > .linkButton-2NshQj {

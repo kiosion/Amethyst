@@ -76,7 +76,7 @@
   @include border-radius('all', 'large');
   > .container-YkUktl {
     @include border-radius('all', 'large');
-    @include box-shadow($color-hover, 'large', 1);
+    @include box-shadow($color-hover, 'large', 0.4);
     background-color: var(--background-tertiary);
     height: 44px;
     > div > button {

@@ -4,8 +4,80 @@
   }
   .container-2qVG6q:active,
   .container-2qVG6q:hover {
-    @include box-shadow($color-hover--darker, 'large', 0.6);
+    @include box-shadow($color-hover, 'large', 0.6);
     transform: none !important;
+  }
+  .body-hCVwsC {
+    &.hasUnreads-3kKLnS {
+      > .header-2W779F {
+        .channelNameSpan-2CGJt7 {
+          color: $color-text;
+        }
+        .pinIcon-zVODC5 {
+          background-color: $color-accent;
+          svg {
+            path {
+              fill: $color-text--dark !important;
+            }
+          }
+        }
+      }
+      > .message-1zs6Od {
+        .messageContent-1SOr75 {
+          margin: {
+            top: 2px;
+          }
+          color: $color-text;
+        }
+      }
+    }
+    > .header-2W779F {
+      .channelNameSpan-2CGJt7 {
+        color: $color-white--darker;
+      }
+    }
+    > .message-1zs6Od {
+      .messageContent-1SOr75 {
+        margin: {
+          top: 2px;
+        }
+        color: $color-white--darker;
+      }
+    }
+  }
+  .footer-3dzxcR {
+    .reaction-102jx9 {
+      @include border-radius('all', 'medium');
+      background-color: $color-hover--lighter;
+      border-color: transparent;
+      &.reactionMe-2zhiyZ {
+        @include background-opacity($color-accent, 0.6);
+        background-color: $color-background-tertiary;
+        border-color: transparent;
+        &:hover {
+          @include background-opacity($color-accent, 0.4);
+        }
+      }
+      &:hover {
+        @include background-opacity($color-accent, 0.2);
+      }
+    }
+    .messageCountBox-XEP63e {
+      .messageCountIcon-2CvKyY {
+        svg {
+          color: $color-white--darker;
+        }
+      }
+      .messageCountText-J-9pag {
+        color: $color-white--darker;
+      }
+    }
+    .bullet-3kDmK0 {
+      color: $color-white--darker;
+      +.text-sm-normal-3Zj3Iv {
+        color: $color-white--darker !important;
+      }
+    }
   }
 }
 
@@ -36,24 +108,77 @@
           top: 6px;
         }
         .scrollerInner-2PPAp2 {
+          background-color: $color-background-tertiary;
+          > li {
+            background-color: $color-background-primary;
+            > div {
+              background-color: $color-background-primary;
+
+              // TODO: Actually integrate w/ group spacing values. For now, just hard-code the value
+              padding: {
+                top: 7px;
+                bottom: 7px;
+              }
+              margin: {
+                top: 0;
+              }
+            }
+            &:hover,
+            &:active {
+              background-color: $color-background-primary;
+              > div {
+                background-color: $color-hover--darker;
+              }
+            }
+          }
+          .scrollerSpacer-3AqkT9 {
+            background-color: $color-background-primary;
+            width: 100%;
+          }
           .container-27JV1h.container-1yy5xN {
+            background-color: $color-background-primary;
+            padding: {
+              bottom: 24px;
+              left: 24px;
+            }
+            margin: {
+              bottom: 0;
+              left: 0;
+              top: 0;
+              right: 0;
+            }
+            .tags-2Siay7 {
+              .pill-3pRQlO {
+                background-color: $color-background-quaternary;
+              }
+            }
             +li {
+              @include border-radius('bottom', 'medium');
               background-color: $color-background-tertiary;
               padding: {
-                bottom: 12px;
+                bottom: 0;
               }
               > div {
                 @include border-radius('bottom', 'medium');
                 background-color: $color-background-primary;
                 margin: {
+                  top: 0;
                   bottom: 0;
                 }
                 padding: {
-                  top: 14px;
-                  bottom: 8px;
+                  top: 8px;
+                  bottom: 14px;
+                }
+              }
+              &:hover,
+              &:active {
+                background-color: $color-background-primary;
+                > div {
+                  background-color: $color-hover--darker;
                 }
               }
               +.container-3YcgdM {
+                z-index: 0;
                 border: none;
                 background-color: $color-background-tertiary;
                 margin: {
@@ -61,18 +186,19 @@
                   bottom: 0;
                 }
                 padding: {
-                  top: 0;
-                  bottom: 0;
+                  top: 14px;
+                  bottom: 14px;
                 }
                 +.divider-AZrXIA {
                   display: none;
                   +li {
+                    @include border-radius('top', 'medium');
                     background-color: $color-background-tertiary;
                     margin: {
                       top: 0;
                     }
                     padding: {
-                      top: 14px;
+                      top: 0;
                     }
                     > div {
                       @include border-radius('top', 'medium');
@@ -81,9 +207,39 @@
                         top: 0;
                       }
                       padding: {
-                        top: 8px;
+                        top: 7px;
+                        bottom: 7px;
                       }
                     }
+                    &:hover,
+                    &:active {
+                      background-color: $color-background-primary;
+                      > div {
+                        background-color: $color-hover--darker;
+                      }
+                    }
+                  }
+                }
+                +.box-2iMsQm {
+                  @include border-radius('top', 'medium');
+                  @include border-radius('bottom', 'none');
+                  margin: {
+                    left: 0;
+                    top: 14px;
+                    bottom: 0;
+                  }
+                  padding: {
+                    top: 14px;
+                    left: 14px;
+                    bottom: 14px;
+                  }
+                  &:before,
+                  &:after {
+                    display: none;
+                  }
+                  +.scrollerSpacer-3AqkT9 {
+                    background-color: $color-background-primary;
+                    width: 100%;
                   }
                 }
               }

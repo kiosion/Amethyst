@@ -1,13 +1,25 @@
 @import './forum/search';
 @import './forum/post';
+@import './forum/sidebar';
 .container-3wLKDe {
-  background-color: $color-background-tertiary;
+  background-color: $color-background-tertiary !important;
   .list-3FIpnh {
-    background-color: $color-background-tertiary;
+    background-color: $color-background-tertiary !important;
+
+    // transform: translateY(-24px);
+    > .content-2a4AW9 {
+      transform: translateY(-24px);
+    }
   }
   .newPostsButton-UaBhcU {
     .newPostsButtonText-2WJdH8 {
       color: $color-text;
+    }
+  }
+  .tags-3s41VI,
+  .tags-2CaEuN {
+    .pill-3pRQlO {
+      background-color: $color-background-quaternary;
     }
   }
 }

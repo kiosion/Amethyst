@@ -3,7 +3,9 @@
   transition: background-color 100ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   &:hover,
   &.selected-2LX7Jy {
-    @include background-opacity($color-background-quaternary, 0.3);
+
+    // @include background-opacity($color-hover--darker, 0.8);
+    background-color: #{$color-hover--darker};
   }
 
   // Action buttons
@@ -130,42 +132,6 @@ code.inline {
 .mentioned-Tre-dv:before {
   background-color: #{$color-accent} !important;
 }
-
-// Reactions
-
-// .reaction-1hd86g {
-
-//   border: 1px solid #{$color-border};
-
-//   border-radius: 50px;
-
-// }
-
-// .reactionDefault-GBA58K {
-
-//   @include border-radius('all', 'medium');
-
-//   &:hover {
-
-//     background-color: var(--background-modifier-hover) !important;
-
-//   }
-
-// }
-
-// .reactionSelected-1pqISm {
-
-//   @include border-radius('all', 'medium');
-
-//   background-color: var(--background-modifier-selected) !important;
-
-//   .colorStandard-2KCXvj {
-
-//     color: var(--interactive-selected);
-
-//   }
-
-// }
 .scroller-1-nKid,
 .reactors-Blmlhw {
   padding-right: 8px !important;

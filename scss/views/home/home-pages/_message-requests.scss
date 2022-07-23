@@ -1,0 +1,41 @@
+.content-1SgpWY {
+  .panel-3DsHLr {
+    .sectionBody-37BzFn {
+      .messageRequestItem-1_NNAR {
+        @include border-radius('all', 'medium');
+        &:hover,
+        &:active {
+          background-color: #{$color-hover};
+          .actions-22Oc3k {
+            .actionButton-2-mzZp {
+              background-color: $color-hover--lighter;
+            }
+          }
+        }
+        .actions-22Oc3k {
+          .actionButton-2-mzZp {
+            > svg,
+            > svg > path {
+              transition: none !important;
+            }
+            &:hover,
+            &:active {
+              &:nth-of-type(1) {
+                @include box-shadow($color-green, 'small', 0.8);
+                background-color: $color-green;
+              }
+              &:nth-of-type(2) {
+                @include box-shadow($color-red, 'small', 0.8);
+                background-color: $color-red;
+              }
+              &,
+              > svg {
+                color: $color-text--dark !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

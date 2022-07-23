@@ -1,5 +1,7 @@
 // Top header bar
 .content-1SgpWY {
+  > .container-2YMsb4,
+  > .container-2cd8Mz,
   > .chat-2ZfjoI {
     > .container-ZMc96U {
       &.themed-Hp1KC_,
@@ -7,6 +9,21 @@
         justify-content: flex-end;
         .children-3xh0VB {
           transform: translateX(-248px);
+        }
+      }
+    }
+  }
+
+  // Nitro page
+  > .applicationStore-2nk7Lo {
+    > .homeWrapperNormal-bu1BS6,
+    > .homeWrapper-L4ors0 {
+      > .container-ZMc96U {
+        &.themed-Hp1KC_ {
+          justify-content: flex-end;
+          .children-3xh0VB {
+            transform: translateX(-248px);
+          }
         }
       }
     }

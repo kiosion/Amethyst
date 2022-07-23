@@ -93,6 +93,27 @@
     }
   }
 }
+
+// Channel thread list items
+.container-1Bj0eq {
+  > svg > path {
+    fill: var(--text-muted);
+  }
+  .containerDefault-YUSmu3 {
+    &.selected-2TbFuo {
+      .mainContent-20q_Hp {
+        > div {
+          color: $color-text--dark !important;
+        }
+      }
+    }
+    .mainContent-20q_Hp {
+      padding: {
+        left: 4px;
+      }
+    }
+  }
+}
 .header-35u4WP {
   border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
 }
@@ -158,18 +179,6 @@
       background-color: #{$color-hover--lighter} !important;
       margin-top: 6px;
       margin-bottom: 2px;
-    }
-  }
-}
-
-// Channel list thread styling
-.container-1Bj0eq {
-  > svg > path {
-    fill: var(--text-muted);
-  }
-  > .containerDefault-YUSmu3 {
-    &.selected-2TbFuo > div > div > div > div {
-      color: var(--text-dark) !important;
     }
   }
 }
