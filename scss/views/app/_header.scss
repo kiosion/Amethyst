@@ -8,7 +8,11 @@
       &.transparent-1lUmft {
         justify-content: flex-end;
         .children-3xh0VB {
-          transform: translateX(-248px);
+          transform: translateX(-250px);
+          > .textBadge-1fdDPJ.base-3IDx3L.baseShapeRound-3epLEv {
+            background-color: $color-accent !important;
+            color: $color-text--dark;
+          }
         }
       }
     }
@@ -22,7 +26,22 @@
         &.themed-Hp1KC_ {
           justify-content: flex-end;
           .children-3xh0VB {
-            transform: translateX(-248px);
+            transform: translateX(-250px);
+          }
+        }
+      }
+    }
+  }
+
+  // Call UI
+  .root-22AK9z {
+    .topControls-23RE3h {
+      .container-ZMc96U {
+        &.themed-Hp1KC_,
+        &.transparent-1lUmft {
+          justify-content: flex-end;
+          .children-3xh0VB {
+            transform: translateX(-250px);
           }
         }
       }

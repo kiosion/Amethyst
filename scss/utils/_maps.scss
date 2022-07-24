@@ -27,8 +27,8 @@ $edge-map: (
   );
 $icons-map: (
     'account': ('My Account-tab'),
-    'profile': ('Profile & Customization-tab'),
-    'privacy': ('Privacy & Safety-tab', 'MODERATION-tab'),
+    'profile': ('Profile & Customization-tab', 'Profile Customization-tab'),
+    'privacy': ('Privacy & Safety-tab', 'MODERATION-tab', 'Activity Privacy-tab'),
     'apps': ('Authorized Apps-tab'),
     'connections': ('Connections-tab'),
     'subscriptions': ('Subscriptions-tab'),
@@ -36,7 +36,7 @@ $icons-map: (
     'nitro': ('Discord Nitro-tab'),
     'boosts': ('Nitro Server Boost-tab', 'GUILD_PREMIUM-tab'),
     'gift': ('Library Inventory-tab'),
-    'billing': ('Billing-tab'),
+    'billing': ('Billing-tab', 'Payment Flow Modals-tab'),
     'appearance': ('Appearance-tab'),
     'accessibility': ('Accessibility-tab'),
     'voice': ('Voice & Video-tab'),

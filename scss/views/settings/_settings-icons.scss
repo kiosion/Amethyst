@@ -67,7 +67,6 @@ $settingsIconGap: 14px;
 }
 .sidebar-nqHbhN .side-2ur1Qk {
   .item-3XjbnG .icon-3FU6Ir,
-  .premiumLabel-3HPvdB,
   .tabBarItemContainer-2HdIlr {
     &,
     svg,
@@ -77,6 +76,11 @@ $settingsIconGap: 14px;
   }
   .tabBarItemContainer-2HdIlr {
     transform: scaleX(1);
+  }
+  .premiumLabel-3HPvdB {
+    > svg {
+      display: none;
+    }
   }
 }
 .bd-server-search ~ .item-3XjbnG:before {

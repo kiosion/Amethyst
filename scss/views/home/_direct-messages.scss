@@ -53,33 +53,67 @@
 }
 
 // New DM Gating action buttons
+.description-22d6ux {
+  > .container-12Vzf8 {
+    .button-f2h6uQ.sizeTiny-3y2SSK,
+    .action-1R6ERA.sizeTiny-3y2SSK {
+      @include box-shadow($color-hover, 'small', 0.8);
+      background-color: $color-hover--lighter !important;
+      color: $color-text !important;
+      &.colorBrand-I6CyqQ {
+        &:hover {
+          @include box-shadow($color-accent, 'small', 0.8);
+          background-color: $color-accent !important;
+          color: $color-text--dark !important;
+        }
+      }
+      &.colorPrimary-2AuQVo,
+      &.colorRed-rQXKgM {
+        &:hover {
+          @include box-shadow($color-red, 'small', 0.8);
+          background-color: $color-red !important;
+          color: $color-text--dark !important;
+        }
+      }
+    }
+  }
+}
 .spamBanner-1auiob {
-  border-radius: var(--border-radius-1) !important;
+  @include border-radius('all', 'large');
   .actionButtons-2SAg-Q {
     button.button-f2h6uQ {
       &:nth-of-type(3n+1) {
-        background-color: #{$color-red} !important;
+        background-color: $color-red !important;
         min-width: fit-content;
         &:hover {
-          background-color: #{$color-red--lighter} !important;
-          color: var(--text-dark) !important;
+          background-color: $color-red--lighter !important;
+          color: $color-text--dark !important;
         }
       }
       &:nth-of-type(3n+2) {
-        background-color: var(--background-primary) !important;
+        background-color: $color-background-primary !important;
         &:hover {
-          background-color: #{$color-hover--lighter} !important;
+          background-color: $color-hover--lighter !important;
         }
       }
       &:nth-of-type(3n+3) {
-        background-color: var(--background-primary) !important;
-        color: var(--text-normal) !important;
+        background-color: $color-background-primary !important;
+        color: $color-text !important;
         &:hover {
           @include box-shadow($color-green, 'small', 0.8);
-          background-color: #{$color-green} !important;
-          color: var(--text-dark) !important;
+          background-color: $color-green !important;
+          color: $color-text--dark !important;
         }
       }
+    }
+  }
+}
+
+// Wave button
+.containerCompact-1Jto1O {
+  .compactButton-3hG-bs {
+    &:hover {
+      background-color: $color-hover--darker;
     }
   }
 }

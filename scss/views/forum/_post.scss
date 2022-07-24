@@ -2,10 +2,17 @@
   padding: {
     bottom: 14px;
   }
-  .container-2qVG6q:active,
-  .container-2qVG6q:hover {
-    @include box-shadow($color-hover, 'large', 0.6);
-    transform: none !important;
+  .container-2qVG6q {
+    border: none;
+    &:active,
+    &:hover {
+      @include box-shadow($color-hover, 'large', 0.6);
+      transform: none !important;
+    }
+    &.isOpen-2OXbFs {
+      @include box-shadow($color-hover--darker, 'large', 0.2);
+      background-color: $color-hover--darker !important;
+    }
   }
   .body-hCVwsC {
     &.hasUnreads-3kKLnS {
@@ -224,14 +231,16 @@
                   @include border-radius('top', 'medium');
                   @include border-radius('bottom', 'none');
                   margin: {
-                    left: 0;
                     top: 14px;
+                    right: 0;
                     bottom: 0;
+                    left: 0;
                   }
                   padding: {
                     top: 14px;
-                    left: 14px;
+                    right: 14px;
                     bottom: 14px;
+                    left: 14px;
                   }
                   &:before,
                   &:after {
