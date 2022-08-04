@@ -37,6 +37,9 @@
             @include border-radius('right', 'medium');
           }
         }
+        .separator-PzTEkx {
+          display: none;
+        }
         &:hover {
           @include box-shadow($color-hover, 'large', 0.8);
         }

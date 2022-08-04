@@ -1,43 +1,19 @@
 // Search bar
 .search-39IXmY {
   @include border-radius('all', 'large');
-  margin: 0 8px;
+  margin: {
+    top: 1px;
+    right: 8px;
+    bottom: -1px;
+    left: 8px;
+  }
   order: -1;
   padding: 5px 3px;
-  background-color: #{$color-background-primary};
+  background-color: $color-background-primary;
 }
 .search-2Mwzzq,
 .searchBar-jGtisZ {
   background-color: transparent !important;
-}
-.search-1FM8Qc {
-  > .icon-1nNws_ {
-    transition: background-color 150ms, color 150ms;
-  }
-  > .searchBar-jGtisZ.open-1F8u2c > .icon-1nNws_ {
-    background-color: #{$color-accent} !important;
-  }
-  &.open-1F8u2c {
-    .DraftEditor-root {
-      @include border-radius('all', 'medium');
-      background-color: var(--background-secondary);
-      margin-right: 8px;
-      transition: opacity 150ms;
-      border: 2px solid var(--background-secondary);
-    }
-    .searchBar-jGtisZ {
-      width: 281px;
-    }
-  }
-  &:not(.open-1F8u2c) {
-    .DraftEditor-root {
-      transition: opacity 150ms;
-      opacity: 0;
-    }
-    .searchBar-jGtisZ {
-      width: 40px;
-    }
-  }
 }
 .DraftEditor-root {
   transform: translateY(-4px);
@@ -48,7 +24,7 @@
 .searchBar-jGtisZ {
   background-color: transparent;
   height: 26px;
-  width: 181px;
+  width: 221px;
   &[aria-expanded='true'] {
     .icon-3cZ1F_,
     .icon-1nNws_:hover .icon-3cZ1F {
@@ -56,26 +32,33 @@
     }
   }
   > .icon-1nNws_ {
-    background-color: var(--background-primary);
+    background-color: $color-background-primary;
     height: 36px;
     width: 36px;
     @include border-radius('all', 'large');
     > div > svg {
-      color: var(--text-normal);
+      color: $color-text--muted;
     }
   }
   &:hover > .icon-1nNws_ {
-    background-color: #{$color-accent} !important;
+    background-color: $color-accent !important;
     > div > svg {
-      color: var(--text-dark);
+      color: $color-text--dark;
     }
   }
+  .focused-1xh-wG &,
   .open-1F8u2c & {
-    width: 221px;
+    width: 221px !important;
   }
 }
 .public-DraftEditorPlaceholder-root {
-  padding: 4px !important;
+  color: $color-white--darker !important;
+  padding: {
+    top: 6px !important;
+    right: 4px !important;
+    bottom: 4px !important;
+    left: 6px !important;
+  }
 }
 .DraftEditor-editorContainer {
   margin: 4px;
@@ -84,36 +67,34 @@
   background-color: var(--background-modifier-hover) !important;
 }
 .layer-2aCOJ3 {
-
-  // transform: translate(-54px, 8px);
   @include border-radius('all', 'large');
 
   // Search bar popup
   .container-2McqkF.elevationBorderHigh-3drnJX {
     @include border-radius('all', 'large');
-    background-color: var(--background-tertiary);
+    background-color: $color-background-tertiary;
     ul[role='group'] {
-      background-color: var(--background-tertiary);
+      background-color: $color-background-tertiary;
       .option-ayUoaq {
         @include border-radius('all', 'medium');
         &:after {
-          background: linear-gradient(90deg, transparent, var(--background-tertiary) 100%) !important;
+          background: linear-gradient(90deg, transparent, $color-background-tertiary 100%) !important;
         }
       }
     }
     .queryContainer-ZunrLZ {
-      background-color: var(--background-quaternary);
+      background-color: $color-background-quaternary;
     }
     .resultsGroup-cfY57t {
       @include border-radius('all', 'large');
     }
   }
 
-  // Pinnes messages popup
+  // Pinned messages popup
   > div[aria-modal='true'] {
     &,
     > .messagesPopoutWrap-3zryHW {
-      border-radius: var(--border-radius-1) !important;
+      @include border-radius('all', 'large');
     }
   }
 }
@@ -125,7 +106,7 @@
   background-color: transparent !important;
   > .scroller-3iiyhZ.thin-31rlnD.scrollerBase-_bVAAt {
     @include border-radius('all', 'large');
-    background-color: var(--background-primary) !important;
+    background-color: $color-background-primary !important;
   }
 }
 
@@ -134,7 +115,7 @@
   > .messagesPopout-eVzQcI {
     &.thin-31rlnD {
       &.scrollerBase-_bVAAt {
-        background-color: var(--background-tertiary) !important;
+        background-color: $color-background-tertiary !important;
       }
     }
   }

@@ -22,7 +22,7 @@
 
 // Friends page panel
 .peopleColumn-1wMU14 {
-  @include border-radius('all', 'large');
+  @include border-radius('bottom', 'large');
   background-color: transparent;
   .title-x4dI75 {
     color: $color-white--darker;
@@ -116,13 +116,13 @@
 
 // Friends search bar
 .searchBar-2aylmZ {
-  @include border-radius('all', 'large');
+  @include border-radius('all', 'medium');
   margin: 0 0 8px;
   background-color: var(--background-primary);
   overflow: visible;
 }
 .searchBar-2aylmZ > .inner-2pOSmK {
-  @include border-radius('all', 'large');
+  @include border-radius('all', 'medium');
   padding: 8px;
   overflow: visible;
 }
