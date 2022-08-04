@@ -34,8 +34,8 @@
               bottom: 10px;
               left: 0;
             };
-            .actions-22Oc3k {
-              .actionButton-2-mzZp {
+            .actions-1VsuBP {
+              .actionButton-3GQIiT {
                 > svg,
                 > svg > path {
                   transition: none !important;
@@ -73,7 +73,7 @@
                 bottom: 10px;
                 left: 10px;
               }
-              .actionButton-2-mzZp {
+              .actionButton-3GQIiT {
                 background-color: #{$color-hover--lighter};
               }
             }
@@ -89,7 +89,7 @@
                 bottom: 10px;
                 left: 10px;
               }
-              .actionButton-2-mzZp {
+              .actionButton-3GQIiT {
                 background-color: #{$color-hover--lighter};
               }
             }
@@ -104,6 +104,29 @@
     margin-top: 6px;
     &:before {
       display: none !important;
+    }
+  }
+}
+.resizeHandle-PBRzPC {
+  +.container-3XgAHv {
+    .spamBanner-1auiob {
+      .actionButtons-2SAg-Q {
+        .largeButton-x1o_n3 {
+          &:nth-of-type(1) {
+            background-color: transparent !important;
+            &:hover {
+              color: $color-text !important;
+            }
+          }
+          &:nth-of-type(2) {
+            background-color: $color-red !important;
+            color: $color-text--dark;
+            &:hover {
+              background-color: $color-red--lighter !important;
+            }
+          }
+        }
+      }
     }
   }
 }
