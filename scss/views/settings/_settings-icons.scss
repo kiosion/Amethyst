@@ -1,6 +1,7 @@
 // Settings icons
 $settingsIconSize: 18px;
 $settingsIconGap: 14px;
+$settingsIconBaseUrl: 'https://kiosion.github.io/Amethyst/img/icons/';
 .sidebarRegion-1VBisG {
   flex-basis: calc(218px + (#{$settingsIconSize} + #{$settingsIconGap})) !important;
 }
@@ -24,7 +25,8 @@ $settingsIconGap: 14px;
     margin-right: #{$settingsIconGap};
     background: currentColor;
     z-index: 2;
-    -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/questionmark.svg') center/contain no-repeat;
+    -webkit-mask: url('#{$settingsIconBaseUrl}questionmark.svg') center/contain no-repeat;
+    mask: url('#{$settingsIconBaseUrl}questionmark.svg') center/contain no-repeat;
   }
 }
 @function str-replace($string, $search: ' ', $replace: '-') {
@@ -41,24 +43,28 @@ $settingsIconGap: 14px;
     @if str-index($key, 'nth-child') {
       #bd-settings-sidebar .ui-tab-bar-item {
         &:#{$key}:before {
-          -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/{$value}.svg') center/contain no-repeat;
+          -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+          mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
         }
       }
     } @else {
       .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG {
         @if str-index($key, 'bd-') {
           &.#{$key}:before {
-            -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+            -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+            mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
           }
         } @else {
           &[aria-controls='#{$key}' i]:before {
-            -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+            -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+            mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
           }
         }
         @if str-index($key, ' ') {
           $dashed: str-replace($key);
           &[aria-controls='#{$dashed}' i]:before {
-            -webkit-mask: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/#{$value}.svg') center/contain no-repeat;
+            -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+            mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
           }
         }
       }

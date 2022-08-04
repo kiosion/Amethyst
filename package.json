@@ -1,7 +1,7 @@
 {
   "name": "amethyst",
   "version": "1.0.0",
-  "description": "<div align=center><h1>Amethyst</h1></div>",
+  "description": "A dark, minimal, modern rework of Discord's UI, with a purple colour scheme & miscillaneous UI tweaks.",
   "repository": {
     "type": "git",
     "url": "https://github.com/kiosion/Amethyst"
@@ -10,13 +10,14 @@
     "husky": "^8.0.0",
     "lint-staged": "^12.4.1",
     "node-sass": "^7.0.1",
+    "rimraf": "^3.0.2",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^4.0.0",
     "stylelint-scss": "^4.2.0"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "rimraf ./.husky/ && husky install && chmod ug+x .husky/* && husky add .husky/pre-commit 'yarn lint-staged'",
     "compile": "node-sass ./scss/base.scss -o ./css/ --output-style compressed && git add *.css",
     "lint": "stylelint ./scss/*.scss --fix"
   }
