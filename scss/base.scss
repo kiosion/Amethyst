@@ -66,19 +66,66 @@
   margin-left: 5px;
 }
 
-// User area panels
+// User profile popout
+.menu-1QACrS[id='account'] {
+  .headerTop-3GPUSF {
+    background-color: $color-background-quaternary !important;
+  }
+  .profileBody-3QbfPe {
+    padding: {
+      left: 0;
+      right: 0;
+    }
+    &,
+    .bodyInnerWrapper-2bQs1k,
+    .activityUserPopout-2MzGCj {
+      background-color: $color-background-quaternary !important;
+    }
+    .bodyInnerWrapper-2bQs1k {
+      padding: {
+        left: 12px;
+        right: 12px;
+      }
+    }
+  }
+}
+
+// User area panels / profile popout
 .panels-3wFtMD {
+  @include border-radius('all', 'large');
   background-color: transparent;
   transform: translate(10px, -22px);
   position: absolute;
   bottom: 0;
   width: 220px;
-  @include border-radius('all', 'large');
   > .container-YkUktl {
     @include border-radius('all', 'large');
     @include box-shadow($color-hover, 'large', 0.4);
     background-color: var(--background-tertiary);
     height: 44px;
+    justify-content: space-between;
+    .avatarWrapper-1B9FTW {
+      @include border-radius('all', 'large');
+      min-width: unset !important;
+      margin: {
+        left: -4px;
+      }
+      padding: {
+        left: 4px;
+        right: 10px;
+      }
+      transition: background-color 150ms ease;
+      &,
+      .nameTag-sc-gpq {
+        margin: {
+          right: 0;
+        }
+      }
+      &:hover,
+      &[aria-expanded='true'] {
+        background-color: $color-hover--lighter;
+      }
+    }
     > div > button {
       background-color: transparent !important;
       &:nth-of-type(3n+1),
