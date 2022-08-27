@@ -59,10 +59,18 @@ $settingsIconBaseUrl: 'https://kiosion.github.io/Amethyst/img/icons/';
             -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
             mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
           }
+          &[data-item-id='#{$key}' i]:before {
+            -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+            mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+          }
         }
         @if str-index($key, ' ') {
           $dashed: str-replace($key);
           &[aria-controls='#{$dashed}' i]:before {
+            -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+            mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
+          }
+          &[data-item-id='#{$dashed}' i]:before {
             -webkit-mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
             mask: url('#{$settingsIconBaseUrl}#{$value}.svg') center/contain no-repeat;
           }
