@@ -1,0 +1,97 @@
+.userPopoutInner-PA9zkU {
+  > .bannerSVGWrapper-qc0szY {
+    > mask {
+      > circle {
+        transform: translate(4px, 4px);
+      }
+    }
+  }
+  .section-3FmfOT {
+    padding: {
+      left: 12px;
+      right: 12px;
+    }
+  }
+  .scroller-1jBQYo {
+    min-height: fit-content;
+    .section-3FmfOT {
+      padding: {
+        top: 8px;
+        bottom: 8px;
+      }
+    }
+  }
+}
+.userPopoutInnerWithoutTheme-23vLID {
+  background: $color-background-tertiary !important;
+  .overlayBackground-arbZMT {
+    background-color: $color-background-primary;
+  }
+  textarea {
+    background-color: $color-hover;
+  }
+}
+.customStatus-3Bvsdb {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.footer-3naVBw {
+  display: var(--message);
+}
+.bodyInnerWrapper-2bQs1k > .bodyTitle-2Az3VQ.base-21yXnu.size12-oc4dx4.muted-eZM05q.uppercase-2unHJn,
+.bodyTitle-2Az3VQ.base-21yXnu.size12-oc4dx4.muted-eZM05q.uppercase-2unHJn:nth-of-type(2n+2),
+.note-6O4w9y textarea,
+.note-6O4w9y,
+.note-3M15gE,
+.userInfoSectionHeader-2mYYun:nth-of-type(2),
+.section-3FmfOT:nth-of-type(3) {
+  display: var(--notes);
+}
+.userPopout-xaxa6l {
+  @include border-radius('all', 'large');
+  border: 1px solid #{$color-border};
+}
+.tabBar-2hXqzU {
+  &.top-K_jibn {
+    justify-content: space-around;
+  }
+}
+.profileBanner-33-uE1 {
+  height: 176px;
+}
+.popoutBanner-19WKGg,
+.bannerNormal-3u-o59,
+.bannerUploaderInnerSquare-1ddxpx {
+  height: 122px;
+}
+.settingsBanner-15-pZk {
+  height: 140px;
+}
+.aboutMeSection---MkQa,
+.headerTop-1PNKck {
+  padding-top: 16px;
+}
+.body-3HBlXn {
+  padding: 8px 8px 0 16px;
+}
+.header-4zuFdR,
+.customStatusActivity-nmH3DF {
+  margin-left: 8px;
+}
+.userPopout-xaxa6l .customStatus-oN4ZZY,
+.userPopout-xaxa6l .aboutMeSection-1Fw5Ia {
+  padding: 0 12px 12px 0;
+}
+.userInfoSection-q_35fn {
+  padding: 0;
+  &:nth-child(2) {
+    padding-bottom: 16px;
+  }
+}
+.banner-1YaD3N {
+  &.profileBannerPremium-KD60EB.bannerPremium-kkSkPv,
+  &.profileBanner-1owKI5 {
+    height: 220px;
+  }
+}

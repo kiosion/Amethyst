@@ -1,0 +1,149 @@
+@import './connected-accounts';
+.focusLock-2tveLW {
+  &[aria-label='User Profile Modal'] {
+    .body-1Ukv50 {
+      overflow: scroll !important;
+      flex: 1;
+    }
+    > .root-8LYsGj.root-g14mjS {
+      height: fill-available;
+      height: -webkit-fill-available;
+    }
+  }
+}
+.bodyTitle-3FWCs2,
+.bodyTitle-1ySSKn,
+.footer-1N3bR3,
+.protip-2urNh2 {
+  display: none;
+}
+.body-2wLx-E {
+  height: calc(100% - 167px);
+}
+.listRow-2nO1T6 {
+  margin: 2px 8px;
+  @include border-radius('all', 'large');
+}
+.root-jbEB5E {
+  &.rolesList-3uZoaa {
+    margin-top: 0 !important;
+  }
+}
+.bodyInnerWrapper-26fQXj {
+  padding: 0 8px 0 0;
+}
+.lookInverted-2D7oAl {
+  .contents-1UYEBX {
+    color: var(--interactive-selected);
+  }
+}
+.tabBarContainer-sCZC4w {
+  padding: 0 20px !important;
+}
+.avatar-37jOim,
+.avatar-3QF_VA,
+.avatarUploaderInner-Oiob_P,
+.avatar-1uQSZT {
+  border-color: $color-background-tertiary;
+}
+.avatar-37jOim {
+  &:before {
+    z-index: -1;
+  }
+}
+.avatar-1uQSZT,
+.avatar-37jOim,
+.avatar-3QF_VA {
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $color-background-tertiary;
+    border-radius: 50%;
+  }
+}
+.avatar-1uQSZT,
+.avatar-37jOim {
+  &:before {
+    width: 28px;
+    height: 28px;
+    top: 54px;
+    left: 54px;
+  }
+}
+.avatar-3QF_VA {
+  top: -156px;
+  &:before {
+    width: 40px;
+    height: 40px;
+    top: 80px;
+    left: 79px;
+  }
+}
+.avatarPositionPremium-3We5Ho,
+.avatarUploader-2UF9NL,
+.avatar-1uQSZT {
+  top: 16px;
+}
+.headerText-1vVs-U {
+  flex-grow: 1;
+}
+:not(.userPopoutInner-PA9zkU) {
+  > .bannerSVGWrapper-qc0szY {
+    > mask {
+      circle {
+        transform: translate(-1px, -87px);
+      }
+    }
+  }
+}
+.profileBadges-ohc0Vu {
+  position: relative;
+  right: 0;
+  max-width: unset;
+  top: 0;
+  padding-left: 8px;
+  flex-wrap: nowrap;
+}
+.avatar-1uQSZT {
+  margin: 7px;
+  + div {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}
+.headerTagWithNickname-1U8zZH {
+  margin-top: 0.2rem !important;
+}
+.customStatus-3XAoF9 {
+  margin-top: 0.1rem !important;
+}
+.userInfo-iCloHO {
+  padding-left: 32px;
+  .container-q03LZO {
+    margin-right: 8px;
+  }
+}
+.background-1QDuV2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.headerTop-1PNKck {
+  display: flex;
+  justify-content: flex-end;
+  top: 4px;
+}
+.nameTag-2Nlmsy {
+  margin: 24px 290px 24px 24px;
+}
+.top-K_jibn {
+  .item-3XjbnG {
+    border-bottom: unset;
+    &.selected-g-kMVV {
+      border-bottom: 2px solid var(--interactive-active);
+    }
+  }
+}

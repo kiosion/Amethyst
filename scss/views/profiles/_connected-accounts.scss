@@ -1,0 +1,36 @@
+.connectedAccounts-2R5M4w {
+  width: 100%;
+  gap: 20px;
+}
+.connectedAccountsColumn-1zdyyx {
+  margin: {
+    top: 20px;
+  }
+  gap: 20px;
+  flex: 1 0 40%;
+  &:nth-of-type(2) {
+    margin: {
+      top: 29px;
+      left: 0;
+    }
+  }
+}
+.discordMemberCreatedAt-31OkT7 {
+  background-color: transparent;
+  margin: {
+    top: 0;
+  }
+}
+.connectedAccountContainer-3aLMHJ {
+  &:not(.discordMemberCreatedAt-31OkT7) {
+    @include border-radius('all', 'medium');
+    padding: 12px;
+    background-color: $color-background-secondary;
+    margin: {
+      top: 0;
+    }
+  }
+}
+.connectedAccountOpenIconContainer-2cYFIC {
+  transform: translateY(-1px);
+}
