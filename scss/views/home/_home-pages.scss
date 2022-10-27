@@ -9,7 +9,7 @@
       @include border-radius('left', 'medium');
       @include border-radius('right', 'large');
       overflow: hidden;
-      margin-left: 10px;
+      margin-left: $space-full;
       .scroller-hE2gWq {
         padding-left: 0 !important;
       }
@@ -28,10 +28,10 @@
   .title-x4dI75 {
     color: $color-white--darker;
     margin: {
-      top: 20px;
-      left: 26px;
-      right: 26px;
-      bottom: 10px;
+      top: $unit-6;
+      right: $unit-5 * 2;
+      bottom: $unit-6 / 2;
+      left: $unit-5 * 2;
     }
   }
   > div:nth-of-type(2) {
@@ -77,18 +77,20 @@
 .scroller-3X7KbA,
 .stageSection-3mAD8V {
   @include border-radius('all', 'medium');
-  background-color: var(--background-primary) !important;
+  background-color: $color-background-primary;
 }
 .scroller-1JbKMe {
-  border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+  @include border-radius('top', 'large');
 }
 .scroller-RmtA4e {
-  border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
-  background-color: var(--background-secondary);
+  @include border-radius('top', 'large');
+  background-color: $color-background-secondary;
 }
 .sidebar-1tnWFu {
-  margin-top: 10px;
-  margin-right: 10px;
+  margin: {
+    top: $space-full;
+    right: $space-full;
+  }
 }
 .chatContent-3KubbW,
 .sidebar-1tnWFu,
@@ -96,34 +98,44 @@
 .pageWrapper-1PgVDX,
 .stageSection-3mAD8V,
 .applicationStore-1pNvnv {
-  margin-bottom: 10px;
+  margin-bottom: $space-full;
 }
 .scroller-1SuHJo {
-  margin-right: 16px;
-  margin-bottom: 24px;
+  margin-right: $unit-5;
+  margin-bottom: $unit-6;
 
   // Stages content
   .content-3YMskv {
     @include border-radius('all', 'large');
-    background-color: var(--background-primary);
-    padding: 0 16px 16px;
+    background-color: $color-background-primary;
+    padding: {
+      top: 0;
+      right: $unit-5;
+      bottom: $unit-5;
+      left: $unit-5;
+    }
   }
 }
 .pageWrapper-1PgVDX,
 .content-yTz4x3,
 .applicationStore-1pNvnv {
-  margin-right: 10px;
+  margin-right: $space-full;
 }
 
 // Friends search bar
 .searchBar-2aylmZ {
   @include border-radius('all', 'medium');
-  margin: 0 0 8px;
-  background-color: var(--background-primary);
+  margin: {
+    top: $space-0;
+    right: $space-0;
+    bottom: $space-full;
+    left: $space-0;
+  }
+  background-color: $color-background-primary;
   overflow: visible;
 }
 .searchBar-2aylmZ > .inner-2pOSmK {
-  padding: 8px;
+  padding: $unit-3;
   overflow: visible;
 }
 .searchBar-2aylmZ:hover > .inner-2pOSmk,
@@ -132,20 +144,20 @@
   @include box-shadow($color-accent, 'medium', 1);
 }
 .tabBody-2dgbAs {
-  margin-right: 10px;
-  margin-top: 6px;
+  margin-right: $space-full;
+  margin-top: $space-half;
 }
 
 // Friend activity scroller
 .scroller-hE2gWq {
   border: none;
   margin: {
-    left: 0;
+    left: $space-0;
   }
   padding: {
-    left: 10px;
-    right: 0;
-    top: 0;
+    left: $space-full;
+    right: $space-0;
+    top: $space-0;
   }
   > .header-Imy05m {
     display: none;
@@ -187,7 +199,12 @@
   .scroller-29cQFV {
     &.auto-2K3UW5.scrollerBase-_bVAAt {
       @include border-radius('all', 'large');
-      margin: 6px 10px 10px 0;
+      margin: {
+        top: $space-half;
+        right: $space-full;
+        bottom: $space-full;
+        left: $space-0;
+      }
     }
   }
   > .tabBody-2YGSMJ {
