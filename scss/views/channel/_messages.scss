@@ -3,9 +3,7 @@
   transition: background-color 100ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   &:hover,
   &.selected-2LX7Jy {
-
-    // @include background-opacity($color-hover--darker, 0.8);
-    background-color: #{$color-hover--darker};
+    background-color: $color-hover--darker !important;
   }
 
   // Action buttons
@@ -20,14 +18,14 @@
         overflow: visible;
         border: none;
         .button-3bklZh {
-          background-color: #{$color-background-tertiary};
+          background-color: $color-background-tertiary;
           border: none;
           &:hover,
           &.selected-69H4ua {
             @include box-shadow($color-accent, 'small', 0.7);
-            background-color: #{$color-accent};
+            background-color: $color-accent;
             > svg {
-              color: var(--text-dark) !important;
+              color: $color-text--dark !important;
             }
           }
           &:first-of-type {
@@ -51,7 +49,7 @@
   @include border-radius('all', 'medium');
   margin-right: 10px;
   margin-left: 0;
-  background-color: #{$color-background-primary};
+  background-color: $color-background-primary;
   overflow: hidden;
 }
 .embedFull-1HGV2S {
@@ -69,7 +67,7 @@
 .reactions-3ryImn {
   margin-top: 4px;
   .reaction-3vwAF2 {
-    background-color: #{$color-hover--lighter};
+    background-color: $color-hover--lighter;
     border-color: transparent;
     @include border-radius('all', 'medium');
     &.reactionMe-1PwQAc {

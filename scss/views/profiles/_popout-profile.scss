@@ -38,8 +38,17 @@
 .note-6O4w9y,
 .note-3M15gE,
 .userInfoSectionHeader-2mYYun:nth-of-type(2),
-.section-3FmfOT:nth-of-type(3) {
+.userPopoutInner-1v4xcM .section-3FmfOT.lastSection-3_1yKt {
   display: var(--notes);
+}
+.userPopoutInner-1v4xcM {
+  .scroller-1jBQYo.thin-31rlnD.scrollerBase-_bVAAt {
+    margin-bottom: $unit-3;
+  }
+  .section-3FmfOT.lastSection-3_1yKt {
+    margin-bottom: -$unit-3;
+    padding-bottom: 0;
+  }
 }
 .userPopout-xaxa6l {
   @include border-radius('all', 'large');
