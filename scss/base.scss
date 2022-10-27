@@ -20,14 +20,11 @@
 }
 .members-3WRCEx {
   padding-bottom: 32px;
-  &.thin-31rlnD {
-    &.scrollerBase-_bVAAt {
-      &.fade-1R6FHN {
-        margin-right: 10px;
-        margin-bottom: 10px;
-        @include border-radius('all', 'large');
-      }
-    }
+  &.scrollerBase-_bVAAt.thin-31rlnD {
+    @include border-radius('right', 'large');
+    @include border-radius('left', 'medium');
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 .membersWrap-3NUR2t {

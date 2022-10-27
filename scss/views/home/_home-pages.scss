@@ -6,9 +6,10 @@
     overflow: visible;
     max-width: calc(100% - 250px);
     .nowPlayingColumn-1eCBCN {
+      @include border-radius('left', 'medium');
+      @include border-radius('right', 'large');
       overflow: hidden;
       margin-left: 10px;
-      @include border-radius('all', 'large');
       .scroller-hE2gWq {
         padding-left: 0 !important;
       }
@@ -22,7 +23,7 @@
 
 // Friends page panel
 .peopleColumn-1wMU14 {
-  @include border-radius('bottom', 'large');
+  @include border-radius('all', 'medium');
   background-color: transparent;
   .title-x4dI75 {
     color: $color-white--darker;
@@ -75,7 +76,7 @@
 .pageWrapper-1PgVDX,
 .scroller-3X7KbA,
 .stageSection-3mAD8V {
-  @include border-radius('all', 'large');
+  @include border-radius('all', 'medium');
   background-color: var(--background-primary) !important;
 }
 .scroller-1JbKMe {
@@ -122,7 +123,6 @@
   overflow: visible;
 }
 .searchBar-2aylmZ > .inner-2pOSmK {
-  @include border-radius('all', 'medium');
   padding: 8px;
   overflow: visible;
 }

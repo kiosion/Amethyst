@@ -87,11 +87,11 @@
 .headerText-1vVs-U {
   flex-grow: 1;
 }
-:not(.userPopoutInner-PA9zkU) {
+header {
   > .bannerSVGWrapper-qc0szY {
     > mask {
       circle {
-        transform: translate(-1px, -87px);
+        transform: translate(0, -87px);
       }
     }
   }

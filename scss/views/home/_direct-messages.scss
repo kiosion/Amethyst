@@ -5,7 +5,8 @@
 
 // DM list
 .scroller-WSmht3.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN {
-  @include border-radius('top', 'large');
+  @include border-radius('left', 'large');
+  @include border-radius('right', 'medium');
 }
 .channel-1Shao0.container-1oeRFJ.selected-1-Z6gm {
   &[data-list-item-id='private-channels-uid_10800___friends'],

@@ -48,10 +48,10 @@
   }
 }
 .chatContent-3KubbW {
+  @include border-radius('all', 'medium');
   margin-right: 10px;
   margin-left: 0;
   background-color: #{$color-background-primary};
-  @include border-radius('all', 'large');
   overflow: hidden;
 }
 .embedFull-1HGV2S {
@@ -91,18 +91,32 @@
 }
 .container-3i3IzO {
   &.systemMessageContainer-3F3V9U {
-    background-color: #{$color-background-tertiary};
+    background-color: $color-background-tertiary;
     @include border-radius('all', 'medium');
   }
 }
 
 // Inline code blocks
 .markup-2BOw-j code {
-  background-color: #{$color-hover};
+  background-color: $color-background-tertiary;
   @include border-radius('all', 'medium');
 }
 code.inline {
-  background-color: #{$color-hover};
+  background-color: $color-background-tertiary;
+}
+.attachmentContentItem-UKeiCx {
+  .footer-GXWBBp {
+    @include border-radius('bottom', 'medium');
+    background-color: $color-background-tertiary;
+    color: $color-text--soft;
+    .downloadSection-20OayS {
+      color: $color-text--soft;
+    }
+  }
+  .textContainer-36wgKK {
+    @include border-radius('top', 'medium');
+    background-color: $color-background-tertiary;
+  }
 }
 
 // Inline datestamps

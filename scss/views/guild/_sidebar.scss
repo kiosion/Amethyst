@@ -22,9 +22,12 @@
     max-width: calc(100% - 250px);
   }
 }
-.sidebar-1tnWFu,
+.sidebar-1tnWFu {
+  @include border-radius('left', 'large');
+  @include border-radius('right', 'medium');
+}
 .content-1x5b-n {
-  border-radius: var(--border-radius-1) !important;
+  @include border-radius('all', 'large');
 }
 .wrapper-2jXpOf {
   margin-right: 10px;
